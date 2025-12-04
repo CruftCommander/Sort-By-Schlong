@@ -43,7 +43,12 @@ public class DesktopIconService : IDesktopIconProvider, IIconLayoutApplier
         {
             try
             {
-                var listViewHandle = FindDesktopListView();
+                // Add a small delay to let Explorer recover if it was stressed by previous operations
+                System.Threading.Thread.Sleep(50);
+                
+                // Use retry logic with more attempts to handle transient window discovery issues
+                // This matches the approach used in GetDesktopBoundsAsync and ApplyLayoutAsync
+                var listViewHandle = FindDesktopListViewWithRetry(maxRetries: 3, delayMs: 200);
                 if (listViewHandle == IntPtr.Zero)
                 {
                     throw new DesktopAccessException("Could not find desktop ListView window.");
