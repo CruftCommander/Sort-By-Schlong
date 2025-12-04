@@ -1,19 +1,19 @@
-# SortByShlong – Desktop Icon Shape Arranger for Windows
+# SortBySchlong – Desktop Icon Shape Arranger for Windows
 
-SortByShlong is a lightweight, headless Windows utility that rearranges your desktop icons into a predefined comedic shape. It demonstrates advanced Windows shell automation while providing a clean, extensible architecture for future shape layouts and script-driven configurations.
+SortBySchlong helps you arrange your Windows desktop icons by penis.
 
 Unlike traditional UI-driven applications, this tool executes silently and is designed to be triggered by:
 1. A simple **console harness** used for development and direct execution.
 2. A planned **Windows Explorer context menu extension** that adds a new option: `Sort by → Penis`.
 
-The first release includes one shape provider:
+The first release includes one pre-defined shape provider:
 - **PenisShapeProvider**
 
 ---
 
 ## Features
 - Programmatically rearranges desktop icons using Win32 ListView messages
-- Headless execution with no GUI components
+- Headless (heh) execution with no GUI components
 - Clean modular architecture for additional shapes
 - Designed for future support of a scriptable shape definition language
 - Provides a console tool for easy debugging and testing
@@ -159,4 +159,4 @@ This integration will be added once the core engine is stable.
 SortByShlong is a humorous but technically serious utility.  
 Use responsibly — icon rearrangement affects your active desktop layout.
 
-Enjoy, explore, and extend.
+Enjoy, explore, and extend ;)
