@@ -3,7 +3,7 @@
 **Penetrate the monotony of your Windows workspace.**
 
 SortBySchlong gives your Windows desktop icons a bit more… *structure.*  
-It organizes them into a tasteful, vertically oriented geometric arrangement inspired by the classic silhouette you're probably imagining right now.
+It organizes them into a tasteful, vertically oriented geometric arrangement inspired by the classic silhouette you're probably imagining right now. 🤤
 
 ![Example desktop icon arrangement](img/Capture.PNG)
 
