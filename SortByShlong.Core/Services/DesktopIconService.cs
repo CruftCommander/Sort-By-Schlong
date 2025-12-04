@@ -48,13 +48,12 @@ public class DesktopIconService : IDesktopIconProvider, IIconLayoutApplier
                     throw new DesktopAccessException("Could not find desktop ListView window.");
                 }
 
-                // Validate handle before use
-                if (!IsWindowHandleValid(listViewHandle))
-                {
-                    throw new DesktopAccessException("Desktop ListView window handle is invalid.");
-                }
-
+                // Try to get icon count - this will validate the handle is usable
                 var iconCount = SendMessage(listViewHandle, LVM_GETITEMCOUNT, IntPtr.Zero, IntPtr.Zero);
+                if (iconCount < 0)
+                {
+                    throw new DesktopAccessException("Failed to get icon count from desktop ListView window.");
+                }
                 _logger.Information("Found {IconCount} icons on desktop", iconCount);
 
                 if (iconCount == 0)
@@ -68,18 +67,22 @@ public class DesktopIconService : IDesktopIconProvider, IIconLayoutApplier
                 {
                     ct.ThrowIfCancellationRequested();
 
-                    // Refresh handle if it becomes invalid
-                    if (!IsWindowHandleValid(listViewHandle))
+                    // Try to get position - if it fails, try refreshing the handle
+                    var position = GetIconPosition(listViewHandle, i);
+                    
+                    // If position is (0,0) and we got an error, try refreshing handle once
+                    if (position.X == 0 && position.Y == 0 && i > 0)
                     {
-                        _logger.Warning("Window handle became invalid during enumeration, refreshing...");
-                        listViewHandle = FindDesktopListView();
-                        if (listViewHandle == IntPtr.Zero || !IsWindowHandleValid(listViewHandle))
+                        // Try refreshing handle with retry logic
+                        var refreshedHandle = FindDesktopListViewWithRetry();
+                        if (refreshedHandle != IntPtr.Zero)
                         {
-                            throw new DesktopAccessException("Desktop ListView window handle became invalid during enumeration.");
+                            listViewHandle = refreshedHandle;
+                            // Retry getting position with new handle
+                            position = GetIconPosition(listViewHandle, i);
                         }
                     }
 
-                    var position = GetIconPosition(listViewHandle, i);
                     var text = GetIconText(listViewHandle, i);
                     icons.Add(new DesktopIcon(i, position, text));
                 }
@@ -115,12 +118,7 @@ public class DesktopIconService : IDesktopIconProvider, IIconLayoutApplier
                     throw new DesktopAccessException("Could not find desktop ListView window.");
                 }
 
-                // Validate handle before use
-                if (!IsWindowHandleValid(listViewHandle))
-                {
-                    throw new DesktopAccessException("Desktop ListView window handle is invalid.");
-                }
-
+                // Try to get client rect - this will validate the handle is usable
                 var hwnd = new HWND(listViewHandle);
                 if (!User32.GetClientRect(hwnd, out var rect))
                 {
@@ -232,60 +230,92 @@ public class DesktopIconService : IDesktopIconProvider, IIconLayoutApplier
 
     private IntPtr FindDesktopListView()
     {
-        // Find Progman window
-        var progman = User32.FindWindow(ProgmanWindowClass, null);
-        if (progman.IsNull)
-        {
-            _logger.Error("Could not find Progman window");
-            return IntPtr.Zero;
-        }
+        return FindDesktopListViewWithRetry(maxRetries: 1);
+    }
 
-        _logger.Debug("Found Progman window: {Handle}", progman.DangerousGetHandle());
-
-        // Try classic Windows hierarchy first: Progman -> SHELLDLL_DefView -> SysListView32
-        var defView = User32.FindWindowEx(progman, HWND.NULL, ShellDllDefViewWindowClass, null);
-        if (!defView.IsNull)
+    private IntPtr FindDesktopListViewWithRetry(int maxRetries = 3, int delayMs = 100)
+    {
+        for (int attempt = 0; attempt <= maxRetries; attempt++)
         {
-            _logger.Debug("Found SHELLDLL_DefView window (classic hierarchy): {Handle}", defView.DangerousGetHandle());
-            
-            var listView = User32.FindWindowEx(defView, HWND.NULL, SysListView32WindowClass, null);
-            if (!listView.IsNull)
+            if (attempt > 0)
             {
-                _logger.Debug("Found SysListView32 window: {Handle}", listView.DangerousGetHandle());
-                return listView.DangerousGetHandle();
+                _logger.Debug("Retrying desktop ListView discovery (attempt {Attempt}/{MaxRetries})", attempt + 1, maxRetries + 1);
+                System.Threading.Thread.Sleep(delayMs);
             }
+
+            // Find Progman window
+            var progman = User32.FindWindow(ProgmanWindowClass, null);
+            if (progman.IsNull)
+            {
+                if (attempt == maxRetries)
+                {
+                    _logger.Error("Could not find Progman window after {Attempts} attempts", attempt + 1);
+                }
+                else
+                {
+                    _logger.Debug("Could not find Progman window, will retry");
+                }
+                continue;
+            }
+
+            _logger.Debug("Found Progman window: {Handle}", progman.DangerousGetHandle());
+
+            // Try classic Windows hierarchy first: Progman -> SHELLDLL_DefView -> SysListView32
+            var defView = User32.FindWindowEx(progman, HWND.NULL, ShellDllDefViewWindowClass, null);
+            if (!defView.IsNull)
+            {
+                _logger.Debug("Found SHELLDLL_DefView window (classic hierarchy): {Handle}", defView.DangerousGetHandle());
+                
+                var listView = User32.FindWindowEx(defView, HWND.NULL, SysListView32WindowClass, null);
+                if (!listView.IsNull)
+                {
+                    _logger.Debug("Found SysListView32 window: {Handle}", listView.DangerousGetHandle());
+                    return listView.DangerousGetHandle();
+                }
+            }
+
+            // Try modern Windows hierarchy: Progman -> WorkerW -> SHELLDLL_DefView -> SysListView32
+            _logger.Debug("Classic hierarchy not found, trying modern hierarchy with WorkerW");
+            
+            var workerW = FindWorkerWWindow(progman);
+            if (workerW.IsNull)
+            {
+                if (attempt == maxRetries)
+                {
+                    _logger.Error("Could not find WorkerW window after {Attempts} attempts", attempt + 1);
+                }
+                continue;
+            }
+
+            _logger.Debug("Found WorkerW window: {Handle}", workerW.DangerousGetHandle());
+
+            defView = User32.FindWindowEx(workerW, HWND.NULL, ShellDllDefViewWindowClass, null);
+            if (defView.IsNull)
+            {
+                if (attempt == maxRetries)
+                {
+                    _logger.Error("Could not find SHELLDLL_DefView window under WorkerW after {Attempts} attempts", attempt + 1);
+                }
+                continue;
+            }
+
+            _logger.Debug("Found SHELLDLL_DefView window (modern hierarchy): {Handle}", defView.DangerousGetHandle());
+
+            var listViewModern = User32.FindWindowEx(defView, HWND.NULL, SysListView32WindowClass, null);
+            if (listViewModern.IsNull)
+            {
+                if (attempt == maxRetries)
+                {
+                    _logger.Error("Could not find SysListView32 window after {Attempts} attempts", attempt + 1);
+                }
+                continue;
+            }
+
+            _logger.Debug("Found SysListView32 window: {Handle}", listViewModern.DangerousGetHandle());
+            return listViewModern.DangerousGetHandle();
         }
 
-        // Try modern Windows hierarchy: Progman -> WorkerW -> SHELLDLL_DefView -> SysListView32
-        _logger.Debug("Classic hierarchy not found, trying modern hierarchy with WorkerW");
-        
-        var workerW = FindWorkerWWindow(progman);
-        if (workerW.IsNull)
-        {
-            _logger.Error("Could not find WorkerW window");
-            return IntPtr.Zero;
-        }
-
-        _logger.Debug("Found WorkerW window: {Handle}", workerW.DangerousGetHandle());
-
-        defView = User32.FindWindowEx(workerW, HWND.NULL, ShellDllDefViewWindowClass, null);
-        if (defView.IsNull)
-        {
-            _logger.Error("Could not find SHELLDLL_DefView window under WorkerW");
-            return IntPtr.Zero;
-        }
-
-        _logger.Debug("Found SHELLDLL_DefView window (modern hierarchy): {Handle}", defView.DangerousGetHandle());
-
-        var listViewModern = User32.FindWindowEx(defView, HWND.NULL, SysListView32WindowClass, null);
-        if (listViewModern.IsNull)
-        {
-            _logger.Error("Could not find SysListView32 window");
-            return IntPtr.Zero;
-        }
-
-        _logger.Debug("Found SysListView32 window: {Handle}", listViewModern.DangerousGetHandle());
-        return listViewModern.DangerousGetHandle();
+        return IntPtr.Zero;
     }
 
     private HWND FindWorkerWWindow(HWND progman)
@@ -328,19 +358,21 @@ public class DesktopIconService : IDesktopIconProvider, IIconLayoutApplier
 
     private int SendMessage(IntPtr hWnd, int msg, IntPtr wParam, IntPtr lParam)
     {
-        if (!IsWindowHandleValid(hWnd))
-        {
-            var error = new Win32Exception();
-            _logger.Warning("Invalid window handle for message {Message}: {Error}", msg, error.Message);
-            return 0;
-        }
-
+        // Don't validate handle here - let the actual operation determine if it's valid
+        // IsWindow can return false for valid handles in some edge cases
         var hwnd = new HWND(hWnd);
         var result = User32.SendMessage(hwnd, (User32.WindowMessage)msg, wParam, lParam);
+        
+        // Only log warnings for messages where zero indicates failure
+        // LVM_GETITEMCOUNT and LVM_GETITEMPOSITION can return zero in valid scenarios
         if (result == IntPtr.Zero && msg != LVM_GETITEMCOUNT && msg != LVM_GETITEMPOSITION)
         {
-            var error = new Win32Exception();
-            _logger.Warning("SendMessage returned zero for message {Message}: {Error}", msg, error.Message);
+            var lastError = System.Runtime.InteropServices.Marshal.GetLastWin32Error();
+            if (lastError != 0)
+            {
+                var error = new Win32Exception();
+                _logger.Warning("SendMessage returned zero for message {Message}: {Error}", msg, error.Message);
+            }
         }
 
         return result.ToInt32();
@@ -348,13 +380,6 @@ public class DesktopIconService : IDesktopIconProvider, IIconLayoutApplier
 
     private Point GetIconPosition(IntPtr listViewHandle, int index)
     {
-        // Validate handle before use
-        if (!IsWindowHandleValid(listViewHandle))
-        {
-            _logger.Warning("Invalid window handle when getting position for icon {Index}", index);
-            return new Point(0, 0);
-        }
-
         var point = new Vanara.PInvoke.POINT();
         var lParam = System.Runtime.InteropServices.Marshal.AllocHGlobal(
             System.Runtime.InteropServices.Marshal.SizeOf(point));
@@ -371,23 +396,20 @@ public class DesktopIconService : IDesktopIconProvider, IIconLayoutApplier
                 new IntPtr(index),
                 lParam);
 
-            // LVM_GETITEMPOSITION returns non-zero on success, but the position is in the POINT structure
-            // Check if the window is still valid after the call
-            if (!IsWindowHandleValid(listViewHandle))
-            {
-                _logger.Warning("Window handle became invalid after getting position for icon {Index}", index);
-                return new Point(0, 0);
-            }
-
-            // Read the position from the structure
+            // Read the position from the structure (it's filled in by Windows)
             point = System.Runtime.InteropServices.Marshal.PtrToStructure<Vanara.PInvoke.POINT>(lParam)!;
             
             // LVM_GETITEMPOSITION returns non-zero on success
+            // Even if result is zero, the POINT structure might still be valid
             if (result == IntPtr.Zero)
             {
                 var error = new Win32Exception();
-                _logger.Warning("LVM_GETITEMPOSITION returned zero for icon {Index}: {Error}", index, error.Message);
-                // Still return the point in case it was filled in
+                var lastError = System.Runtime.InteropServices.Marshal.GetLastWin32Error();
+                // Only log if there's an actual error (not ERROR_SUCCESS)
+                if (lastError != 0)
+                {
+                    _logger.Warning("LVM_GETITEMPOSITION returned zero for icon {Index}, last error: {Error}", index, error.Message);
+                }
             }
 
             return new Point(point.X, point.Y);
