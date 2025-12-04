@@ -315,6 +315,40 @@
         <member name="M:SortBySchlong.Core.Services.DesktopIconService.ApplyLayoutAsync(System.Collections.Generic.IReadOnlyList{SortBySchlong.Core.Models.DesktopIcon},System.Threading.CancellationToken)">
             <inheritdoc/>
         </member>
+        <member name="M:SortBySchlong.Core.Services.DesktopIconService.FindDesktopListViewAlternative">
+            <summary>
+            Alternative method to find desktop ListView using EnumWindows.
+            This is used as a fallback when standard methods fail.
+            </summary>
+        </member>
+        <member name="M:SortBySchlong.Core.Services.DesktopIconService.RefreshDesktopIcons(System.IntPtr)">
+            <summary>
+            Forces a comprehensive refresh of the desktop icons to ensure changes are visible.
+            </summary>
+        </member>
+        <member name="M:SortBySchlong.Core.Services.DesktopIconService.IsExplorerResponsive(System.IntPtr)">
+            <summary>
+            Checks if Explorer is responsive by attempting a quick operation with timeout.
+            </summary>
+            <param name="listViewHandle">The ListView handle to test.</param>
+            <returns>True if Explorer is responsive, false if hung/unresponsive.</returns>
+        </member>
+        <member name="M:SortBySchlong.Core.Services.DesktopIconService.IsExplorerResponsiveWithRetry(System.IntPtr,System.Int32,System.Int32)">
+            <summary>
+            Checks if Explorer is responsive with retries, giving it time to recover.
+            </summary>
+            <param name="listViewHandle">The ListView handle to test.</param>
+            <param name="maxRetries">Maximum number of retry attempts.</param>
+            <param name="delayMs">Delay between retries in milliseconds.</param>
+            <returns>True if Explorer becomes responsive, false if still unresponsive after retries.</returns>
+        </member>
+        <member name="M:SortBySchlong.Core.Services.DesktopIconService.WaitForExplorerReady(System.Int32)">
+            <summary>
+            Waits for Explorer to be ready by checking if the Progman window exists.
+            </summary>
+            <param name="maxWaitMs">Maximum time to wait in milliseconds.</param>
+            <returns>True if Explorer appears ready (Progman window found), false if timeout.</returns>
+        </member>
         <member name="T:SortBySchlong.Core.Services.IconArrangementService">
             <summary>
             Orchestrates the icon arrangement process by coordinating icon retrieval, shape generation, and layout application.

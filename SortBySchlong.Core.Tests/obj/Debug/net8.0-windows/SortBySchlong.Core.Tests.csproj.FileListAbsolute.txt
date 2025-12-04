@@ -247,8 +247,8 @@ C:\Users\Daddy\source\repos\Sort-By-Schlong\SortBySchlong.Core.Tests\obj\Debug\n
 C:\Users\Daddy\source\repos\Sort-By-Schlong\SortBySchlong.Core.Tests\obj\Debug\net8.0-windows\ref\SortBySchlong.Core.Tests.dll
 C:\Users\Buffe\OneDrive\Documents\Sort-By-Schlong\SortBySchlong.Core.Tests\bin\Debug\net8.0-windows\.msCoverageSourceRootsMapping_SortBySchlong.Core.Tests
 C:\Users\Buffe\OneDrive\Documents\Sort-By-Schlong\SortBySchlong.Core.Tests\bin\Debug\net8.0-windows\CoverletSourceRootsMapping_SortBySchlong.Core.Tests
-C:\Users\Buffe\OneDrive\Documents\Sort-By-Schlong\SortBySchlong.Core.Tests\bin\Debug\net8.0-windows\testhost.exe
 C:\Users\Buffe\OneDrive\Documents\Sort-By-Schlong\SortBySchlong.Core.Tests\bin\Debug\net8.0-windows\testhost.dll
+C:\Users\Buffe\OneDrive\Documents\Sort-By-Schlong\SortBySchlong.Core.Tests\bin\Debug\net8.0-windows\testhost.exe
 C:\Users\Buffe\OneDrive\Documents\Sort-By-Schlong\SortBySchlong.Core.Tests\bin\Debug\net8.0-windows\xunit.runner.visualstudio.testadapter.dll
 C:\Users\Buffe\OneDrive\Documents\Sort-By-Schlong\SortBySchlong.Core.Tests\bin\Debug\net8.0-windows\xunit.runner.reporters.netcoreapp10.dll
 C:\Users\Buffe\OneDrive\Documents\Sort-By-Schlong\SortBySchlong.Core.Tests\bin\Debug\net8.0-windows\xunit.runner.utility.netcoreapp10.dll

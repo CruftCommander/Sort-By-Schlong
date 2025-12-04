@@ -133,6 +133,11 @@ public class IconArrangementService
                 .ToList();
 
             // Step 7: Apply layout
+            // Add a brief delay to let Explorer recover from enumeration before applying layout
+            // This helps prevent "window not found" errors when Explorer is recreating windows
+            _logger.Debug("Waiting briefly before applying layout to let Explorer stabilize...");
+            await Task.Delay(300, ct);
+
             _logger.Debug("Applying layout to desktop");
             await _layoutApplier.ApplyLayoutAsync(iconsWithNewPositions, ct);
 
