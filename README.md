@@ -1,23 +1,30 @@
 # SortBySchlong – Desktop Icon Shape Arranger for Windows
 
-SortBySchlong helps you arrange your Windows desktop icons by penis.
+**Penetrate the monotony of your Windows workspace.**
 
-Unlike traditional UI-driven applications, this tool executes silently and is designed to be triggered by:
-1. A simple **console harness** used for development and direct execution.
-2. A planned **Windows Explorer context menu extension** that adds a new option: `Sort by → Penis`.
+SortBySchlong gives your Windows desktop icons a bit more… *structure.*  
+It organizes them into a tasteful, vertically oriented geometric arrangement inspired by the classic silhouette you’re probably imagining right now.
 
-The first release includes one pre-defined shape provider:
-- **PenisShapeProvider**
+Unlike traditional UI-driven applications, this tool operates quietly in the background and is intended to be triggered by:
+
+1. A lightweight **console harness** for development and direct execution.  
+2. A planned **Windows Explorer context menu extension** offering a new, refined option:  
+   `Sort by → Penis`  
+   (Because symmetry matters.)
+
+The debut release ships with a single arrangement engine:
+- **PenisShapeProvider**  
+  (Providing a firm foundation for future shapes.)
 
 ---
 
 ## Features
-- Programmatically rearranges desktop icons using Win32 ListView messages
-- Headless (heh) execution with no GUI components
-- Clean modular architecture for additional shapes
-- Designed for future support of a scriptable shape definition language
-- Provides a console tool for easy debugging and testing
-- Shell extension integration planned for Windows Explorer
+- Rearranges desktop icons using Win32 ListView messages  
+- Fully headless execution (the application keeps things discreet)  
+- Extensible architecture designed to handle new shapes as they emerge  
+- Future-ready scriptable layout system  
+- Console harness for easy debugging and hands-on testing  
+- Planned shell integration for one-click… sorting
 
 ---
 
@@ -25,9 +32,9 @@ The first release includes one pre-defined shape provider:
 ```
 /icon-arranger
   /src
-    /IconArranger.Core              # Layout engine, Win32 interop, shape providers
-    /IconArranger.ConsoleHarness    # CLI runner for execution and testing
-    /IconArranger.Shell             # (Future) C++ COM shell extension
+    /IconArranger.Core              # Core engine, Win32 interop, shape logic
+    /IconArranger.ConsoleHarness    # CLI runner for building and testing layouts
+    /IconArranger.Shell             # (Future) C++ COM Explorer extension
   /docs
     ARCHITECTURE.md
     TESTING.md
@@ -38,56 +45,57 @@ The first release includes one pre-defined shape provider:
 ---
 
 ## Technologies
-- **C# .NET 8** for the core library and testing harness  
+- **C# .NET 8** for core logic and the testing harness  
 - **C++ Win32 COM** for the future Explorer context menu extension  
-- **P/Invoke** for desktop ListView interaction  
+- **P/Invoke** for manipulating the desktop ListView window  
 
-The application targets Windows exclusively due to its reliance on Win32 APIs and Explorer internals.
+(That said, this application is capable of running only on Windows)
 
 ---
 
 ## System Requirements & Compatibility
+- **OS:** Windows 10 or Windows 11  
+- **Supports:** Single and multi-monitor setups  
+- **Runtime:** .NET 8.0 or later  
 
-- **Operating System**: Windows 10 and Windows 11
-- **Monitor Support**: Multiple monitor configurations are fully supported
-- **.NET Runtime**: .NET 8.0 or later
-
-The application automatically detects and works with the primary desktop ListView window, making it compatible with both single and multi-monitor setups. Icon arrangements are calculated based on the detected desktop bounds, ensuring proper positioning across all monitor configurations.
+SortBySchlong automatically identifies your primary desktop ListView and distributes icons proportionally, ensuring they stay neatly aligned regardless of your *width* or *height* configuration.
 
 ---
 
 ## Core Components
 
 ### Interfaces
-- `IDesktopIconProvider` — retrieves icon metadata  
-- `IIconLayoutApplier` — applies updated icon coordinates  
-- `IShapeProvider` — generates layout points for each shape  
-- `IShapeRegistry` — manages shape providers  
-- `IShapeScriptEngine` — reserved for future script-generated shapes  
+- `IDesktopIconProvider` - gathers icon metadata  
+- `IIconLayoutApplier` - updates icon coordinates  
+- `IShapeProvider` - generates shape layouts with artistic intent  
+- `IShapeRegistry` - manages shape providers  
+- `IShapeScriptEngine` - placeholder for future custom “expressions”  
 
 ### Initial Implementations
 - `DesktopIconService`
 - `PenisShapeProvider`
 - `ShapeRegistry`
-- `NoopShapeScriptEngine`
+- `NoopShapeScriptEngine` (premature for now)
 
 ---
 
 ## How the Engine Works
-1. Enumerate desktop icons  
-2. Determine desktop working bounds  
-3. Generate the desired layout coordinates  
-4. Apply the new icon positions  
+1. Detect desktop icons  
+2. Measure the available… space  
+3. Generate layout points  
+4. Reposition icons with careful, consistent alignment  
 
 The initial invocation pattern:
 ```
 ArrangeDesktopIcons("penis")
 ```
+A simple call. A powerful result.
 
 ---
 
 ## Console Harness Usage
-The console harness is the primary entry point during early development.
+
+The console harness provides direct access to the arrangement engine.
 
 ### Default execution
 ```bash
@@ -109,7 +117,8 @@ dotnet run --project IconArranger.ConsoleHarness -- --list-shapes
 dotnet run --project IconArranger.ConsoleHarness -- --help
 ```
 
-**Important:** Running this tool will rearrange your actual desktop icons.
+> ⚠️ *Note: Running this will reposition your actual desktop icons.  
+Proceed only when fully ready for commitment.*
 
 ---
 
@@ -121,9 +130,14 @@ dotnet restore
 dotnet build -c Release
 ```
 
-### Publish as a self-contained executable
+### Publish a self-contained executable
 ```bash
-dotnet publish IconArranger.ConsoleHarness/IconArranger.ConsoleHarness.csproj   -c Release   -r win-x64   --self-contained true   /p:PublishSingleFile=true   -o ./publish
+dotnet publish IconArranger.ConsoleHarness/IconArranger.ConsoleHarness.csproj \
+  -c Release \
+  -r win-x64 \
+  --self-contained true \
+  /p:PublishSingleFile=true \
+  -o ./publish
 ```
 
 ### Run tests
@@ -134,11 +148,14 @@ dotnet test
 ---
 
 ## Shell Extension (Future Work)
-The project intends to provide a shell extension that:
-- Adds a new context menu entry under `Sort by`
-- Launches the console harness upon selection
 
-Development details will be documented in:
+Planned enhancements include a Windows Explorer right-click entry that:
+
+- Adds a `Sort by → Penis` option  
+- Invokes the console harness behind the scenes  
+- Provides instant, satisfying icon alignment
+
+Full details appear in:
 ```
 docs/SHELL_INTEGRATION.md
 ```
@@ -148,15 +165,16 @@ This integration will be added once the core engine is stable.
 ---
 
 ## Documentation
-- **ARCHITECTURE.md** – Full system layout and design overview  
-- **TESTING.md** – Guidance for manual and automated testing  
-- **SHELL_INTEGRATION.md** – COM extension design notes  
-- **SHAPE_LANGUAGE_FUTURE.md** – Concepts for script-based shape logic  
+- **ARCHITECTURE.md** - component breakdown and design notes  
+- **TESTING.md** - manual testing procedures  
+- **SHELL_INTEGRATION.md** - plans for Explorer integration  
+- **SHAPE_LANGUAGE_FUTURE.md** - early ideas for expressive, user-defined layouts  
 
 ---
 
 ## Disclaimer
-SortByShlong is a humorous but technically serious utility.  
-Use responsibly — icon rearrangement affects your active desktop layout.
+SortBySchlong is a humorous yet fully functional tool.  
+Handle with care - it may leave your desktop looking unexpectedly… organized.
 
-Enjoy, explore, and extend ;)
+Enjoy, refine, and extend.  
+Symmetry awaits.
