@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0SE92836NMc=",
+  "dgSpecHash": "q+ecDOtxOu0=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Daddy\\source\\repos\\Sort by Schlong\\SortBySchlong.Core.Tests\\SortBySchlong.Core.Tests.csproj",
+  "projectFilePath": "C:\\Users\\Daddy\\source\\repos\\Sort-By-Schlong\\SortBySchlong.Core.Tests\\SortBySchlong.Core.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Daddy\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
     "C:\\Users\\Daddy\\.nuget\\packages\\coverlet.collector\\6.0.2\\coverlet.collector.6.0.2.nupkg.sha512",
@@ -115,9 +115,9 @@
       "code": "NU1603",
       "level": "Warning",
       "message": "SortBySchlong.Core.Tests depends on Serilog.Sinks.TestCorrelator (>= 3.0.0) but Serilog.Sinks.TestCorrelator 3.0.0 was not found. Serilog.Sinks.TestCorrelator 3.0.0.64 was resolved instead.",
-      "projectPath": "C:\\Users\\Daddy\\source\\repos\\Sort by Schlong\\SortBySchlong.Core.Tests\\SortBySchlong.Core.Tests.csproj",
+      "projectPath": "C:\\Users\\Daddy\\source\\repos\\Sort-By-Schlong\\SortBySchlong.Core.Tests\\SortBySchlong.Core.Tests.csproj",
       "warningLevel": 1,
-      "filePath": "C:\\Users\\Daddy\\source\\repos\\Sort by Schlong\\SortBySchlong.Core.Tests\\SortBySchlong.Core.Tests.csproj",
+      "filePath": "C:\\Users\\Daddy\\source\\repos\\Sort-By-Schlong\\SortBySchlong.Core.Tests\\SortBySchlong.Core.Tests.csproj",
       "libraryId": "Serilog.Sinks.TestCorrelator",
       "targetGraphs": [
         "net8.0-windows7.0"

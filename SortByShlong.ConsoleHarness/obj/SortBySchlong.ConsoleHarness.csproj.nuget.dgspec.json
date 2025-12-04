@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Daddy\\source\\repos\\Sort by Schlong\\SortByShlong.ConsoleHarness\\SortBySchlong.ConsoleHarness.csproj": {}
+    "C:\\Users\\Daddy\\source\\repos\\Sort-By-Schlong\\SortByShlong.ConsoleHarness\\SortBySchlong.ConsoleHarness.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Daddy\\source\\repos\\Sort by Schlong\\SortByShlong.ConsoleHarness\\SortBySchlong.ConsoleHarness.csproj": {
+    "C:\\Users\\Daddy\\source\\repos\\Sort-By-Schlong\\SortByShlong.ConsoleHarness\\SortBySchlong.ConsoleHarness.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Daddy\\source\\repos\\Sort by Schlong\\SortByShlong.ConsoleHarness\\SortBySchlong.ConsoleHarness.csproj",
+        "projectUniqueName": "C:\\Users\\Daddy\\source\\repos\\Sort-By-Schlong\\SortByShlong.ConsoleHarness\\SortBySchlong.ConsoleHarness.csproj",
         "projectName": "SortBySchlong.ConsoleHarness",
-        "projectPath": "C:\\Users\\Daddy\\source\\repos\\Sort by Schlong\\SortByShlong.ConsoleHarness\\SortBySchlong.ConsoleHarness.csproj",
+        "projectPath": "C:\\Users\\Daddy\\source\\repos\\Sort-By-Schlong\\SortByShlong.ConsoleHarness\\SortBySchlong.ConsoleHarness.csproj",
         "packagesPath": "C:\\Users\\Daddy\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Daddy\\source\\repos\\Sort by Schlong\\SortByShlong.ConsoleHarness\\obj\\",
+        "outputPath": "C:\\Users\\Daddy\\source\\repos\\Sort-By-Schlong\\SortByShlong.ConsoleHarness\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,8 +32,8 @@
           "net8.0-windows7.0": {
             "targetAlias": "net8.0-windows",
             "projectReferences": {
-              "C:\\Users\\Daddy\\source\\repos\\Sort by Schlong\\SortByShlong.Core\\SortBySchlong.Core.csproj": {
-                "projectPath": "C:\\Users\\Daddy\\source\\repos\\Sort by Schlong\\SortByShlong.Core\\SortBySchlong.Core.csproj"
+              "C:\\Users\\Daddy\\source\\repos\\Sort-By-Schlong\\SortByShlong.Core\\SortBySchlong.Core.csproj": {
+                "projectPath": "C:\\Users\\Daddy\\source\\repos\\Sort-By-Schlong\\SortByShlong.Core\\SortBySchlong.Core.csproj"
               }
             }
           }
@@ -87,14 +87,14 @@
         }
       }
     },
-    "C:\\Users\\Daddy\\source\\repos\\Sort by Schlong\\SortByShlong.Core\\SortBySchlong.Core.csproj": {
+    "C:\\Users\\Daddy\\source\\repos\\Sort-By-Schlong\\SortByShlong.Core\\SortBySchlong.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Daddy\\source\\repos\\Sort by Schlong\\SortByShlong.Core\\SortBySchlong.Core.csproj",
+        "projectUniqueName": "C:\\Users\\Daddy\\source\\repos\\Sort-By-Schlong\\SortByShlong.Core\\SortBySchlong.Core.csproj",
         "projectName": "SortBySchlong.Core",
-        "projectPath": "C:\\Users\\Daddy\\source\\repos\\Sort by Schlong\\SortByShlong.Core\\SortBySchlong.Core.csproj",
+        "projectPath": "C:\\Users\\Daddy\\source\\repos\\Sort-By-Schlong\\SortByShlong.Core\\SortBySchlong.Core.csproj",
         "packagesPath": "C:\\Users\\Daddy\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Daddy\\source\\repos\\Sort by Schlong\\SortByShlong.Core\\obj\\",
+        "outputPath": "C:\\Users\\Daddy\\source\\repos\\Sort-By-Schlong\\SortByShlong.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
