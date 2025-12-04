@@ -46,6 +46,16 @@ The application targets Windows exclusively due to its reliance on Win32 APIs an
 
 ---
 
+## System Requirements & Compatibility
+
+- **Operating System**: Windows 10 and Windows 11
+- **Monitor Support**: Multiple monitor configurations are fully supported
+- **.NET Runtime**: .NET 8.0 or later
+
+The application automatically detects and works with the primary desktop ListView window, making it compatible with both single and multi-monitor setups. Icon arrangements are calculated based on the detected desktop bounds, ensuring proper positioning across all monitor configurations.
+
+---
+
 ## Core Components
 
 ### Interfaces

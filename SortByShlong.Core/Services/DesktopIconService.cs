@@ -48,9 +48,9 @@ public class DesktopIconService : IDesktopIconProvider, IIconLayoutApplier
                 // Add a small delay to let Explorer recover if it was stressed by previous operations
                 System.Threading.Thread.Sleep(50);
                 
-                // Use retry logic with more attempts to handle transient window discovery issues
-                // This matches the approach used in GetDesktopBoundsAsync and ApplyLayoutAsync
-                var listViewHandle = FindDesktopListViewWithRetry(maxRetries: 3, delayMs: 200);
+                // Use retry logic with exactly 3 attempts to handle transient window discovery issues
+                // maxRetries: 2 means 3 total attempts (attempt 0, 1, 2)
+                var listViewHandle = FindDesktopListViewWithRetry(maxRetries: 2, delayMs: 200);
                 if (listViewHandle == IntPtr.Zero)
                 {
                     throw new DesktopAccessException("Could not find desktop ListView window.");
@@ -174,8 +174,9 @@ public class DesktopIconService : IDesktopIconProvider, IIconLayoutApplier
                 // Add a small delay to let Explorer recover if it was stressed by enumeration
                 System.Threading.Thread.Sleep(50);
 
-                // Use retry logic with more attempts to handle transient window discovery issues
-                var listViewHandle = FindDesktopListViewWithRetry(maxRetries: 3, delayMs: 200);
+                // Use retry logic with exactly 3 attempts to handle transient window discovery issues
+                // maxRetries: 2 means 3 total attempts (attempt 0, 1, 2)
+                var listViewHandle = FindDesktopListViewWithRetry(maxRetries: 2, delayMs: 200);
                 if (listViewHandle == IntPtr.Zero)
                 {
                     // Fallback: Use screen dimensions if we can't find the ListView window
@@ -253,44 +254,60 @@ public class DesktopIconService : IDesktopIconProvider, IIconLayoutApplier
                 _logger.Debug("Waiting for Explorer to stabilize before applying layout...");
                 System.Threading.Thread.Sleep(500);
 
-                // Get handle with more retries and longer delays to handle Explorer recovery
+                // Get handle with exactly 3 attempts to handle Explorer recovery
                 // After enumeration, Explorer may need time to recreate windows
-                var listViewHandle = FindDesktopListViewWithRetry(maxRetries: 5, delayMs: 300);
+                // maxRetries: 2 means 3 total attempts (attempt 0, 1, 2)
+                var listViewHandle = FindDesktopListViewWithRetry(maxRetries: 2, delayMs: 300);
                 if (listViewHandle == IntPtr.Zero)
                 {
-                    // Try one more time with even longer delays
-                    _logger.Warning("Could not find desktop ListView window, waiting longer and retrying...");
-                    System.Threading.Thread.Sleep(1000);
-                    listViewHandle = FindDesktopListViewWithRetry(maxRetries: 5, delayMs: 500);
-                    
-                    if (listViewHandle == IntPtr.Zero)
-                    {
-                        throw new DesktopAccessException("Could not find desktop ListView window after multiple attempts. Explorer may be unresponsive.");
-                    }
+                    throw new DesktopAccessException("Could not find desktop ListView window after 3 attempts. Explorer may be unresponsive.");
                 }
 
                 // Validate the handle is still valid
                 if (!IsWindowHandleValid(listViewHandle))
                 {
-                    _logger.Warning("Initial handle is invalid, re-acquiring...");
-                    listViewHandle = FindDesktopListViewWithRetry(maxRetries: 3, delayMs: 200);
+                    _logger.Warning("Initial handle is invalid, re-acquiring with 3 attempts...");
+                    // maxRetries: 2 means 3 total attempts (attempt 0, 1, 2)
+                    listViewHandle = FindDesktopListViewWithRetry(maxRetries: 2, delayMs: 200);
                     if (listViewHandle == IntPtr.Zero)
                     {
-                        throw new DesktopAccessException("Could not find desktop ListView window after re-acquisition.");
+                        throw new DesktopAccessException("Could not find desktop ListView window after 3 re-acquisition attempts.");
                     }
                 }
 
                 // Give Explorer time to recover from enumeration before checking responsiveness
-                // Explorer may be busy processing the enumeration, so we wait a bit
+                // Explorer may be busy processing the enumeration, so we wait longer
                 _logger.Debug("Waiting for Explorer to recover from enumeration before checking responsiveness...");
-                System.Threading.Thread.Sleep(300);
+                System.Threading.Thread.Sleep(800); // Increased wait time to give Explorer more recovery time
                 
                 // Check if Explorer is responsive - but be lenient and retry if needed
-                // Explorer might just be busy, not hung, so we give it multiple chances
-                if (!IsExplorerResponsiveWithRetry(listViewHandle, maxRetries: 3, delayMs: 200))
+                // Explorer might just be busy, not hung, so we give it multiple chances with longer delays
+                if (!IsExplorerResponsiveWithRetry(listViewHandle, maxRetries: 4, delayMs: 300))
                 {
-                    _logger.Error("Explorer appears to be hung/unresponsive after multiple attempts. Aborting layout application to prevent crash.");
-                    throw new DesktopAccessException("Explorer is unresponsive. Please wait and try again.");
+                    // If Explorer appears unresponsive, try re-acquiring the handle one more time
+                    // Sometimes the handle becomes stale but Explorer is actually fine
+                    _logger.Warning("Explorer appears unresponsive with current handle, attempting to re-acquire handle...");
+                    System.Threading.Thread.Sleep(500);
+                    var newHandle = FindDesktopListViewWithRetry(maxRetries: 2, delayMs: 300);
+                    if (newHandle != IntPtr.Zero && IsWindowHandleValid(newHandle))
+                    {
+                        // Try responsiveness check with new handle
+                        if (IsExplorerResponsiveWithRetry(newHandle, maxRetries: 3, delayMs: 200))
+                        {
+                            _logger.Information("Successfully re-acquired handle and Explorer is responsive");
+                            listViewHandle = newHandle;
+                        }
+                        else
+                        {
+                            _logger.Error("Explorer appears to be hung/unresponsive even after re-acquiring handle. Aborting layout application to prevent crash.");
+                            throw new DesktopAccessException("Explorer is unresponsive. Please wait and try again.");
+                        }
+                    }
+                    else
+                    {
+                        _logger.Error("Explorer appears to be hung/unresponsive after multiple attempts. Aborting layout application to prevent crash.");
+                        throw new DesktopAccessException("Explorer is unresponsive. Please wait and try again.");
+                    }
                 }
 
                 var currentIconCount = SendMessage(listViewHandle, LVM_GETITEMCOUNT, IntPtr.Zero, IntPtr.Zero);
@@ -1071,7 +1088,7 @@ public class DesktopIconService : IDesktopIconProvider, IIconLayoutApplier
             // Try a quick, non-blocking operation with a reasonable timeout
             // Increased timeout to account for Explorer being busy (not hung)
             var hwnd = new HWND(listViewHandle);
-            const uint timeoutMs = 1500; // Increased timeout - Explorer might just be busy
+            const uint timeoutMs = 2000; // Further increased timeout - Explorer might just be busy processing
             IntPtr result = IntPtr.Zero;
             
             // Use SendMessageTimeout with a simple message to test responsiveness

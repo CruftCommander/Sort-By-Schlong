@@ -391,7 +391,7 @@
         </member>
         <member name="T:SortBySchlong.Core.Shapes.PenisShapeProvider">
             <summary>
-            Shape provider that arranges icons in a penis shape.
+            Shape provider that arranges icons by penis.
             </summary>
         </member>
         <member name="P:SortBySchlong.Core.Shapes.PenisShapeProvider.Key">

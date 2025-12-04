@@ -4,7 +4,7 @@ using SortBySchlong.Core.Models;
 namespace SortBySchlong.Core.Shapes;
 
 /// <summary>
-/// Shape provider that arranges icons in a penis shape.
+/// Shape provider that arranges icons by penis.
 /// </summary>
 public class PenisShapeProvider : IShapeProvider
 {
@@ -49,31 +49,58 @@ public class PenisShapeProvider : IShapeProvider
         var rightBallIcons = totalBallIcons - leftBallIcons;
 
         // Generate circular balls on the left
-        var ballRadius = Math.Min(bounds.Width, bounds.Height) / 12;
-        var ballCenterX = leftX + ballRadius;
+        // Ensure ball radius is reasonable and balls stay well within bounds
+        var maxBallRadius = Math.Min(bounds.Width / 8, bounds.Height / 6);
+        var ballRadius = Math.Min(maxBallRadius, Math.Min(bounds.Width, bounds.Height) / 12);
+        
+        // Position ball centers with margin to ensure circles stay within bounds
+        // Use a larger margin on the left to prevent balls from going off-screen
+        var leftMargin = ballRadius + 20; // Extra margin to keep balls visible
+        var ballCenterX = leftMargin + ballRadius;
         var topBallCenterY = centerY - ballRadius;
         var bottomBallCenterY = centerY + ballRadius;
 
-        // Generate left (top) ball circle
+        // Ensure ball centers don't go outside vertical bounds
+        if (topBallCenterY - ballRadius < 0)
+        {
+            topBallCenterY = ballRadius;
+        }
+        if (bottomBallCenterY + ballRadius >= bounds.Height)
+        {
+            bottomBallCenterY = bounds.Height - ballRadius - 1;
+        }
+
+        // Generate left (top) ball
         for (int i = 0; i < leftBallIcons; i++)
         {
             var angle = 2.0 * Math.PI * i / leftBallIcons;
             var x = ballCenterX + (int)(ballRadius * Math.Cos(angle));
             var y = topBallCenterY + (int)(ballRadius * Math.Sin(angle));
+            
+            // Clamp to bounds to ensure visibility
+            x = Math.Max(0, Math.Min(bounds.Width - 1, x));
+            y = Math.Max(0, Math.Min(bounds.Height - 1, y));
+            
             points.Add(new Point(x, y));
         }
 
-        // Generate right (bottom) ball circle
+        // Generate right (bottom) ball
         for (int i = 0; i < rightBallIcons; i++)
         {
             var angle = 2.0 * Math.PI * i / rightBallIcons;
             var x = ballCenterX + (int)(ballRadius * Math.Cos(angle));
             var y = bottomBallCenterY + (int)(ballRadius * Math.Sin(angle));
+            
+            // Clamp to bounds to ensure visibility
+            x = Math.Max(0, Math.Min(bounds.Width - 1, x));
+            y = Math.Max(0, Math.Min(bounds.Height - 1, y));
+            
             points.Add(new Point(x, y));
         }
 
         // Generate shaft (2 columns extending right)
-        var shaftStartX = ballCenterX + ballRadius;
+        // Start shaft after the balls (ball center + radius + small gap)
+        var shaftStartX = ballCenterX + ballRadius + 10;
         var shaftEndX = rightX - (int)(bounds.Width * 0.08); // Leave room for head
         var shaftLength = shaftEndX - shaftStartX;
         var shaftColumnOffset = ballRadius / 2; // Offset for the two columns
