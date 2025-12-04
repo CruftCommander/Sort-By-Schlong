@@ -63,6 +63,8 @@ public class DesktopIconService : IDesktopIconProvider, IIconLayoutApplier
                 }
 
                 var icons = new List<DesktopIcon>(iconCount);
+                var consecutiveFailures = 0;
+                const int maxConsecutiveFailures = 5; // Only refresh after 5 consecutive failures
 
                 for (int i = 0; i < iconCount; i++)
                 {
@@ -76,27 +78,41 @@ public class DesktopIconService : IDesktopIconProvider, IIconLayoutApplier
                     }
 
                     // Try to get position
-                    var position = GetIconPosition(listViewHandle, i);
+                    var position = GetIconPosition(listViewHandle, i, out var hadError);
                     
-                    // Only try to refresh handle if we get (0,0) AND it's clearly an error
-                    // Don't refresh on every failure to avoid overwhelming Explorer
-                    if (position.X == 0 && position.Y == 0 && i > 0 && i % 20 == 0)
+                    // Track consecutive failures to detect if handle is truly invalid
+                    if (hadError)
                     {
-                        // Only refresh occasionally, not on every failure
-                        var refreshedHandle = FindDesktopListView();
-                        if (refreshedHandle != IntPtr.Zero)
+                        consecutiveFailures++;
+                        
+                        // Only try to refresh handle after multiple consecutive failures
+                        // This prevents unnecessary refreshes and Explorer crashes
+                        if (consecutiveFailures >= maxConsecutiveFailures)
                         {
-                            listViewHandle = refreshedHandle;
-                            // Retry getting position with new handle
-                            position = GetIconPosition(listViewHandle, i);
+                            _logger.Debug("Multiple consecutive failures detected, attempting to refresh handle");
+                            var refreshedHandle = FindDesktopListView();
+                            if (refreshedHandle != IntPtr.Zero)
+                            {
+                                listViewHandle = refreshedHandle;
+                                consecutiveFailures = 0; // Reset counter on successful refresh
+                                // Retry getting position with new handle
+                                position = GetIconPosition(listViewHandle, i, out hadError);
+                                if (!hadError)
+                                {
+                                    consecutiveFailures = 0;
+                                }
+                            }
+                            else
+                            {
+                                // If we can't refresh, continue with current handle
+                                // Don't break - we want to get as many icons as possible
+                                _logger.Warning("Could not refresh desktop window handle, continuing with current handle");
+                            }
                         }
-                        else
-                        {
-                            // If we can't find the window, Explorer might have crashed
-                            // Stop trying to avoid making it worse
-                            _logger.Warning("Could not refresh desktop window handle. Explorer may have crashed. Stopping enumeration.");
-                            break;
-                        }
+                    }
+                    else
+                    {
+                        consecutiveFailures = 0; // Reset on success
                     }
 
                     var text = GetIconText(listViewHandle, i);
@@ -128,7 +144,8 @@ public class DesktopIconService : IDesktopIconProvider, IIconLayoutApplier
         {
             try
             {
-                var listViewHandle = FindDesktopListView();
+                // Use retry logic to handle transient window discovery issues
+                var listViewHandle = FindDesktopListViewWithRetry(maxRetries: 2, delayMs: 100);
                 if (listViewHandle == IntPtr.Zero)
                 {
                     throw new DesktopAccessException("Could not find desktop ListView window.");
@@ -435,8 +452,9 @@ public class DesktopIconService : IDesktopIconProvider, IIconLayoutApplier
         return resultMsg.ToInt32();
     }
 
-    private Point GetIconPosition(IntPtr listViewHandle, int index)
+    private Point GetIconPosition(IntPtr listViewHandle, int index, out bool hadError)
     {
+        hadError = false;
         var point = new Vanara.PInvoke.POINT();
         var lParam = System.Runtime.InteropServices.Marshal.AllocHGlobal(
             System.Runtime.InteropServices.Marshal.SizeOf(point));
@@ -463,15 +481,14 @@ public class DesktopIconService : IDesktopIconProvider, IIconLayoutApplier
 
             if (result == IntPtr.Zero)
             {
-                // Timeout or error - return (0,0) but don't log every failure to avoid spam
-                if (index % 20 == 0) // Only log occasionally
+                // Timeout or error - mark as error but still return (0,0) which might be valid
+                hadError = true;
+                var lastError = System.Runtime.InteropServices.Marshal.GetLastWin32Error();
+                // Only log actual errors, not ERROR_SUCCESS
+                if (lastError != 0 && index % 20 == 0) // Only log occasionally
                 {
-                    var lastError = System.Runtime.InteropServices.Marshal.GetLastWin32Error();
-                    if (lastError != 0)
-                    {
-                        var error = new Win32Exception();
-                        _logger.Debug("SendMessageTimeout failed for icon {Index}, last error: {Error}", index, error.Message);
-                    }
+                    var error = new Win32Exception();
+                    _logger.Debug("SendMessageTimeout failed for icon {Index}, last error: {Error}", index, error.Message);
                 }
                 return new Point(0, 0);
             }
@@ -483,6 +500,7 @@ public class DesktopIconService : IDesktopIconProvider, IIconLayoutApplier
         }
         catch (Exception ex)
         {
+            hadError = true;
             // Don't log every exception to avoid overwhelming the log
             if (index % 20 == 0)
             {
