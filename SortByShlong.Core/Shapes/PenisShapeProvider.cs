@@ -25,58 +25,120 @@ public class PenisShapeProvider : IShapeProvider
 
         var points = new List<Point>();
 
-        // Calculate proportions
-        var centerX = bounds.Width / 2;
-        var bottomY = (int)(bounds.Height * 0.9);
-        var topY = (int)(bounds.Height * 0.1);
+        // Calculate horizontal proportions (left-to-right orientation)
+        var centerY = bounds.Height / 2;
+        var leftX = (int)(bounds.Width * 0.1);
+        var rightX = (int)(bounds.Width * 0.9);
 
         // Allocate icons:
-        // - 2 for balls
-        // - Remaining icons for shaft + head
-        var iconsForBalls = 2;
-        var iconsForShaftAndHead = iconCount - iconsForBalls;
-
-        // Generate balls (two ellipses at bottom)
-        var ballRadius = Math.Min(bounds.Width, bounds.Height) / 10;
-        var ballCenterY = bottomY;
-        var leftBallCenterX = centerX - ballRadius;
-        var rightBallCenterX = centerX + ballRadius;
-
-        points.Add(new Point(leftBallCenterX, ballCenterY)); // Left ball center
-        points.Add(new Point(rightBallCenterX, ballCenterY)); // Right ball center
-
-        // Generate shaft (vertical line from bottom to top)
-        var shaftTopY = topY + (int)((bounds.Height * 0.1)); // Leave some room for head
-        var shaftLength = bottomY - shaftTopY;
-        var iconsForShaft = Math.Max(1, iconsForShaftAndHead - 3); // Reserve some for head
-
-        if (iconsForShaft > 1)
+        // - Circular balls on the left (allocate proportionally, minimum 4 per ball for circular shape)
+        // - Remaining icons for 2-column shaft + head
+        var minIconsPerBall = 4;
+        var totalBallIcons = Math.Max(minIconsPerBall * 2, (int)(iconCount * 0.2)); // At least 8 icons for balls, or 20% of total
+        var iconsForShaftAndHead = iconCount - totalBallIcons;
+        
+        // Ensure we have enough icons for shaft and head
+        if (iconsForShaftAndHead < 3)
         {
-            for (int i = 0; i < iconsForShaft; i++)
+            totalBallIcons = iconCount - 3;
+            iconsForShaftAndHead = 3;
+        }
+
+        var iconsPerBall = totalBallIcons / 2;
+        var leftBallIcons = iconsPerBall;
+        var rightBallIcons = totalBallIcons - leftBallIcons;
+
+        // Generate circular balls on the left
+        var ballRadius = Math.Min(bounds.Width, bounds.Height) / 12;
+        var ballCenterX = leftX + ballRadius;
+        var topBallCenterY = centerY - ballRadius;
+        var bottomBallCenterY = centerY + ballRadius;
+
+        // Generate left (top) ball circle
+        for (int i = 0; i < leftBallIcons; i++)
+        {
+            var angle = 2.0 * Math.PI * i / leftBallIcons;
+            var x = ballCenterX + (int)(ballRadius * Math.Cos(angle));
+            var y = topBallCenterY + (int)(ballRadius * Math.Sin(angle));
+            points.Add(new Point(x, y));
+        }
+
+        // Generate right (bottom) ball circle
+        for (int i = 0; i < rightBallIcons; i++)
+        {
+            var angle = 2.0 * Math.PI * i / rightBallIcons;
+            var x = ballCenterX + (int)(ballRadius * Math.Cos(angle));
+            var y = bottomBallCenterY + (int)(ballRadius * Math.Sin(angle));
+            points.Add(new Point(x, y));
+        }
+
+        // Generate shaft (2 columns extending right)
+        var shaftStartX = ballCenterX + ballRadius;
+        var shaftEndX = rightX - (int)(bounds.Width * 0.08); // Leave room for head
+        var shaftLength = shaftEndX - shaftStartX;
+        var shaftColumnOffset = ballRadius / 2; // Offset for the two columns
+        var iconsForShaft = Math.Max(2, iconsForShaftAndHead - 3); // Reserve some for head, ensure at least 2 for 2 columns
+
+        if (iconsForShaft >= 2)
+        {
+            // Distribute icons across 2 columns
+            var iconsPerColumn = iconsForShaft / 2;
+            var remainder = iconsForShaft % 2;
+
+            // First column (top)
+            var firstColumnCount = iconsPerColumn + remainder;
+            for (int i = 0; i < firstColumnCount; i++)
             {
-                var y = shaftTopY + (int)((double)i / (iconsForShaft - 1) * shaftLength);
-                points.Add(new Point(centerX, y));
+                var x = shaftStartX;
+                var y = centerY - shaftColumnOffset;
+                if (firstColumnCount == 1)
+                {
+                    x = shaftStartX + shaftLength / 2;
+                }
+                else
+                {
+                    x = shaftStartX + (int)((double)i / (firstColumnCount - 1) * shaftLength);
+                }
+                points.Add(new Point(x, y));
+            }
+
+            // Second column (bottom)
+            for (int i = 0; i < iconsPerColumn; i++)
+            {
+                var x = shaftStartX;
+                var y = centerY + shaftColumnOffset;
+                if (iconsPerColumn == 1)
+                {
+                    x = shaftStartX + shaftLength / 2;
+                }
+                else
+                {
+                    x = shaftStartX + (int)((double)i / (iconsPerColumn - 1) * shaftLength);
+                }
+                points.Add(new Point(x, y));
             }
         }
         else
         {
-            // Single point for shaft
-            points.Add(new Point(centerX, (shaftTopY + bottomY) / 2));
+            // Fallback: single point in each column
+            points.Add(new Point(shaftStartX + shaftLength / 2, centerY - shaftColumnOffset));
+            points.Add(new Point(shaftStartX + shaftLength / 2, centerY + shaftColumnOffset));
         }
 
-        // Generate head (curved segment at top - ellipse arc)
-        var headCenterY = topY;
-        var headWidth = ballRadius * 1.5;
-        var headHeight = (int)(bounds.Height * 0.08);
+        // Generate head (curved segment on the right - horizontal ellipse arc)
+        var headCenterX = rightX;
+        var headWidth = (int)(bounds.Width * 0.06);
+        var headHeight = ballRadius * 1.2;
         var iconsForHead = iconsForShaftAndHead - iconsForShaft;
 
         if (iconsForHead > 0)
         {
             for (int i = 0; i < iconsForHead; i++)
             {
-                var angle = Math.PI * i / (iconsForHead + 1); // 0 to PI (top half of ellipse)
-                var x = centerX + (int)(headWidth * Math.Cos(angle));
-                var y = headCenterY + (int)(headHeight * Math.Sin(angle));
+                // Generate points along the right side of an ellipse (vertical arc)
+                var angle = Math.PI / 2 + Math.PI * i / (iconsForHead + 1); // PI/2 to 3*PI/2 (right half of ellipse)
+                var x = headCenterX - (int)(headWidth * Math.Cos(angle));
+                var y = centerY + (int)(headHeight * Math.Sin(angle));
                 points.Add(new Point(x, y));
             }
         }
