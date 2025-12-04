@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "dgSpecHash": "4TbJ9mhOoIk=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Daddy\\source\\repos\\Sort by Schlong\\SortByShlong.Core\\SortBySchlong.Core.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Daddy\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\Daddy\\.nuget\\packages\\serilog\\4.0.0\\serilog.4.0.0.nupkg.sha512",
+    "C:\\Users\\Daddy\\.nuget\\packages\\serilog.sinks.console\\5.0.1\\serilog.sinks.console.5.0.1.nupkg.sha512",
+    "C:\\Users\\Daddy\\.nuget\\packages\\vanara.core\\4.2.1\\vanara.core.4.2.1.nupkg.sha512",
+    "C:\\Users\\Daddy\\.nuget\\packages\\vanara.pinvoke.comctl32\\4.2.1\\vanara.pinvoke.comctl32.4.2.1.nupkg.sha512",
+    "C:\\Users\\Daddy\\.nuget\\packages\\vanara.pinvoke.gdi32\\4.2.1\\vanara.pinvoke.gdi32.4.2.1.nupkg.sha512",
+    "C:\\Users\\Daddy\\.nuget\\packages\\vanara.pinvoke.kernel32\\4.2.1\\vanara.pinvoke.kernel32.4.2.1.nupkg.sha512",
+    "C:\\Users\\Daddy\\.nuget\\packages\\vanara.pinvoke.shared\\4.2.1\\vanara.pinvoke.shared.4.2.1.nupkg.sha512",
+    "C:\\Users\\Daddy\\.nuget\\packages\\vanara.pinvoke.user32\\4.2.1\\vanara.pinvoke.user32.4.2.1.nupkg.sha512"
+  ],
+  "logs": []
+}

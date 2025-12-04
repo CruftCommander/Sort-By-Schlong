@@ -1,0 +1,370 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SortBySchlong.Core</name>
+    </assembly>
+    <members>
+        <member name="T:SortBySchlong.Core.Exceptions.DesktopAccessException">
+            <summary>
+            Exception thrown when the desktop window cannot be accessed.
+            </summary>
+        </member>
+        <member name="M:SortBySchlong.Core.Exceptions.DesktopAccessException.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:SortBySchlong.Core.Exceptions.DesktopAccessException"/> class.
+            </summary>
+        </member>
+        <member name="M:SortBySchlong.Core.Exceptions.DesktopAccessException.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:SortBySchlong.Core.Exceptions.DesktopAccessException"/> class with a specified error message.
+            </summary>
+            <param name="message">The message that describes the error.</param>
+        </member>
+        <member name="M:SortBySchlong.Core.Exceptions.DesktopAccessException.#ctor(System.String,System.Exception)">
+            <summary>
+            Initializes a new instance of the <see cref="T:SortBySchlong.Core.Exceptions.DesktopAccessException"/> class with a specified error message and inner exception.
+            </summary>
+            <param name="message">The message that describes the error.</param>
+            <param name="innerException">The exception that is the cause of the current exception.</param>
+        </member>
+        <member name="T:SortBySchlong.Core.Exceptions.IconArrangementException">
+            <summary>
+            Base exception for icon arrangement failures.
+            </summary>
+        </member>
+        <member name="M:SortBySchlong.Core.Exceptions.IconArrangementException.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:SortBySchlong.Core.Exceptions.IconArrangementException"/> class.
+            </summary>
+        </member>
+        <member name="M:SortBySchlong.Core.Exceptions.IconArrangementException.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:SortBySchlong.Core.Exceptions.IconArrangementException"/> class with a specified error message.
+            </summary>
+            <param name="message">The message that describes the error.</param>
+        </member>
+        <member name="M:SortBySchlong.Core.Exceptions.IconArrangementException.#ctor(System.String,System.Exception)">
+            <summary>
+            Initializes a new instance of the <see cref="T:SortBySchlong.Core.Exceptions.IconArrangementException"/> class with a specified error message and inner exception.
+            </summary>
+            <param name="message">The message that describes the error.</param>
+            <param name="innerException">The exception that is the cause of the current exception.</param>
+        </member>
+        <member name="T:SortBySchlong.Core.Exceptions.InvalidLayoutException">
+            <summary>
+            Exception thrown when layout validation fails.
+            </summary>
+        </member>
+        <member name="M:SortBySchlong.Core.Exceptions.InvalidLayoutException.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:SortBySchlong.Core.Exceptions.InvalidLayoutException"/> class.
+            </summary>
+        </member>
+        <member name="M:SortBySchlong.Core.Exceptions.InvalidLayoutException.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:SortBySchlong.Core.Exceptions.InvalidLayoutException"/> class with a specified error message.
+            </summary>
+            <param name="message">The message that describes the error.</param>
+        </member>
+        <member name="M:SortBySchlong.Core.Exceptions.InvalidLayoutException.#ctor(System.String,System.Exception)">
+            <summary>
+            Initializes a new instance of the <see cref="T:SortBySchlong.Core.Exceptions.InvalidLayoutException"/> class with a specified error message and inner exception.
+            </summary>
+            <param name="message">The message that describes the error.</param>
+            <param name="innerException">The exception that is the cause of the current exception.</param>
+        </member>
+        <member name="T:SortBySchlong.Core.Exceptions.ShapeNotFoundException">
+            <summary>
+            Exception thrown when a requested shape is not found in the registry.
+            </summary>
+        </member>
+        <member name="P:SortBySchlong.Core.Exceptions.ShapeNotFoundException.ShapeKey">
+            <summary>
+            Gets the shape key that was not found.
+            </summary>
+        </member>
+        <member name="M:SortBySchlong.Core.Exceptions.ShapeNotFoundException.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:SortBySchlong.Core.Exceptions.ShapeNotFoundException"/> class.
+            </summary>
+            <param name="shapeKey">The shape key that was not found.</param>
+        </member>
+        <member name="M:SortBySchlong.Core.Exceptions.ShapeNotFoundException.#ctor(System.String,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:SortBySchlong.Core.Exceptions.ShapeNotFoundException"/> class with a specified error message.
+            </summary>
+            <param name="shapeKey">The shape key that was not found.</param>
+            <param name="message">The message that describes the error.</param>
+        </member>
+        <member name="T:SortBySchlong.Core.Interfaces.IDesktopIconProvider">
+            <summary>
+            Provides access to desktop icons and their properties.
+            </summary>
+        </member>
+        <member name="M:SortBySchlong.Core.Interfaces.IDesktopIconProvider.GetIconsAsync(System.Threading.CancellationToken)">
+            <summary>
+            Retrieves all icons from the desktop.
+            </summary>
+            <param name="ct">Cancellation token to cancel the operation.</param>
+            <returns>A list of desktop icons.</returns>
+            <exception cref="T:SortBySchlong.Core.Exceptions.DesktopAccessException">Thrown when desktop window cannot be accessed.</exception>
+        </member>
+        <member name="M:SortBySchlong.Core.Interfaces.IDesktopIconProvider.GetDesktopBoundsAsync(System.Threading.CancellationToken)">
+            <summary>
+            Gets the bounds of the desktop ListView window.
+            </summary>
+            <param name="ct">Cancellation token to cancel the operation.</param>
+            <returns>The desktop bounds.</returns>
+            <exception cref="T:SortBySchlong.Core.Exceptions.DesktopAccessException">Thrown when desktop window cannot be accessed.</exception>
+        </member>
+        <member name="T:SortBySchlong.Core.Interfaces.IIconLayoutApplier">
+            <summary>
+            Applies a layout to desktop icons by repositioning them.
+            </summary>
+        </member>
+        <member name="M:SortBySchlong.Core.Interfaces.IIconLayoutApplier.ApplyLayoutAsync(System.Collections.Generic.IReadOnlyList{SortBySchlong.Core.Models.DesktopIcon},System.Threading.CancellationToken)">
+            <summary>
+            Applies a new layout to the desktop icons.
+            </summary>
+            <param name="icons">The icons with their new positions to apply.</param>
+            <param name="ct">Cancellation token to cancel the operation.</param>
+            <returns>A task representing the asynchronous operation.</returns>
+            <exception cref="T:System.ArgumentNullException">Thrown when icons is null.</exception>
+            <exception cref="T:SortBySchlong.Core.Exceptions.InvalidLayoutException">Thrown when layout validation fails.</exception>
+            <exception cref="T:SortBySchlong.Core.Exceptions.DesktopAccessException">Thrown when desktop window cannot be accessed.</exception>
+        </member>
+        <member name="T:SortBySchlong.Core.Interfaces.IShapeProvider">
+            <summary>
+            Generates layouts for arranging desktop icons in a specific shape.
+            </summary>
+        </member>
+        <member name="P:SortBySchlong.Core.Interfaces.IShapeProvider.Key">
+            <summary>
+            Gets the unique key identifying this shape provider.
+            </summary>
+        </member>
+        <member name="M:SortBySchlong.Core.Interfaces.IShapeProvider.GenerateLayout(System.Int32,SortBySchlong.Core.Models.DesktopBounds)">
+            <summary>
+            Generates a layout of points representing where icons should be positioned.
+            </summary>
+            <param name="iconCount">The number of icons to arrange.</param>
+            <param name="bounds">The desktop bounds to arrange icons within.</param>
+            <returns>A list of points representing icon positions.</returns>
+            <exception cref="T:System.ArgumentException">Thrown when iconCount is less than the minimum required for this shape.</exception>
+        </member>
+        <member name="T:SortBySchlong.Core.Interfaces.IShapeRegistry">
+            <summary>
+            Registry for shape providers that can arrange desktop icons.
+            </summary>
+        </member>
+        <member name="M:SortBySchlong.Core.Interfaces.IShapeRegistry.Register(SortBySchlong.Core.Interfaces.IShapeProvider)">
+            <summary>
+            Registers a shape provider.
+            </summary>
+            <param name="provider">The shape provider to register.</param>
+            <exception cref="T:System.ArgumentNullException">Thrown when provider is null.</exception>
+            <exception cref="T:System.ArgumentException">Thrown when a provider with the same key is already registered.</exception>
+        </member>
+        <member name="M:SortBySchlong.Core.Interfaces.IShapeRegistry.GetProvider(System.String)">
+            <summary>
+            Gets a shape provider by its key.
+            </summary>
+            <param name="key">The key of the shape provider to retrieve.</param>
+            <returns>The shape provider if found; otherwise, null.</returns>
+        </member>
+        <member name="M:SortBySchlong.Core.Interfaces.IShapeRegistry.GetAvailableShapes">
+            <summary>
+            Gets all available shape keys.
+            </summary>
+            <returns>A collection of available shape keys.</returns>
+        </member>
+        <member name="T:SortBySchlong.Core.Interfaces.IShapeScriptEngine">
+            <summary>
+            Engine for executing scriptable shape definitions (future feature).
+            </summary>
+        </member>
+        <member name="M:SortBySchlong.Core.Interfaces.IShapeScriptEngine.CanExecute(System.String)">
+            <summary>
+            Determines whether this engine can execute the given script.
+            </summary>
+            <param name="script">The script to check.</param>
+            <returns>True if the engine can execute the script; otherwise, false.</returns>
+        </member>
+        <member name="M:SortBySchlong.Core.Interfaces.IShapeScriptEngine.Execute(System.String,System.Int32,SortBySchlong.Core.Models.DesktopBounds)">
+            <summary>
+            Executes a script to generate a layout.
+            </summary>
+            <param name="script">The script to execute.</param>
+            <param name="iconCount">The number of icons to arrange.</param>
+            <param name="bounds">The desktop bounds to arrange icons within.</param>
+            <returns>A list of points representing icon positions.</returns>
+            <exception cref="T:System.NotSupportedException">Thrown when script execution is not supported.</exception>
+        </member>
+        <member name="T:SortBySchlong.Core.Models.DesktopBounds">
+            <summary>
+            Represents the bounds of the desktop ListView window.
+            </summary>
+            <param name="Width">The width of the desktop bounds in pixels.</param>
+            <param name="Height">The height of the desktop bounds in pixels.</param>
+        </member>
+        <member name="M:SortBySchlong.Core.Models.DesktopBounds.#ctor(System.Int32,System.Int32)">
+            <summary>
+            Represents the bounds of the desktop ListView window.
+            </summary>
+            <param name="Width">The width of the desktop bounds in pixels.</param>
+            <param name="Height">The height of the desktop bounds in pixels.</param>
+        </member>
+        <member name="P:SortBySchlong.Core.Models.DesktopBounds.Width">
+            <summary>The width of the desktop bounds in pixels.</summary>
+        </member>
+        <member name="P:SortBySchlong.Core.Models.DesktopBounds.Height">
+            <summary>The height of the desktop bounds in pixels.</summary>
+        </member>
+        <member name="P:SortBySchlong.Core.Models.DesktopBounds.Center">
+            <summary>
+            Gets the center point of the desktop bounds.
+            </summary>
+        </member>
+        <member name="M:SortBySchlong.Core.Models.DesktopBounds.Contains(SortBySchlong.Core.Models.Point)">
+            <summary>
+            Validates that a point is within the bounds.
+            </summary>
+            <param name="point">The point to validate.</param>
+            <returns>True if the point is within bounds; otherwise, false.</returns>
+        </member>
+        <member name="M:SortBySchlong.Core.Models.DesktopBounds.ContainsAll(System.Collections.Generic.IEnumerable{SortBySchlong.Core.Models.Point})">
+            <summary>
+            Validates that all points are within the bounds.
+            </summary>
+            <param name="points">The points to validate.</param>
+            <returns>True if all points are within bounds; otherwise, false.</returns>
+        </member>
+        <member name="T:SortBySchlong.Core.Models.DesktopIcon">
+            <summary>
+            Represents a desktop icon with its position and optional text.
+            </summary>
+            <param name="Index">The zero-based index of the icon in the desktop ListView.</param>
+            <param name="Position">The current position of the icon on the desktop.</param>
+            <param name="Text">Optional text/label associated with the icon.</param>
+        </member>
+        <member name="M:SortBySchlong.Core.Models.DesktopIcon.#ctor(System.Int32,SortBySchlong.Core.Models.Point,System.String)">
+            <summary>
+            Represents a desktop icon with its position and optional text.
+            </summary>
+            <param name="Index">The zero-based index of the icon in the desktop ListView.</param>
+            <param name="Position">The current position of the icon on the desktop.</param>
+            <param name="Text">Optional text/label associated with the icon.</param>
+        </member>
+        <member name="P:SortBySchlong.Core.Models.DesktopIcon.Index">
+            <summary>The zero-based index of the icon in the desktop ListView.</summary>
+        </member>
+        <member name="P:SortBySchlong.Core.Models.DesktopIcon.Position">
+            <summary>The current position of the icon on the desktop.</summary>
+        </member>
+        <member name="P:SortBySchlong.Core.Models.DesktopIcon.Text">
+            <summary>Optional text/label associated with the icon.</summary>
+        </member>
+        <member name="T:SortBySchlong.Core.Models.Point">
+            <summary>
+            Represents a point in 2D space with X and Y coordinates.
+            </summary>
+            <param name="X">The X coordinate.</param>
+            <param name="Y">The Y coordinate.</param>
+        </member>
+        <member name="M:SortBySchlong.Core.Models.Point.#ctor(System.Int32,System.Int32)">
+            <summary>
+            Represents a point in 2D space with X and Y coordinates.
+            </summary>
+            <param name="X">The X coordinate.</param>
+            <param name="Y">The Y coordinate.</param>
+        </member>
+        <member name="P:SortBySchlong.Core.Models.Point.X">
+            <summary>The X coordinate.</summary>
+        </member>
+        <member name="P:SortBySchlong.Core.Models.Point.Y">
+            <summary>The Y coordinate.</summary>
+        </member>
+        <member name="M:SortBySchlong.Core.Models.Point.FromSystemPoint(System.Drawing.Point)">
+            <summary>
+            Creates a point from System.Drawing.Point.
+            </summary>
+        </member>
+        <member name="M:SortBySchlong.Core.Models.Point.ToSystemPoint">
+            <summary>
+            Converts to System.Drawing.Point.
+            </summary>
+        </member>
+        <member name="T:SortBySchlong.Core.Services.DesktopIconService">
+            <summary>
+            Service for interacting with the Windows desktop to enumerate and reposition icons.
+            </summary>
+        </member>
+        <member name="M:SortBySchlong.Core.Services.DesktopIconService.#ctor(Serilog.ILogger)">
+            <summary>
+            Initializes a new instance of the <see cref="T:SortBySchlong.Core.Services.DesktopIconService"/> class.
+            </summary>
+            <param name="logger">The logger instance.</param>
+            <exception cref="T:System.ArgumentNullException">Thrown when logger is null.</exception>
+        </member>
+        <member name="M:SortBySchlong.Core.Services.DesktopIconService.GetIconsAsync(System.Threading.CancellationToken)">
+            <inheritdoc/>
+        </member>
+        <member name="M:SortBySchlong.Core.Services.DesktopIconService.GetDesktopBoundsAsync(System.Threading.CancellationToken)">
+            <inheritdoc/>
+        </member>
+        <member name="M:SortBySchlong.Core.Services.DesktopIconService.ApplyLayoutAsync(System.Collections.Generic.IReadOnlyList{SortBySchlong.Core.Models.DesktopIcon},System.Threading.CancellationToken)">
+            <inheritdoc/>
+        </member>
+        <member name="T:SortBySchlong.Core.Services.IconArrangementService">
+            <summary>
+            Orchestrates the icon arrangement process by coordinating icon retrieval, shape generation, and layout application.
+            </summary>
+        </member>
+        <member name="M:SortBySchlong.Core.Services.IconArrangementService.#ctor(SortBySchlong.Core.Interfaces.IDesktopIconProvider,SortBySchlong.Core.Interfaces.IIconLayoutApplier,SortBySchlong.Core.Interfaces.IShapeRegistry,Serilog.ILogger)">
+            <summary>
+            Initializes a new instance of the <see cref="T:SortBySchlong.Core.Services.IconArrangementService"/> class.
+            </summary>
+            <param name="iconProvider">The desktop icon provider.</param>
+            <param name="layoutApplier">The layout applier.</param>
+            <param name="shapeRegistry">The shape registry.</param>
+            <param name="logger">The logger instance.</param>
+            <exception cref="T:System.ArgumentNullException">Thrown when any parameter is null.</exception>
+        </member>
+        <member name="M:SortBySchlong.Core.Services.IconArrangementService.ArrangeIconsAsync(System.String,System.Threading.CancellationToken)">
+            <summary>
+            Arranges desktop icons in the specified shape.
+            </summary>
+            <param name="shapeKey">The key of the shape to arrange icons in.</param>
+            <param name="ct">Cancellation token to cancel the operation.</param>
+            <returns>A task representing the asynchronous operation.</returns>
+            <exception cref="T:System.ArgumentNullException">Thrown when shapeKey is null or empty.</exception>
+            <exception cref="T:SortBySchlong.Core.Exceptions.ShapeNotFoundException">Thrown when the specified shape is not found.</exception>
+            <exception cref="T:SortBySchlong.Core.Exceptions.IconArrangementException">Thrown when arrangement fails.</exception>
+        </member>
+        <member name="T:SortBySchlong.Core.Services.ShapeRegistry">
+            <summary>
+            Thread-safe registry for shape providers.
+            </summary>
+        </member>
+        <member name="M:SortBySchlong.Core.Services.ShapeRegistry.Register(SortBySchlong.Core.Interfaces.IShapeProvider)">
+            <inheritdoc/>
+        </member>
+        <member name="M:SortBySchlong.Core.Services.ShapeRegistry.GetProvider(System.String)">
+            <inheritdoc/>
+        </member>
+        <member name="M:SortBySchlong.Core.Services.ShapeRegistry.GetAvailableShapes">
+            <inheritdoc/>
+        </member>
+        <member name="T:SortBySchlong.Core.Shapes.PenisShapeProvider">
+            <summary>
+            Shape provider that arranges icons in a penis shape.
+            </summary>
+        </member>
+        <member name="P:SortBySchlong.Core.Shapes.PenisShapeProvider.Key">
+            <inheritdoc/>
+        </member>
+        <member name="M:SortBySchlong.Core.Shapes.PenisShapeProvider.GenerateLayout(System.Int32,SortBySchlong.Core.Models.DesktopBounds)">
+            <inheritdoc/>
+        </member>
+    </members>
+</doc>

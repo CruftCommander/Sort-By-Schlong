@@ -1,0 +1,14 @@
+C:\Users\Daddy\source\repos\Sort by Schlong\SortByShlong.Core\bin\Debug\net8.0-windows\SortBySchlong.Core.deps.json
+C:\Users\Daddy\source\repos\Sort by Schlong\SortByShlong.Core\bin\Debug\net8.0-windows\SortBySchlong.Core.dll
+C:\Users\Daddy\source\repos\Sort by Schlong\SortByShlong.Core\bin\Debug\net8.0-windows\SortBySchlong.Core.pdb
+C:\Users\Daddy\source\repos\Sort by Schlong\SortByShlong.Core\obj\Debug\net8.0-windows\SortBySchlong.Core.csproj.AssemblyReference.cache
+C:\Users\Daddy\source\repos\Sort by Schlong\SortByShlong.Core\obj\Debug\net8.0-windows\SortBySchlong.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Daddy\source\repos\Sort by Schlong\SortByShlong.Core\obj\Debug\net8.0-windows\SortBySchlong.Core.AssemblyInfoInputs.cache
+C:\Users\Daddy\source\repos\Sort by Schlong\SortByShlong.Core\obj\Debug\net8.0-windows\SortBySchlong.Core.AssemblyInfo.cs
+C:\Users\Daddy\source\repos\Sort by Schlong\SortByShlong.Core\obj\Debug\net8.0-windows\SortBySchlong.Core.csproj.CoreCompileInputs.cache
+C:\Users\Daddy\source\repos\Sort by Schlong\SortByShlong.Core\obj\Debug\net8.0-windows\SortBySchlong.Core.dll
+C:\Users\Daddy\source\repos\Sort by Schlong\SortByShlong.Core\obj\Debug\net8.0-windows\refint\SortBySchlong.Core.dll
+C:\Users\Daddy\source\repos\Sort by Schlong\SortByShlong.Core\obj\Debug\net8.0-windows\SortBySchlong.Core.pdb
+C:\Users\Daddy\source\repos\Sort by Schlong\SortByShlong.Core\obj\Debug\net8.0-windows\ref\SortBySchlong.Core.dll
+C:\Users\Daddy\source\repos\Sort by Schlong\SortByShlong.Core\bin\Debug\net8.0-windows\SortBySchlong.Core.xml
+C:\Users\Daddy\source\repos\Sort by Schlong\SortByShlong.Core\obj\Debug\net8.0-windows\SortBySchlong.Core.xml
