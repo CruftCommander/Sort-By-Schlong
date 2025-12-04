@@ -1,267 +1,152 @@
-# Project Plan - Windows Desktop Icon Shape Arranger (Headless, Context Menu Only)
+# SortByShlong – Desktop Icon Shape Arranger for Windows
 
-## 1. Overview
-This project is a headless Windows tool that:
-- Rearranges desktop icons into a predefined **penis** shape.
-- Adds a desktop right-click context menu entry: `Sort by -> Penis`
-- Provides a console harness used for dev/testing.
-- Is architected for future shapes and a scriptable shape language.
+SortByShlong is a lightweight, headless Windows utility that rearranges your desktop icons into a predefined comedic shape. It demonstrates advanced Windows shell automation while providing a clean, extensible architecture for future shape layouts and script-driven configurations.
 
-The initial version includes only:
-- `PenisShapeProvider`
+Unlike traditional UI-driven applications, this tool executes silently and is designed to be triggered by:
+1. A simple **console harness** used for development and direct execution.
+2. A planned **Windows Explorer context menu extension** that adds a new option: `Sort by → Penis`.
+
+The first release includes one shape provider:
+- **PenisShapeProvider**
 
 ---
 
-## 2. Architecture Overview
+## Features
+- Programmatically rearranges desktop icons using Win32 ListView messages
+- Headless execution with no GUI components
+- Clean modular architecture for additional shapes
+- Designed for future support of a scriptable shape definition language
+- Provides a console tool for easy debugging and testing
+- Shell extension integration planned for Windows Explorer
 
-### 2.1 Solution Structure
+---
+
+## Solution Structure
+```
 /icon-arranger
   /src
-    /IconArranger.Core
-    /IconArranger.ConsoleHarness
-    /IconArranger.Shell
+    /IconArranger.Core              # Layout engine, Win32 interop, shape providers
+    /IconArranger.ConsoleHarness    # CLI runner for execution and testing
+    /IconArranger.Shell             # (Future) C++ COM shell extension
   /docs
     ARCHITECTURE.md
     TESTING.md
     SHELL_INTEGRATION.md
     SHAPE_LANGUAGE_FUTURE.md
-
-### 2.2 Technologies
-- Core + Console → C# .NET 8
-- Context Menu Shell Extension → C++ Win32 COM
-- P/Invoke for Windows ListView manipulation
-
-### 2.3 Core Interfaces & Types
-- IDesktopIconProvider
-- IIconLayoutApplier
-- IShapeProvider
-- IShapeRegistry
-- IShapeScriptEngine (stub)
-
-Concrete v1:
-- DesktopIconService
-- PenisShapeProvider
-- ShapeRegistry
-- NoopShapeScriptEngine
+```
 
 ---
 
-## 3. Repo & Solution Setup
+## Technologies
+- **C# .NET 8** for the core library and testing harness  
+- **C++ Win32 COM** for the future Explorer context menu extension  
+- **P/Invoke** for desktop ListView interaction  
 
-### 3.1 Initial repo setup
-- Create repo, branches, README, .editorconfig, .gitignore
-
-### 3.2 Create projects
-- Core (C#)
-- ConsoleHarness (C#)
-- Shell extension (C++)
+The application targets Windows exclusively due to its reliance on Win32 APIs and Explorer internals.
 
 ---
 
-## 4. Desktop Interaction Engine
+## Core Components
 
-### 4.1 Handle Discovery
-- Find desktop ListView window using:
-  - FindWindow("Progman")
-  - FindWindowEx to locate SHELLDLL_DefView
-  - FindWindowEx SysListView32
+### Interfaces
+- `IDesktopIconProvider` — retrieves icon metadata  
+- `IIconLayoutApplier` — applies updated icon coordinates  
+- `IShapeProvider` — generates layout points for each shape  
+- `IShapeRegistry` — manages shape providers  
+- `IShapeScriptEngine` — reserved for future script-generated shapes  
 
-### 4.2 Icon Enumeration
-- LVM_GETITEMCOUNT
-- LVM_GETITEMPOSITION
-- LVM_GETITEMTEXT (optional)
-
-### 4.3 Layout Application
-- LVM_SETITEMPOSITION
-- InvalidateRect for redraw
-
-### 4.4 Desktop Bounds
-- Use ListView client rect
+### Initial Implementations
+- `DesktopIconService`
+- `PenisShapeProvider`
+- `ShapeRegistry`
+- `NoopShapeScriptEngine`
 
 ---
 
-## 5. Shape Architecture
+## How the Engine Works
+1. Enumerate desktop icons  
+2. Determine desktop working bounds  
+3. Generate the desired layout coordinates  
+4. Apply the new icon positions  
 
-### 5.1 IShapeProvider
-Each provider supplies:
-- string Key
-- GenerateLayout(int iconCount, DesktopBounds bounds)
-
-### 5.2 PenisShapeProvider
-Produces:
-- Shaft (line)
-- Head (curved segment)
-- Balls (two ellipses)
-
-### 5.3 ShapeRegistry
-Registers:
-- “penis” → PenisShapeProvider
-
-Future:
-- Additional shapes
-- Scripted shapes
+The initial invocation pattern:
+```
+ArrangeDesktopIcons("penis")
+```
 
 ---
 
-## 6. Orchestration Logic
+## Console Harness Usage
+The console harness is the primary entry point during early development.
 
-ArrangeDesktopIcons("penis"):
-1. Get icons
-2. Get desktop bounds
-3. Compute layout
-4. Apply layout
-
----
-
-## 7. Console Harness (Testing)
-
-### 7.1 Behavior
-Running the exe:
-- Applies penis arrangement
-- Exits with 0 on success
-
-### 7.2 CLI (future)
---shape=penis
-
-### 7.3 Dev testing
-- Move icons manually
-- Run console harness
-- Validate layout
-
----
-
-## 8. Shell Integration (Sort by → Penis)
-
-### 8.1 Implementation
-- C++ COM extension:
-  - Implements IContextMenu, IShellExtInit
-  - Adds menu item under “Sort by”
-  - On click → launches console:
-    IconArranger.ConsoleHarness.exe --shape=penis
-
-### 8.2 Registration
-regsvr32 IconArranger.Shell.dll
-
-### 8.3 Debugging
-- Attach to explorer.exe
-- Validate proper menu injection
-
----
-
-## 9. Testing & Quality
-
-### 9.1 Unit Tests
-- PenisShapeProvider layout generation
-- Bounds scaling
-- Mocked orchestration flow
-
-### 9.2 Integration Tests
-- Fake desktop service for coordinate validation
-
-### 9.3 Manual Tests
-- Document steps in docs/TESTING.md
-
----
-
-## 10. Future Scriptable Shape Language
-
-### 10.1 Interface stub
-IShapeScriptEngine
-
-### 10.2 Noop implementation
-- Included in v1
-
-### 10.3 Planning doc
-- docs/SHAPE_LANGUAGE_FUTURE.md
-
----
-
-## 11. Building & Running
-
-### 11.1 Build Instructions
-
+### Default execution
 ```bash
-# Restore dependencies
+dotnet run --project IconArranger.ConsoleHarness
+```
+
+### Specify shape explicitly
+```bash
+dotnet run --project IconArranger.ConsoleHarness -- --shape=penis
+```
+
+### List available shapes
+```bash
+dotnet run --project IconArranger.ConsoleHarness -- --list-shapes
+```
+
+### Help
+```bash
+dotnet run --project IconArranger.ConsoleHarness -- --help
+```
+
+**Important:** Running this tool will rearrange your actual desktop icons.
+
+---
+
+## Build Instructions
+
+### Restore and build
+```bash
 dotnet restore
-
-# Build solution
 dotnet build -c Release
-
-# Build specific project
-dotnet build SortByShlong.Core/SortBySchlong.Core.csproj -c Release
 ```
 
-### 11.2 Running the Console Harness
-
+### Publish as a self-contained executable
 ```bash
-# Run with default shape (penis)
-dotnet run --project SortByShlong.ConsoleHarness
-
-# Run with specific shape
-dotnet run --project SortByShlong.ConsoleHarness -- --shape=penis
-
-# List available shapes
-dotnet run --project SortByShlong.ConsoleHarness -- --list-shapes
-
-# Help
-dotnet run --project SortByShlong.ConsoleHarness -- --help
+dotnet publish IconArranger.ConsoleHarness/IconArranger.ConsoleHarness.csproj   -c Release   -r win-x64   --self-contained true   /p:PublishSingleFile=true   -o ./publish
 ```
 
-### 11.3 Publishing for Deployment
-
+### Run tests
 ```bash
-# Publish console application (self-contained)
-dotnet publish SortByShlong.ConsoleHarness/SortBySchlong.ConsoleHarness.csproj \
-  -c Release \
-  -r win-x64 \
-  --self-contained true \
-  /p:PublishSingleFile=true \
-  -o ./publish
-```
-
-### 11.4 Running Tests
-
-```bash
-# Run all tests
 dotnet test
-
-# Run with coverage
-dotnet test /p:CollectCoverage=true /p:CoverletOutputFormat=opencover
-
-# Run specific test project
-dotnet test SortBySchlong.Core.Tests/SortBySchlong.Core.Tests.csproj
 ```
 
-### 11.5 Manual Testing
+---
 
-**Warning**: Running the application will rearrange your desktop icons!
+## Shell Extension (Future Work)
+The project intends to provide a shell extension that:
+- Adds a new context menu entry under `Sort by`
+- Launches the console harness upon selection
 
-1. Ensure you have at least 3 icons on your desktop
-2. Build the solution in Release mode
-3. Run the console harness:
-   ```bash
-   cd SortByShlong.ConsoleHarness/bin/Release/net8.0-windows
-   .\SortBySchlong.ConsoleHarness.exe --shape=penis
-   ```
-4. Verify icons are arranged correctly
-5. Manually restore icon positions if needed
-
-See [docs/TESTING.md](docs/TESTING.md) for detailed testing procedures.
-
-## 12. Documentation
-
-- [Architecture Documentation](docs/ARCHITECTURE.md): System design and component overview
-- [Testing Documentation](docs/TESTING.md): Testing procedures and guidelines
-- [Shell Integration Documentation](docs/SHELL_INTEGRATION.md): C++ COM extension integration plan
-- [Future Shape Language Documentation](docs/SHAPE_LANGUAGE_FUTURE.md): Planned scriptable shape language
-
-## 13. Packaging & Deployment
-
-### 13.1 Publishing console
-```bash
-dotnet publish -c Release -r win-x64 --self-contained true /p:PublishSingleFile=true
+Development details will be documented in:
+```
+docs/SHELL_INTEGRATION.md
 ```
 
-### 13.2 Deploy shell extension
-- Copy DLL + EXE
-- Register DLL (see [Shell Integration Documentation](docs/SHELL_INTEGRATION.md))
+This integration will be added once the core engine is stable.
+
+---
+
+## Documentation
+- **ARCHITECTURE.md** – Full system layout and design overview  
+- **TESTING.md** – Guidance for manual and automated testing  
+- **SHELL_INTEGRATION.md** – COM extension design notes  
+- **SHAPE_LANGUAGE_FUTURE.md** – Concepts for script-based shape logic  
+
+---
+
+## Disclaimer
+SortByShlong is a humorous but technically serious utility.  
+Use responsibly — icon rearrangement affects your active desktop layout.
+
+Enjoy, explore, and extend.

@@ -64,7 +64,9 @@ public class DesktopIconService : IDesktopIconProvider, IIconLayoutApplier
 
                 var icons = new List<DesktopIcon>(iconCount);
                 var consecutiveFailures = 0;
-                const int maxConsecutiveFailures = 5; // Only refresh after 5 consecutive failures
+                const int maxConsecutiveFailures = 10; // Increased threshold to reduce refresh attempts
+                var refreshAttempted = false; // Track if we've already tried to refresh
+                var lastRefreshAttempt = 0; // Track when we last tried to refresh
 
                 for (int i = 0; i < iconCount; i++)
                 {
@@ -86,8 +88,12 @@ public class DesktopIconService : IDesktopIconProvider, IIconLayoutApplier
                         consecutiveFailures++;
                         
                         // Only try to refresh handle after multiple consecutive failures
+                        // AND only if we haven't already tried recently (cooldown period)
                         // This prevents unnecessary refreshes and Explorer crashes
-                        if (consecutiveFailures >= maxConsecutiveFailures)
+                        var iconsSinceLastRefresh = i - lastRefreshAttempt;
+                        if (consecutiveFailures >= maxConsecutiveFailures && 
+                            !refreshAttempted && 
+                            iconsSinceLastRefresh >= 20) // Cooldown: wait 20 icons between refresh attempts
                         {
                             _logger.Debug("Multiple consecutive failures detected, attempting to refresh handle");
                             var refreshedHandle = FindDesktopListView();
@@ -95,6 +101,8 @@ public class DesktopIconService : IDesktopIconProvider, IIconLayoutApplier
                             {
                                 listViewHandle = refreshedHandle;
                                 consecutiveFailures = 0; // Reset counter on successful refresh
+                                refreshAttempted = false; // Allow future refreshes
+                                lastRefreshAttempt = i;
                                 // Retry getting position with new handle
                                 position = GetIconPosition(listViewHandle, i, out hadError);
                                 if (!hadError)
@@ -104,15 +112,27 @@ public class DesktopIconService : IDesktopIconProvider, IIconLayoutApplier
                             }
                             else
                             {
-                                // If we can't refresh, continue with current handle
-                                // Don't break - we want to get as many icons as possible
-                                _logger.Warning("Could not refresh desktop window handle, continuing with current handle");
+                                // If we can't refresh, mark as attempted and continue with current handle
+                                // Don't try again for a while to avoid log spam
+                                refreshAttempted = true;
+                                lastRefreshAttempt = i;
+                                consecutiveFailures = 0; // Reset to prevent immediate retry
+                                // Only log once to avoid spam
+                                if (i < 30) // Only log early failures
+                                {
+                                    _logger.Warning("Could not refresh desktop window handle, continuing with current handle");
+                                }
                             }
                         }
                     }
                     else
                     {
                         consecutiveFailures = 0; // Reset on success
+                        // If we had a successful operation after a failed refresh attempt, allow refresh again
+                        if (refreshAttempted && i - lastRefreshAttempt > 50)
+                        {
+                            refreshAttempted = false; // Reset after 50 successful icons
+                        }
                     }
 
                     var text = GetIconText(listViewHandle, i);
@@ -144,11 +164,17 @@ public class DesktopIconService : IDesktopIconProvider, IIconLayoutApplier
         {
             try
             {
-                // Use retry logic to handle transient window discovery issues
-                var listViewHandle = FindDesktopListViewWithRetry(maxRetries: 2, delayMs: 100);
+                // Add a small delay to let Explorer recover if it was stressed by enumeration
+                System.Threading.Thread.Sleep(50);
+
+                // Use retry logic with more attempts to handle transient window discovery issues
+                var listViewHandle = FindDesktopListViewWithRetry(maxRetries: 3, delayMs: 200);
                 if (listViewHandle == IntPtr.Zero)
                 {
-                    throw new DesktopAccessException("Could not find desktop ListView window.");
+                    // Fallback: Use screen dimensions if we can't find the ListView window
+                    // This is a reasonable fallback since desktop icons are typically on the primary screen
+                    _logger.Warning("Could not find desktop ListView window, using screen dimensions as fallback");
+                    return GetScreenBoundsFallback();
                 }
 
                 // Try to get client rect - this will validate the handle is usable
@@ -156,8 +182,8 @@ public class DesktopIconService : IDesktopIconProvider, IIconLayoutApplier
                 if (!User32.GetClientRect(hwnd, out var rect))
                 {
                     var error = new Win32Exception();
-                    _logger.Error("Failed to get client rect: {Error}", error.Message);
-                    throw new DesktopAccessException("Failed to get desktop bounds.", error);
+                    _logger.Warning("Failed to get client rect: {Error}, using screen dimensions as fallback", error.Message);
+                    return GetScreenBoundsFallback();
                 }
 
                 var bounds = new DesktopBounds(rect.Width, rect.Height);
@@ -171,10 +197,28 @@ public class DesktopIconService : IDesktopIconProvider, IIconLayoutApplier
             }
             catch (Exception ex) when (ex is not DesktopAccessException)
             {
-                _logger.Error(ex, "Error getting desktop bounds");
-                throw new DesktopAccessException("Failed to get desktop bounds.", ex);
+                _logger.Warning(ex, "Error getting desktop bounds, using screen dimensions as fallback");
+                return GetScreenBoundsFallback();
             }
         }, ct);
+    }
+
+    private DesktopBounds GetScreenBoundsFallback()
+    {
+        try
+        {
+            // Get primary screen dimensions as fallback
+            var width = User32.GetSystemMetrics(User32.SystemMetric.SM_CXSCREEN);
+            var height = User32.GetSystemMetrics(User32.SystemMetric.SM_CYSCREEN);
+            _logger.Debug("Using screen dimensions as fallback: {Width}x{Height}", width, height);
+            return new DesktopBounds(width, height);
+        }
+        catch (Exception ex)
+        {
+            _logger.Error(ex, "Failed to get screen dimensions, using default bounds");
+            // Last resort: use a reasonable default (1920x1080)
+            return new DesktopBounds(1920, 1080);
+        }
     }
 
     /// <inheritdoc/>
@@ -197,7 +241,10 @@ public class DesktopIconService : IDesktopIconProvider, IIconLayoutApplier
         {
             try
             {
-                var listViewHandle = FindDesktopListView();
+                // Add a small delay to let Explorer recover if it was stressed
+                System.Threading.Thread.Sleep(100);
+
+                var listViewHandle = FindDesktopListViewWithRetry(maxRetries: 3, delayMs: 200);
                 if (listViewHandle == IntPtr.Zero)
                 {
                     throw new DesktopAccessException("Could not find desktop ListView window.");
@@ -205,14 +252,35 @@ public class DesktopIconService : IDesktopIconProvider, IIconLayoutApplier
 
                 // Get current icon count to validate
                 var currentIconCount = SendMessage(listViewHandle, LVM_GETITEMCOUNT, IntPtr.Zero, IntPtr.Zero);
+                
+                // Be more lenient with validation - if count is 0, it might be a transient issue
+                // Still try to apply the layout as the icons might reappear
                 if (currentIconCount != icons.Count)
                 {
-                    _logger.Warning(
-                        "Icon count mismatch: expected {ExpectedCount}, found {ActualCount}",
-                        icons.Count,
-                        currentIconCount);
-                    throw new InvalidLayoutException(
-                        $"Icon count mismatch: expected {icons.Count}, but desktop has {currentIconCount} icons.");
+                    if (currentIconCount == 0)
+                    {
+                        // If count is 0, it might be a transient Explorer issue
+                        // Log warning but continue - the layout might still work
+                        _logger.Warning(
+                            "Desktop shows 0 icons (expected {ExpectedCount}). This may be a transient Explorer issue. Attempting to apply layout anyway.",
+                            icons.Count);
+                    }
+                    else
+                    {
+                        // If count is different but not zero, it's a real mismatch
+                        _logger.Warning(
+                            "Icon count mismatch: expected {ExpectedCount}, found {ActualCount}. Attempting to apply layout anyway.",
+                            icons.Count,
+                            currentIconCount);
+                        
+                        // Only throw if the mismatch is significant (more than 10% difference)
+                        var difference = Math.Abs(currentIconCount - icons.Count);
+                        if (difference > icons.Count * 0.1)
+                        {
+                            throw new InvalidLayoutException(
+                                $"Icon count mismatch: expected {icons.Count}, but desktop has {currentIconCount} icons.");
+                        }
+                    }
                 }
 
                 // Validate all positions are within bounds
@@ -228,10 +296,31 @@ public class DesktopIconService : IDesktopIconProvider, IIconLayoutApplier
                 }
 
                 // Apply positions
+                var successfulPositions = 0;
                 foreach (var icon in icons)
                 {
                     ct.ThrowIfCancellationRequested();
-                    SetIconPosition(listViewHandle, icon.Index, icon.Position);
+                    
+                    try
+                    {
+                        SetIconPosition(listViewHandle, icon.Index, icon.Position);
+                        successfulPositions++;
+                    }
+                    catch (Exception ex)
+                    {
+                        // Log but continue - some positions might still work
+                        if (successfulPositions == 0 || icon.Index % 10 == 0)
+                        {
+                            _logger.Warning(ex, "Failed to set position for icon {Index} to ({X}, {Y})", 
+                                icon.Index, icon.Position.X, icon.Position.Y);
+                        }
+                    }
+                }
+                
+                if (successfulPositions < icons.Count)
+                {
+                    _logger.Warning("Successfully set {SuccessfulCount} out of {TotalCount} icon positions", 
+                        successfulPositions, icons.Count);
                 }
 
                 // Force desktop redraw
