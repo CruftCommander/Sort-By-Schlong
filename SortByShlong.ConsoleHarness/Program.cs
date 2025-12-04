@@ -155,12 +155,22 @@ internal class Program
         // Register core services
         services.AddSingleton<IDesktopIconProvider, DesktopIconService>();
         services.AddSingleton<IIconLayoutApplier, DesktopIconService>();
-        services.AddSingleton<IShapeRegistry, ShapeRegistry>();
+        
+        // Create and configure shape registry
+        var shapeRegistry = new ShapeRegistry();
+        
+        // Create and register shape providers with the registry
+        var penisShapeProvider = new PenisShapeProvider();
+        shapeRegistry.Register(penisShapeProvider);
+        
+        // Register the configured registry as a singleton
+        services.AddSingleton<IShapeRegistry>(shapeRegistry);
+        
+        // Also register shape providers in DI for potential future use
+        services.AddSingleton<IShapeProvider>(penisShapeProvider);
+        
         // Note: NoopShapeScriptEngine is optional and not currently used
         // services.AddSingleton<IShapeScriptEngine, NoopShapeScriptEngine>();
-
-        // Register shape providers
-        services.AddSingleton<IShapeProvider, PenisShapeProvider>();
 
         // Register orchestration service
         services.AddSingleton<IconArrangementService>();

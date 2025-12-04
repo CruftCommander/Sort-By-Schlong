@@ -15,6 +15,7 @@ public class DesktopIconService : IDesktopIconProvider, IIconLayoutApplier
 {
     private readonly ILogger _logger;
     private const string ProgmanWindowClass = "Progman";
+    private const string WorkerWWindowClass = "WorkerW";
     private const string ShellDllDefViewWindowClass = "SHELLDLL_DefView";
     private const string SysListView32WindowClass = "SysListView32";
     private const int LVM_GETITEMCOUNT = 0x1004;
@@ -218,26 +219,77 @@ public class DesktopIconService : IDesktopIconProvider, IIconLayoutApplier
 
         _logger.Debug("Found Progman window: {Handle}", progman.DangerousGetHandle());
 
-        // Find SHELLDLL_DefView child window
+        // Try classic Windows hierarchy first: Progman -> SHELLDLL_DefView -> SysListView32
         var defView = User32.FindWindowEx(progman, HWND.NULL, ShellDllDefViewWindowClass, null);
-        if (defView.IsNull)
+        if (!defView.IsNull)
         {
-            _logger.Error("Could not find SHELLDLL_DefView window");
+            _logger.Debug("Found SHELLDLL_DefView window (classic hierarchy): {Handle}", defView.DangerousGetHandle());
+            
+            var listView = User32.FindWindowEx(defView, HWND.NULL, SysListView32WindowClass, null);
+            if (!listView.IsNull)
+            {
+                _logger.Debug("Found SysListView32 window: {Handle}", listView.DangerousGetHandle());
+                return listView.DangerousGetHandle();
+            }
+        }
+
+        // Try modern Windows hierarchy: Progman -> WorkerW -> SHELLDLL_DefView -> SysListView32
+        _logger.Debug("Classic hierarchy not found, trying modern hierarchy with WorkerW");
+        
+        var workerW = FindWorkerWWindow(progman);
+        if (workerW.IsNull)
+        {
+            _logger.Error("Could not find WorkerW window");
             return IntPtr.Zero;
         }
 
-        _logger.Debug("Found SHELLDLL_DefView window: {Handle}", defView.DangerousGetHandle());
+        _logger.Debug("Found WorkerW window: {Handle}", workerW.DangerousGetHandle());
 
-        // Find SysListView32 child window
-        var listView = User32.FindWindowEx(defView, HWND.NULL, SysListView32WindowClass, null);
-        if (listView.IsNull)
+        defView = User32.FindWindowEx(workerW, HWND.NULL, ShellDllDefViewWindowClass, null);
+        if (defView.IsNull)
+        {
+            _logger.Error("Could not find SHELLDLL_DefView window under WorkerW");
+            return IntPtr.Zero;
+        }
+
+        _logger.Debug("Found SHELLDLL_DefView window (modern hierarchy): {Handle}", defView.DangerousGetHandle());
+
+        var listViewModern = User32.FindWindowEx(defView, HWND.NULL, SysListView32WindowClass, null);
+        if (listViewModern.IsNull)
         {
             _logger.Error("Could not find SysListView32 window");
             return IntPtr.Zero;
         }
 
-        _logger.Debug("Found SysListView32 window: {Handle}", listView.DangerousGetHandle());
-        return listView.DangerousGetHandle();
+        _logger.Debug("Found SysListView32 window: {Handle}", listViewModern.DangerousGetHandle());
+        return listViewModern.DangerousGetHandle();
+    }
+
+    private HWND FindWorkerWWindow(HWND progman)
+    {
+        // Find WorkerW windows by iterating through child windows
+        // We need to find the WorkerW that contains SHELLDLL_DefView
+        HWND currentChild = HWND.NULL;
+        
+        // Iterate through all child windows of Progman
+        while (true)
+        {
+            currentChild = User32.FindWindowEx(progman, currentChild, WorkerWWindowClass, null);
+            if (currentChild.IsNull)
+            {
+                break; // No more WorkerW windows found
+            }
+
+            // Check if this WorkerW contains SHELLDLL_DefView
+            var defView = User32.FindWindowEx(currentChild, HWND.NULL, ShellDllDefViewWindowClass, null);
+            if (!defView.IsNull)
+            {
+                // Found the correct WorkerW window
+                return currentChild;
+            }
+        }
+
+        return HWND.NULL;
     }
 
     private int SendMessage(IntPtr hWnd, int msg, IntPtr wParam, IntPtr lParam)
