@@ -1,4 +1,5 @@
 using System.ComponentModel;
+using System.Diagnostics;
 using SortBySchlong.Core.Exceptions;
 using SortBySchlong.Core.Interfaces;
 using SortBySchlong.Core.Models;
@@ -67,19 +68,34 @@ public class DesktopIconService : IDesktopIconProvider, IIconLayoutApplier
                 {
                     ct.ThrowIfCancellationRequested();
 
-                    // Try to get position - if it fails, try refreshing the handle
+                    // Add small delay between operations to avoid overwhelming Explorer
+                    // This prevents Explorer crashes from too many rapid API calls
+                    if (i > 0 && i % 10 == 0)
+                    {
+                        System.Threading.Thread.Sleep(10); // Small delay every 10 icons
+                    }
+
+                    // Try to get position
                     var position = GetIconPosition(listViewHandle, i);
                     
-                    // If position is (0,0) and we got an error, try refreshing handle once
-                    if (position.X == 0 && position.Y == 0 && i > 0)
+                    // Only try to refresh handle if we get (0,0) AND it's clearly an error
+                    // Don't refresh on every failure to avoid overwhelming Explorer
+                    if (position.X == 0 && position.Y == 0 && i > 0 && i % 20 == 0)
                     {
-                        // Try refreshing handle with retry logic
-                        var refreshedHandle = FindDesktopListViewWithRetry();
+                        // Only refresh occasionally, not on every failure
+                        var refreshedHandle = FindDesktopListView();
                         if (refreshedHandle != IntPtr.Zero)
                         {
                             listViewHandle = refreshedHandle;
                             // Retry getting position with new handle
                             position = GetIconPosition(listViewHandle, i);
+                        }
+                        else
+                        {
+                            // If we can't find the window, Explorer might have crashed
+                            // Stop trying to avoid making it worse
+                            _logger.Warning("Could not refresh desktop window handle. Explorer may have crashed. Stopping enumeration.");
+                            break;
                         }
                     }
 
@@ -230,17 +246,27 @@ public class DesktopIconService : IDesktopIconProvider, IIconLayoutApplier
 
     private IntPtr FindDesktopListView()
     {
-        return FindDesktopListViewWithRetry(maxRetries: 1);
+        // Reduced retries to prevent overwhelming Explorer
+        return FindDesktopListViewWithRetry(maxRetries: 1, delayMs: 50);
     }
 
-    private IntPtr FindDesktopListViewWithRetry(int maxRetries = 3, int delayMs = 100)
+    private IntPtr FindDesktopListViewWithRetry(int maxRetries = 1, int delayMs = 50)
     {
         for (int attempt = 0; attempt <= maxRetries; attempt++)
         {
             if (attempt > 0)
             {
                 _logger.Debug("Retrying desktop ListView discovery (attempt {Attempt}/{MaxRetries})", attempt + 1, maxRetries + 1);
+                // Add delay to avoid overwhelming Explorer with rapid retries
                 System.Threading.Thread.Sleep(delayMs);
+            }
+            
+            // Check if Explorer process is still running before attempting
+            // This helps detect if Explorer has crashed
+            if (!IsExplorerRunning())
+            {
+                _logger.Error("Explorer.exe appears to have crashed. Stopping window discovery.");
+                return IntPtr.Zero;
             }
 
             // Find Progman window
@@ -361,11 +387,42 @@ public class DesktopIconService : IDesktopIconProvider, IIconLayoutApplier
         // Don't validate handle here - let the actual operation determine if it's valid
         // IsWindow can return false for valid handles in some edge cases
         var hwnd = new HWND(hWnd);
-        var result = User32.SendMessage(hwnd, (User32.WindowMessage)msg, wParam, lParam);
+        
+        // Use SendMessageTimeout for critical operations to prevent hanging
+        // This helps prevent Explorer crashes from blocking operations
+        if (msg == LVM_GETITEMCOUNT)
+        {
+            const uint timeoutMs = 2000; // 2 second timeout for getting count
+            IntPtr result = IntPtr.Zero;
+            var success = User32.SendMessageTimeout(
+                hwnd,
+                (uint)msg,
+                wParam,
+                lParam,
+                User32.SMTO.SMTO_ABORTIFHUNG | User32.SMTO.SMTO_NORMAL,
+                timeoutMs,
+                ref result);
+            
+            if (success == IntPtr.Zero)
+            {
+                var lastError = System.Runtime.InteropServices.Marshal.GetLastWin32Error();
+                if (lastError != 0)
+                {
+                    var error = new Win32Exception();
+                    _logger.Warning("SendMessageTimeout failed for LVM_GETITEMCOUNT: {Error}", error.Message);
+                }
+                return 0;
+            }
+            
+            return result.ToInt32();
+        }
+        
+        // For other messages, use regular SendMessage but be careful
+        var resultMsg = User32.SendMessage(hwnd, (User32.WindowMessage)msg, wParam, lParam);
         
         // Only log warnings for messages where zero indicates failure
-        // LVM_GETITEMCOUNT and LVM_GETITEMPOSITION can return zero in valid scenarios
-        if (result == IntPtr.Zero && msg != LVM_GETITEMCOUNT && msg != LVM_GETITEMPOSITION)
+        // LVM_GETITEMPOSITION can return zero in valid scenarios
+        if (resultMsg == IntPtr.Zero && msg != LVM_GETITEMPOSITION)
         {
             var lastError = System.Runtime.InteropServices.Marshal.GetLastWin32Error();
             if (lastError != 0)
@@ -375,7 +432,7 @@ public class DesktopIconService : IDesktopIconProvider, IIconLayoutApplier
             }
         }
 
-        return result.ToInt32();
+        return resultMsg.ToInt32();
     }
 
     private Point GetIconPosition(IntPtr listViewHandle, int index)
@@ -390,33 +447,47 @@ public class DesktopIconService : IDesktopIconProvider, IIconLayoutApplier
             System.Runtime.InteropServices.Marshal.StructureToPtr(point, lParam, false);
             
             var hwnd = new HWND(listViewHandle);
-            var result = User32.SendMessage(
+            
+            // Use SendMessageTimeout to prevent hanging if Explorer is unresponsive
+            // This helps prevent crashes by not blocking indefinitely
+            const uint timeoutMs = 1000; // 1 second timeout
+            IntPtr resultPtr = IntPtr.Zero;
+            var result = User32.SendMessageTimeout(
                 hwnd,
-                (User32.WindowMessage)LVM_GETITEMPOSITION,
+                (uint)LVM_GETITEMPOSITION,
                 new IntPtr(index),
-                lParam);
+                lParam,
+                User32.SMTO.SMTO_ABORTIFHUNG | User32.SMTO.SMTO_NORMAL,
+                timeoutMs,
+                ref resultPtr);
+
+            if (result == IntPtr.Zero)
+            {
+                // Timeout or error - return (0,0) but don't log every failure to avoid spam
+                if (index % 20 == 0) // Only log occasionally
+                {
+                    var lastError = System.Runtime.InteropServices.Marshal.GetLastWin32Error();
+                    if (lastError != 0)
+                    {
+                        var error = new Win32Exception();
+                        _logger.Debug("SendMessageTimeout failed for icon {Index}, last error: {Error}", index, error.Message);
+                    }
+                }
+                return new Point(0, 0);
+            }
 
             // Read the position from the structure (it's filled in by Windows)
             point = System.Runtime.InteropServices.Marshal.PtrToStructure<Vanara.PInvoke.POINT>(lParam)!;
             
-            // LVM_GETITEMPOSITION returns non-zero on success
-            // Even if result is zero, the POINT structure might still be valid
-            if (result == IntPtr.Zero)
-            {
-                var error = new Win32Exception();
-                var lastError = System.Runtime.InteropServices.Marshal.GetLastWin32Error();
-                // Only log if there's an actual error (not ERROR_SUCCESS)
-                if (lastError != 0)
-                {
-                    _logger.Warning("LVM_GETITEMPOSITION returned zero for icon {Index}, last error: {Error}", index, error.Message);
-                }
-            }
-
             return new Point(point.X, point.Y);
         }
         catch (Exception ex)
         {
-            _logger.Warning(ex, "Exception getting position for icon {Index}", index);
+            // Don't log every exception to avoid overwhelming the log
+            if (index % 20 == 0)
+            {
+                _logger.Debug(ex, "Exception getting position for icon {Index}", index);
+            }
             return new Point(0, 0);
         }
         finally
@@ -461,5 +532,19 @@ public class DesktopIconService : IDesktopIconProvider, IIconLayoutApplier
     }
 
     private static IntPtr MAKELPARAM(int low, int high) => new IntPtr((int)((ushort)low | ((uint)(ushort)high << 16)));
+
+    private static bool IsExplorerRunning()
+    {
+        try
+        {
+            var explorerProcesses = Process.GetProcessesByName("explorer");
+            return explorerProcesses.Length > 0;
+        }
+        catch
+        {
+            // If we can't check, assume it's running to avoid false positives
+            return true;
+        }
+    }
 }
 
