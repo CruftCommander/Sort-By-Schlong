@@ -48,6 +48,12 @@ public class DesktopIconService : IDesktopIconProvider, IIconLayoutApplier
                     throw new DesktopAccessException("Could not find desktop ListView window.");
                 }
 
+                // Validate handle before use
+                if (!IsWindowHandleValid(listViewHandle))
+                {
+                    throw new DesktopAccessException("Desktop ListView window handle is invalid.");
+                }
+
                 var iconCount = SendMessage(listViewHandle, LVM_GETITEMCOUNT, IntPtr.Zero, IntPtr.Zero);
                 _logger.Information("Found {IconCount} icons on desktop", iconCount);
 
@@ -61,6 +67,17 @@ public class DesktopIconService : IDesktopIconProvider, IIconLayoutApplier
                 for (int i = 0; i < iconCount; i++)
                 {
                     ct.ThrowIfCancellationRequested();
+
+                    // Refresh handle if it becomes invalid
+                    if (!IsWindowHandleValid(listViewHandle))
+                    {
+                        _logger.Warning("Window handle became invalid during enumeration, refreshing...");
+                        listViewHandle = FindDesktopListView();
+                        if (listViewHandle == IntPtr.Zero || !IsWindowHandleValid(listViewHandle))
+                        {
+                            throw new DesktopAccessException("Desktop ListView window handle became invalid during enumeration.");
+                        }
+                    }
 
                     var position = GetIconPosition(listViewHandle, i);
                     var text = GetIconText(listViewHandle, i);
@@ -96,6 +113,12 @@ public class DesktopIconService : IDesktopIconProvider, IIconLayoutApplier
                 if (listViewHandle == IntPtr.Zero)
                 {
                     throw new DesktopAccessException("Could not find desktop ListView window.");
+                }
+
+                // Validate handle before use
+                if (!IsWindowHandleValid(listViewHandle))
+                {
+                    throw new DesktopAccessException("Desktop ListView window handle is invalid.");
                 }
 
                 var hwnd = new HWND(listViewHandle);
@@ -292,11 +315,29 @@ public class DesktopIconService : IDesktopIconProvider, IIconLayoutApplier
         return HWND.NULL;
     }
 
+    private bool IsWindowHandleValid(IntPtr hWnd)
+    {
+        if (hWnd == IntPtr.Zero)
+        {
+            return false;
+        }
+
+        var hwnd = new HWND(hWnd);
+        return User32.IsWindow(hwnd);
+    }
+
     private int SendMessage(IntPtr hWnd, int msg, IntPtr wParam, IntPtr lParam)
     {
+        if (!IsWindowHandleValid(hWnd))
+        {
+            var error = new Win32Exception();
+            _logger.Warning("Invalid window handle for message {Message}: {Error}", msg, error.Message);
+            return 0;
+        }
+
         var hwnd = new HWND(hWnd);
         var result = User32.SendMessage(hwnd, (User32.WindowMessage)msg, wParam, lParam);
-        if (result == IntPtr.Zero && msg != LVM_GETITEMCOUNT)
+        if (result == IntPtr.Zero && msg != LVM_GETITEMCOUNT && msg != LVM_GETITEMPOSITION)
         {
             var error = new Win32Exception();
             _logger.Warning("SendMessage returned zero for message {Message}: {Error}", msg, error.Message);
@@ -307,13 +348,22 @@ public class DesktopIconService : IDesktopIconProvider, IIconLayoutApplier
 
     private Point GetIconPosition(IntPtr listViewHandle, int index)
     {
+        // Validate handle before use
+        if (!IsWindowHandleValid(listViewHandle))
+        {
+            _logger.Warning("Invalid window handle when getting position for icon {Index}", index);
+            return new Point(0, 0);
+        }
+
         var point = new Vanara.PInvoke.POINT();
         var lParam = System.Runtime.InteropServices.Marshal.AllocHGlobal(
             System.Runtime.InteropServices.Marshal.SizeOf(point));
 
         try
         {
+            // Initialize the structure
             System.Runtime.InteropServices.Marshal.StructureToPtr(point, lParam, false);
+            
             var hwnd = new HWND(listViewHandle);
             var result = User32.SendMessage(
                 hwnd,
@@ -321,15 +371,31 @@ public class DesktopIconService : IDesktopIconProvider, IIconLayoutApplier
                 new IntPtr(index),
                 lParam);
 
-            if (result == IntPtr.Zero)
+            // LVM_GETITEMPOSITION returns non-zero on success, but the position is in the POINT structure
+            // Check if the window is still valid after the call
+            if (!IsWindowHandleValid(listViewHandle))
             {
-                var error = new Win32Exception();
-                _logger.Warning("Failed to get position for icon {Index}: {Error}", index, error.Message);
+                _logger.Warning("Window handle became invalid after getting position for icon {Index}", index);
                 return new Point(0, 0);
             }
 
+            // Read the position from the structure
             point = System.Runtime.InteropServices.Marshal.PtrToStructure<Vanara.PInvoke.POINT>(lParam)!;
+            
+            // LVM_GETITEMPOSITION returns non-zero on success
+            if (result == IntPtr.Zero)
+            {
+                var error = new Win32Exception();
+                _logger.Warning("LVM_GETITEMPOSITION returned zero for icon {Index}: {Error}", index, error.Message);
+                // Still return the point in case it was filled in
+            }
+
             return new Point(point.X, point.Y);
+        }
+        catch (Exception ex)
+        {
+            _logger.Warning(ex, "Exception getting position for icon {Index}", index);
+            return new Point(0, 0);
         }
         finally
         {
