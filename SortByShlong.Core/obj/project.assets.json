@@ -441,23 +441,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Buffe\\.nuget\\packages\\": {},
+    "C:\\Users\\Daddy\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Buffe\\OneDrive\\Documents\\Sort-By-Schlong\\SortByShlong.Core\\SortBySchlong.Core.csproj",
+      "projectUniqueName": "C:\\Users\\Daddy\\source\\repos\\Sort-By-Schlong\\SortByShlong.Core\\SortBySchlong.Core.csproj",
       "projectName": "SortBySchlong.Core",
-      "projectPath": "C:\\Users\\Buffe\\OneDrive\\Documents\\Sort-By-Schlong\\SortByShlong.Core\\SortBySchlong.Core.csproj",
-      "packagesPath": "C:\\Users\\Buffe\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Buffe\\OneDrive\\Documents\\Sort-By-Schlong\\SortByShlong.Core\\obj\\",
+      "projectPath": "C:\\Users\\Daddy\\source\\repos\\Sort-By-Schlong\\SortByShlong.Core\\SortBySchlong.Core.csproj",
+      "packagesPath": "C:\\Users\\Daddy\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Daddy\\source\\repos\\Sort-By-Schlong\\SortByShlong.Core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Buffe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Daddy\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
