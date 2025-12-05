@@ -1,9 +1,2 @@
-﻿  ClassFactory.cpp
-  DllMain.cpp
-  ProcessLauncher.cpp
-  SortBySchlongExtension.cpp
-  Generating Code...
-C:\Users\Buffe\OneDrive\Documents\Sort-By-Schlong\SortBySchlong.Shell\SortBySchlong.Shell.def(2): warning LNK4017: DESCRIPTION statement not supported for the target platform; ignored
-     Creating library C:\Users\Buffe\OneDrive\Documents\Sort-By-Schlong\x64\Debug\SortBySchlong.Shell.lib and object C:\Users\Buffe\OneDrive\Documents\Sort-By-Schlong\x64\Debug\SortBySchlong.Shell.exp
-SortBySchlong.Shell.exp : warning LNK4070: /OUT:SortBySchlong.Shell directive in .EXP differs from output filename 'C:\Users\Buffe\OneDrive\Documents\Sort-By-Schlong\x64\Debug\SortBySchlong.Shell.dll'; ignoring directive
+﻿  SortBySchlongExtension.cpp
   SortBySchlong.Shell.vcxproj -> C:\Users\Buffe\OneDrive\Documents\Sort-By-Schlong\x64\Debug\SortBySchlong.Shell.dll

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SortBySchlong.ConsoleHarness")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a3231df973b3dbabbef5150cc39dcc71d28bd7f9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+feb1dd516b4aba3a87edbdad1dce8cc3c0435fbe")]
 [assembly: System.Reflection.AssemblyProductAttribute("SortBySchlong.ConsoleHarness")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SortBySchlong.ConsoleHarness")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

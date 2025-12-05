@@ -2,7 +2,7 @@
 
 ## Overview
 
-This document describes the C++ COM Shell extension implementation that adds a "Sort by → Penis" context menu item to the Windows desktop. The extension launches the ConsoleHarness.exe to arrange desktop icons.
+This document describes the C++ COM Shell extension implementation that adds a "SortBySchlong" submenu to the Windows desktop context menu. The extension launches the ConsoleHarness.exe to arrange desktop icons.
 
 ## Architecture
 
@@ -13,7 +13,7 @@ This document describes the C++ COM Shell extension implementation that adds a "
 │   Windows Explorer (explorer.exe)       │
 │                                         │
 │  Right-click Desktop → Context Menu    │
-│    └─ Sort by → Penis                   │
+│    └─ SortBySchlong → Penis            │
 │         └─ (Click)                      │
 │              └─ Launch                  │
 │                  SortBySchlong.         │
@@ -41,6 +41,8 @@ SortBySchlong.Shell/
 ├── Guids.h                          # CLSID definitions
 ├── ClassFactory.h/.cpp              # IClassFactory implementation
 ├── SortBySchlongExtension.h/.cpp    # Main extension class
+├── MenuConstants.h                   # Menu text constants and command enum
+├── MenuBuilder.h/.cpp                # Helper for building context menu
 ├── ProcessLauncher.h/.cpp           # Helper for launching ConsoleHarness.exe
 ├── SortBySchlong.Shell.def          # DLL export definitions
 └── SortBySchlong.Shell.vcxproj      # Visual Studio project file
@@ -61,9 +63,11 @@ The main extension class `CSortBySchlongExtension` implements:
 The extension:
 
 1. Detects desktop background context in `Initialize()`
-2. Finds "Sort by" top-level menu item via `GetMenuString`
-3. Inserts "Penis" entry into the "Sort by" submenu
+2. Adds a top-level "SortBySchlong" submenu to the context menu (via `MenuBuilder::AddSortBySchlongMenu()`)
+3. Populates the submenu with available shapes (currently "Penis")
 4. On click, launches `SortBySchlong.ConsoleHarness.exe --shape=penis`
+
+**Important**: The extension does NOT modify the system-owned "Sort by" submenu. Instead, it adds its own branded submenu at the top level of the context menu. This approach is safer, more stable, and follows Windows shell extension best practices.
 
 ### Process Launching
 
@@ -221,8 +225,9 @@ For deployment, place files as follows:
 
 5. **Test Menu Appearance**
    - Right-click on desktop (empty area)
-   - Navigate to "Sort by" submenu
-   - Verify "Penis" menu item appears
+   - Look for "SortBySchlong" submenu in the context menu
+   - Verify "Penis" menu item appears under "SortBySchlong"
+   - Verify the menu does NOT appear in the system "Sort by" submenu
 
 6. **Test Command Invocation**
    - Click "Penis" menu item
@@ -339,15 +344,21 @@ The extension logs debug messages via `OutputDebugStringW`:
 
 ## Future Enhancements
 
+### Additional Shapes
+
+- Add more shapes to the SortBySchlong submenu (e.g., "Stealth Mode", "Custom Shape...")
+- Shapes are defined in `MenuBuilder.cpp` using the `ShapeMenuItem` array
+- Simply add entries to the array and update `CommandCount` in `MenuConstants.h`
+
 ### Dynamic Shape Selection
 
-- Add submenu with all available shapes
 - Query ConsoleHarness for available shapes via `--list-shapes`
+- Dynamically populate submenu based on available shapes
 
 ### Localization
 
-- Support localized "Sort by" menu text
-- Support localized menu item text
+- Support localized menu text
+- Menu text constants are centralized in `MenuConstants.h` for easy localization
 
 ### Configuration
 

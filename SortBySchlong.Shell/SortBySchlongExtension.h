@@ -6,7 +6,7 @@
 #include <string>
 
 /// <summary>
-/// Shell extension that adds "Sort by -> Penis" menu item to desktop context menu.
+/// Shell extension that adds "SortBySchlong" submenu to desktop context menu.
 /// </summary>
 class CSortBySchlongExtension : public IShellExtInit, public IContextMenu
 {
@@ -35,10 +35,11 @@ public:
 
 private:
     LONG m_cRef;
-    UINT m_sortByPenisId;
+    UINT m_commandIdFirst;      // First command ID in our reserved range
+    UINT m_commandIdCount;       // Number of command IDs we reserved
     bool m_isDesktopBackground;
 
     void LogDebug(const std::wstring& message) const;
-    int FindSortByMenuIndex(HMENU hmenu) const;
+    void HandlePenisLayout() const;
 };
 

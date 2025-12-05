@@ -102,12 +102,15 @@
   <ItemGroup>
     <ClInclude Include="ClassFactory.h" />
     <ClInclude Include="Guids.h" />
+    <ClInclude Include="MenuBuilder.h" />
+    <ClInclude Include="MenuConstants.h" />
     <ClInclude Include="ProcessLauncher.h" />
     <ClInclude Include="SortBySchlongExtension.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ClassFactory.cpp" />
     <ClCompile Include="DllMain.cpp" />
+    <ClCompile Include="MenuBuilder.cpp" />
     <ClCompile Include="ProcessLauncher.cpp" />
     <ClCompile Include="SortBySchlongExtension.cpp" />
   </ItemGroup>
