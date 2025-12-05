@@ -1,28 +1,23 @@
 # SortBySchlong – Desktop Icon Shape Arranger for Windows
 
-**Penetrate the monotony of your Windows workspace.**
+**Penetrate the monotony of your Windows workspace. 🍑**
 
 SortBySchlong gives your Windows desktop icons a bit more… *structure.*  
 It organizes them into a tasteful, vertically oriented geometric arrangement inspired by the classic silhouette you're probably imagining right now. 🤤
 
 ![Example desktop icon arrangement](img/Capture.PNG)
 
-Unlike traditional UI-driven applications, this tool operates quietly in the background and is intended to be triggered by:
-
-1. A lightweight **console harness** for development and direct execution.  
-2. A planned **Windows Explorer context menu extension** offering a new, refined option:  
-   `Sort by → Penis`  
-   (Because symmetry matters.)
+> ⚠️ **Experimental Status:** This project is currently in an experimental stage and is being actively developed. Features may change, and the application should be used with caution.
 
 The debut release ships with a single arrangement engine:
 - **PenisShapeProvider**  
-  (Providing a firm foundation for future shapes.)
+  (Providing a firm foundation for future shapes)
 
 ---
 
 ## Features
-- Rearranges desktop icons using Win32 ListView messages  
-- Fully headless execution (the application keeps things discreet)  
+- Programmatically rearranges desktop icons using Win32 ListView messages  
+- Fully headless execution (the application keeps things discreet 🤫)  
 - Extensible architecture designed to handle new shapes as they emerge  
 - Future-ready scriptable layout system  
 - Console harness for easy debugging and hands-on testing  
@@ -60,7 +55,7 @@ The debut release ships with a single arrangement engine:
 - **Supports:** Single and multi-monitor setups  
 - **Runtime:** .NET 8.0 or later  
 
-SortBySchlong automatically identifies your primary desktop ListView and distributes icons proportionally, ensuring they stay neatly aligned regardless of your *width* or *height* configuration.
+SortBySchlong automatically identifies your primary desktop ListView and distributes icons proportionally, ensuring they stay neatly aligned regardless of your *width* or *height* configuration. 🫣
 
 ---
 
@@ -83,7 +78,7 @@ SortBySchlong automatically identifies your primary desktop ListView and distrib
 
 ## How the Engine Works
 1. Detect desktop icons  
-2. Measure the available… space  
+2. Measure the available… space 🚀
 3. Generate layout points  
 4. Reposition icons with careful, consistent alignment  
 
@@ -91,7 +86,7 @@ The initial invocation pattern:
 ```
 ArrangeDesktopIcons("penis")
 ```
-A simple call. A powerful result.
+A simple call. A powerful result. 😏
 
 ---
 
@@ -134,12 +129,7 @@ dotnet build -c Release
 
 ### Publish a self-contained executable
 ```bash
-dotnet publish IconArranger.ConsoleHarness/IconArranger.ConsoleHarness.csproj \
-  -c Release \
-  -r win-x64 \
-  --self-contained true \
-  /p:PublishSingleFile=true \
-  -o ./publish
+dotnet publish IconArranger.ConsoleHarness/IconArranger.ConsoleHarness.csproj   -c Release   -r win-x64   --self-contained true   /p:PublishSingleFile=true   -o ./publish
 ```
 
 ### Run tests
@@ -176,7 +166,7 @@ This integration will be added once the core engine is stable.
 
 ## Disclaimer
 SortBySchlong is a humorous yet fully functional tool.  
-Handle with care - it may leave your desktop looking unexpectedly… organized.
+Handle with care - it may leave your desktop looking unexpectedly… organized. 🍑
 
 Enjoy, refine, and extend.  
-Symmetry awaits.
+Symmetry awaits. 😈
