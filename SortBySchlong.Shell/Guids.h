@@ -1,6 +1,7 @@
 #pragma once
 
+#include <guiddef.h>
+
 // {A8B3C4D5-E6F7-4A8B-9C0D-1E2F3A4B5C6D}
-DEFINE_GUID(CLSID_SortBySchlongExtension,
-    0xa8b3c4d5, 0xe6f7, 0x4a8b, 0x9c, 0xd, 0x1e, 0x2f, 0x3a, 0x4b, 0x5c, 0x6d);
+EXTERN_C const GUID CLSID_SortBySchlongExtension;
 

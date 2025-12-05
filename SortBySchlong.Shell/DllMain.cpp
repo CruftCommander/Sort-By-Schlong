@@ -7,6 +7,13 @@
 #include <string>
 #include <vector>
 
+// Define the GUID in this translation unit
+// {A8B3C4D5-E6F7-4A8B-9C0D-1E2F3A4B5C6D}
+const GUID CLSID_SortBySchlongExtension = {
+    0xa8b3c4d5, 0xe6f7, 0x4a8b,
+    {0x9c, 0x0d, 0x1e, 0x2f, 0x3a, 0x4b, 0x5c, 0x6d}
+};
+
 #pragma comment(lib, "ole32.lib")
 #pragma comment(lib, "oleaut32.lib")
 #pragma comment(lib, "shlwapi.lib")
@@ -19,7 +26,7 @@ STDAPI DllUnregisterServer(void);
 
 HINSTANCE g_hInst = nullptr;
 
-BOOL APIENTRY DllMain(HMODULE hModule, DWORD dwReason, LPVOID lpReserved)
+BOOL APIENTRY DllMain(HMODULE hModule, DWORD dwReason, LPVOID /*lpReserved*/)
 {
     switch (dwReason)
     {
@@ -84,9 +91,12 @@ STDAPI DllRegisterServer(void)
     
     std::wstring handlerKey = L"Directory\\Background\\shellex\\ContextMenuHandlers\\SortBySchlong";
 
-    // Register CLSID
+    // Register CLSID (per-user registration under HKEY_CURRENT_USER)
+    std::wstring userClsidKey = L"Software\\Classes\\CLSID\\";
+    userClsidKey += szCLSID;
+    
     HKEY hKey = nullptr;
-    LONG lResult = RegCreateKeyExW(HKEY_CLASSES_ROOT, clsidKey.c_str(), 0, nullptr,
+    LONG lResult = RegCreateKeyExW(HKEY_CURRENT_USER, userClsidKey.c_str(), 0, nullptr,
         REG_OPTION_NON_VOLATILE, KEY_WRITE, nullptr, &hKey, nullptr);
     if (lResult == ERROR_SUCCESS)
     {
@@ -97,9 +107,10 @@ STDAPI DllRegisterServer(void)
         RegCloseKey(hKey);
     }
 
-    // Register InprocServer32
+    // Register InprocServer32 (per-user)
+    std::wstring userInprocKey = userClsidKey + L"\\InprocServer32";
     hKey = nullptr;
-    lResult = RegCreateKeyExW(HKEY_CLASSES_ROOT, inprocKey.c_str(), 0, nullptr,
+    lResult = RegCreateKeyExW(HKEY_CURRENT_USER, userInprocKey.c_str(), 0, nullptr,
         REG_OPTION_NON_VOLATILE, KEY_WRITE, nullptr, &hKey, nullptr);
     if (lResult == ERROR_SUCCESS)
     {
@@ -137,9 +148,9 @@ STDAPI DllUnregisterServer(void)
     wchar_t szCLSID[64] = {};
     StringFromGUID2(CLSID_SortBySchlongExtension, szCLSID, _countof(szCLSID));
 
-    // Build registry paths
-    std::wstring clsidKey = L"CLSID\\";
-    clsidKey += szCLSID;
+    // Build registry paths (per-user)
+    std::wstring userClsidKey = L"Software\\Classes\\CLSID\\";
+    userClsidKey += szCLSID;
 
     std::wstring userHandlerKey = L"Software\\Classes\\Directory\\Background\\shellex\\ContextMenuHandlers\\SortBySchlong";
 
@@ -147,8 +158,8 @@ STDAPI DllUnregisterServer(void)
     RegDeleteTreeW(HKEY_CURRENT_USER, userHandlerKey.c_str());
     // Ignore errors if key doesn't exist
 
-    // Remove CLSID key (which will also remove InprocServer32)
-    SHDeleteKeyW(HKEY_CLASSES_ROOT, clsidKey.c_str());
+    // Remove per-user CLSID key (which will also remove InprocServer32)
+    SHDeleteKeyW(HKEY_CURRENT_USER, userClsidKey.c_str());
     // Ignore errors if key doesn't exist
 
     return S_OK;

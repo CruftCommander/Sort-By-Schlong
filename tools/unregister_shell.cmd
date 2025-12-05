@@ -1,23 +1,39 @@
 @echo off
-setlocal
+setlocal enabledelayedexpansion
 
-set DLL_PATH=%~dp0..\x64\Release\SortBySchlong.Shell.dll
+REM Change to solution root directory (parent of tools)
+pushd "%~dp0.."
 
-if not exist "%DLL_PATH%" (
-    echo Error: DLL not found at %DLL_PATH%
+REM Try Release first
+if exist "x64\Release\SortBySchlong.Shell.dll" (
+    set "DLL_PATH=%CD%\x64\Release\SortBySchlong.Shell.dll"
+) else if exist "x64\Debug\SortBySchlong.Shell.dll" (
+    set "DLL_PATH=%CD%\x64\Debug\SortBySchlong.Shell.dll"
+) else (
+    echo Error: DLL not found in Release or Debug configuration.
+    echo Expected locations:
+    echo   %CD%\x64\Release\SortBySchlong.Shell.dll
+    echo   %CD%\x64\Debug\SortBySchlong.Shell.dll
+    popd
     exit /b 1
 )
 
-echo Unregistering shell extension...
+echo Unregistering shell extension from: %DLL_PATH%
+echo.
+
 regsvr32 /u /s "%DLL_PATH%"
 
-if %ERRORLEVEL% EQU 0 (
+set REG_RESULT=%ERRORLEVEL%
+popd
+
+if %REG_RESULT% EQU 0 (
+    echo.
     echo Shell extension unregistered successfully.
     echo Please restart Explorer or log off/on for changes to take effect.
 ) else (
-    echo Error: Unregistration failed with error code %ERRORLEVEL%
+    echo.
+    echo Error: Unregistration failed with error code %REG_RESULT%
     exit /b 1
 )
 
 endlocal
-
