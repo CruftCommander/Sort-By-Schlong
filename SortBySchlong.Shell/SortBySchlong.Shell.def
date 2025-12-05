@@ -1,0 +1,9 @@
+LIBRARY "SortBySchlong.Shell"
+DESCRIPTION "SortBySchlong Shell Extension"
+
+EXPORTS
+    DllGetClassObject   PRIVATE
+    DllCanUnloadNow     PRIVATE
+    DllRegisterServer   PRIVATE
+    DllUnregisterServer PRIVATE
+
