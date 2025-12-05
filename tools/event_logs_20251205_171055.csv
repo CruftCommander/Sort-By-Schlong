@@ -1,0 +1,4383 @@
+﻿"TimeCreated","LogName","Level","EventId","ProviderName","ProcessId","ThreadId","Message"
+"12/5/2025 4:36:40 PM","Application","Information","1001","Windows Error Reporting","0","0","Fault bucket 2294921860750228142, type 4
+Event Name: APPCRASH
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: Explorer.EXE
+P2: 10.0.19041.6575
+P3: 8ad29777
+P4: SHELL32.dll
+P5: 10.0.19041.6456
+P6: 9ee39b73
+P7: c0000005
+P8: 00000000000ad4dc
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERD037.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERD5C5.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERD643.tmp.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERD651.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERD671.tmp.txt
+\\?\C:\Users\Buffe\AppData\Local\Temp\WERD6E2.tmp.appcompat.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_Explorer.EXE_67ee34e4654dc687f3c41c44335f79ad63b8b3b_aa741173_cab_af326876-20c6-4f6e-8713-06b1928c0279\memory.hdmp
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_Explorer.EXE_67ee34e4654dc687f3c41c44335f79ad63b8b3b_aa741173_af326876-20c6-4f6e-8713-06b1928c0279
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: 0deb90c5-5092-4850-98aa-c9b12fe864a7
+Report Status: 268435456
+Hashed bucket: 604bf15475206164ffd93345f94bbaae
+Cab Guid: 0"
+"12/5/2025 4:36:39 PM","Application","Information","1001","Windows Error Reporting","0","0","Fault bucket , type 0
+Event Name: APPCRASH
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: Explorer.EXE
+P2: 10.0.19041.6575
+P3: 8ad29777
+P4: SHELL32.dll
+P5: 10.0.19041.6456
+P6: 9ee39b73
+P7: c0000005
+P8: 00000000000ad4dc
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERD037.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERD5C5.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERD643.tmp.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERD651.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERD671.tmp.txt
+\\?\C:\Users\Buffe\AppData\Local\Temp\WERD6E2.tmp.appcompat.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_Explorer.EXE_67ee34e4654dc687f3c41c44335f79ad63b8b3b_aa741173_cab_af326876-20c6-4f6e-8713-06b1928c0279\memory.hdmp
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_Explorer.EXE_67ee34e4654dc687f3c41c44335f79ad63b8b3b_aa741173_cab_af326876-20c6-4f6e-8713-06b1928c0279
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: 0deb90c5-5092-4850-98aa-c9b12fe864a7
+Report Status: 4
+Hashed bucket: 
+Cab Guid: 0"
+"12/5/2025 4:36:36 PM","Application","Error","1000","Application Error","0","0","Faulting application name: Explorer.EXE, version: 10.0.19041.6575, time stamp: 0x8ad29777
+Faulting module name: SHELL32.dll, version: 10.0.19041.6456, time stamp: 0x9ee39b73
+Exception code: 0xc0000005
+Fault offset: 0x00000000000ad4dc
+Faulting process id: 0x87c
+Faulting application start time: 0x01dc66375966ef43
+Faulting application path: C:\Windows\Explorer.EXE
+Faulting module path: C:\Windows\System32\SHELL32.dll
+Report Id: 0deb90c5-5092-4850-98aa-c9b12fe864a7
+Faulting package full name: 
+Faulting package-relative application ID: "
+"12/5/2025 4:11:36 PM","Application","Information","1001","Windows Error Reporting","0","0","Fault bucket 2179361232605035509, type 4
+Event Name: APPCRASH
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: Explorer.EXE
+P2: 10.0.19041.6456
+P3: fbcace5c
+P4: SHELL32.dll
+P5: 10.0.19041.6456
+P6: 9ee39b73
+P7: c0000005
+P8: 00000000000ad4dc
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERC70F.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERCD88.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERCDF6.tmp.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERCE16.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERCE46.tmp.txt
+\\?\C:\Users\Buffe\AppData\Local\Temp\WERCEC4.tmp.appcompat.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_Explorer.EXE_c9ae3b96d925be57f2f840e567ec4b0e96fb53_f1d739db_cab_4235213d-d8a4-4781-b2a1-c162457e87de\memory.hdmp
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_Explorer.EXE_c9ae3b96d925be57f2f840e567ec4b0e96fb53_f1d739db_4235213d-d8a4-4781-b2a1-c162457e87de
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: 5c0fd940-0468-4ca3-8187-b0af601e889b
+Report Status: 268435456
+Hashed bucket: 7bc12df7d266c1480e3ea57e8aae3bf5
+Cab Guid: 0"
+"12/5/2025 4:11:35 PM","Application","Information","1001","Windows Error Reporting","0","0","Fault bucket , type 0
+Event Name: APPCRASH
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: Explorer.EXE
+P2: 10.0.19041.6456
+P3: fbcace5c
+P4: SHELL32.dll
+P5: 10.0.19041.6456
+P6: 9ee39b73
+P7: c0000005
+P8: 00000000000ad4dc
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERC70F.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERCD88.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERCDF6.tmp.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERCE16.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERCE46.tmp.txt
+\\?\C:\Users\Buffe\AppData\Local\Temp\WERCEC4.tmp.appcompat.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_Explorer.EXE_c9ae3b96d925be57f2f840e567ec4b0e96fb53_f1d739db_cab_4235213d-d8a4-4781-b2a1-c162457e87de\memory.hdmp
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_Explorer.EXE_c9ae3b96d925be57f2f840e567ec4b0e96fb53_f1d739db_cab_4235213d-d8a4-4781-b2a1-c162457e87de
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: 5c0fd940-0468-4ca3-8187-b0af601e889b
+Report Status: 4
+Hashed bucket: 
+Cab Guid: 0"
+"12/5/2025 4:11:32 PM","Application","Error","1000","Application Error","0","0","Faulting application name: Explorer.EXE, version: 10.0.19041.6456, time stamp: 0xfbcace5c
+Faulting module name: SHELL32.dll, version: 10.0.19041.6456, time stamp: 0x9ee39b73
+Exception code: 0xc0000005
+Fault offset: 0x00000000000ad4dc
+Faulting process id: 0x18ac
+Faulting application start time: 0x01dc6633d16b3db4
+Faulting application path: C:\Windows\Explorer.EXE
+Faulting module path: C:\Windows\System32\SHELL32.dll
+Report Id: 5c0fd940-0468-4ca3-8187-b0af601e889b
+Faulting package full name: 
+Faulting package-relative application ID: "
+"12/5/2025 3:45:21 PM","Application","Information","1001","Windows Error Reporting","0","0","Fault bucket 2179361232605035509, type 4
+Event Name: APPCRASH
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: explorer.exe
+P2: 10.0.19041.6456
+P3: fbcace5c
+P4: SHELL32.dll
+P5: 10.0.19041.6456
+P6: 9ee39b73
+P7: c0000005
+P8: 00000000000ad4dc
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERFAEA.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER53C.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER721.tmp.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER73E.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER7DC.tmp.txt
+\\?\C:\Users\Buffe\AppData\Local\Temp\WER86B.tmp.appcompat.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_explorer.exe_a7b470fc69c3d036575d6a873b9efa73e615757_35bf31f6_cab_9f9fbad7-f4d6-4541-8aec-f7fc59d191c4\memory.hdmp
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_explorer.exe_a7b470fc69c3d036575d6a873b9efa73e615757_35bf31f6_9f9fbad7-f4d6-4541-8aec-f7fc59d191c4
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: 45dbaf1a-00ef-44e2-967c-58ab2bf590a0
+Report Status: 268435456
+Hashed bucket: 7bc12df7d266c1480e3ea57e8aae3bf5
+Cab Guid: 0"
+"12/5/2025 3:45:20 PM","Application","Information","1001","Windows Error Reporting","0","0","Fault bucket , type 0
+Event Name: APPCRASH
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: explorer.exe
+P2: 10.0.19041.6456
+P3: fbcace5c
+P4: SHELL32.dll
+P5: 10.0.19041.6456
+P6: 9ee39b73
+P7: c0000005
+P8: 00000000000ad4dc
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERFAEA.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER53C.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER721.tmp.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER73E.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER7DC.tmp.txt
+\\?\C:\Users\Buffe\AppData\Local\Temp\WER86B.tmp.appcompat.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_explorer.exe_a7b470fc69c3d036575d6a873b9efa73e615757_35bf31f6_cab_9f9fbad7-f4d6-4541-8aec-f7fc59d191c4\memory.hdmp
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_explorer.exe_a7b470fc69c3d036575d6a873b9efa73e615757_35bf31f6_cab_9f9fbad7-f4d6-4541-8aec-f7fc59d191c4
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: 45dbaf1a-00ef-44e2-967c-58ab2bf590a0
+Report Status: 4
+Hashed bucket: 
+Cab Guid: 0"
+"12/5/2025 3:45:13 PM","Application","Error","1000","Application Error","0","0","Faulting application name: explorer.exe, version: 10.0.19041.6456, time stamp: 0xfbcace5c
+Faulting module name: SHELL32.dll, version: 10.0.19041.6456, time stamp: 0x9ee39b73
+Exception code: 0xc0000005
+Fault offset: 0x00000000000ad4dc
+Faulting process id: 0xf330
+Faulting application start time: 0x01dc6630614f97f3
+Faulting application path: C:\Windows\explorer.exe
+Faulting module path: C:\Windows\System32\SHELL32.dll
+Report Id: 45dbaf1a-00ef-44e2-967c-58ab2bf590a0
+Faulting package full name: 
+Faulting package-relative application ID: "
+"12/5/2025 3:34:47 PM","Application","Information","1001","Windows Error Reporting","0","0","Fault bucket 2179361232605035509, type 4
+Event Name: APPCRASH
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: explorer.exe
+P2: 10.0.19041.6456
+P3: fbcace5c
+P4: SHELL32.dll
+P5: 10.0.19041.6456
+P6: 9ee39b73
+P7: c0000005
+P8: 00000000000ad4dc
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER5753.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER5C55.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER5CD3.tmp.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER5CE1.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER5D20.tmp.txt
+\\?\C:\Users\Buffe\AppData\Local\Temp\WER5DB0.tmp.appcompat.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_explorer.exe_a7b470fc69c3d036575d6a873b9efa73e615757_35bf31f6_cab_89519b67-a1e8-47b6-be3b-67468b0b6cf8\memory.hdmp
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_explorer.exe_a7b470fc69c3d036575d6a873b9efa73e615757_35bf31f6_89519b67-a1e8-47b6-be3b-67468b0b6cf8
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: e2d26ccb-da34-42b4-ac21-c39053ea9026
+Report Status: 268435456
+Hashed bucket: 7bc12df7d266c1480e3ea57e8aae3bf5
+Cab Guid: 0"
+"12/5/2025 3:34:47 PM","Application","Information","1001","Windows Error Reporting","0","0","Fault bucket , type 0
+Event Name: APPCRASH
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: explorer.exe
+P2: 10.0.19041.6456
+P3: fbcace5c
+P4: SHELL32.dll
+P5: 10.0.19041.6456
+P6: 9ee39b73
+P7: c0000005
+P8: 00000000000ad4dc
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER5753.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER5C55.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER5CD3.tmp.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER5CE1.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER5D20.tmp.txt
+\\?\C:\Users\Buffe\AppData\Local\Temp\WER5DB0.tmp.appcompat.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_explorer.exe_a7b470fc69c3d036575d6a873b9efa73e615757_35bf31f6_cab_89519b67-a1e8-47b6-be3b-67468b0b6cf8\memory.hdmp
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_explorer.exe_a7b470fc69c3d036575d6a873b9efa73e615757_35bf31f6_cab_89519b67-a1e8-47b6-be3b-67468b0b6cf8
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: e2d26ccb-da34-42b4-ac21-c39053ea9026
+Report Status: 4
+Hashed bucket: 
+Cab Guid: 0"
+"12/5/2025 3:34:41 PM","Application","Error","1000","Application Error","0","0","Faulting application name: explorer.exe, version: 10.0.19041.6456, time stamp: 0xfbcace5c
+Faulting module name: SHELL32.dll, version: 10.0.19041.6456, time stamp: 0x9ee39b73
+Exception code: 0xc0000005
+Fault offset: 0x00000000000ad4dc
+Faulting process id: 0x396c
+Faulting application start time: 0x01dc662ee7c758ab
+Faulting application path: C:\Windows\explorer.exe
+Faulting module path: C:\Windows\System32\SHELL32.dll
+Report Id: e2d26ccb-da34-42b4-ac21-c39053ea9026
+Faulting package full name: 
+Faulting package-relative application ID: "
+"12/5/2025 3:20:24 PM","Application","Information","1001","Windows Error Reporting","0","0","Fault bucket 2179361232605035509, type 4
+Event Name: APPCRASH
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: explorer.exe
+P2: 10.0.19041.6456
+P3: fbcace5c
+P4: SHELL32.dll
+P5: 10.0.19041.6456
+P6: 9ee39b73
+P7: c0000005
+P8: 00000000000ad4dc
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER3469.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER3823.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER38C0.tmp.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER38CE.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER390D.tmp.txt
+\\?\C:\Users\Buffe\AppData\Local\Temp\WER397E.tmp.appcompat.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_explorer.exe_a7b470fc69c3d036575d6a873b9efa73e615757_35bf31f6_cab_13b778e3-f807-4881-8999-21f82762dce4\memory.hdmp
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_explorer.exe_a7b470fc69c3d036575d6a873b9efa73e615757_35bf31f6_13b778e3-f807-4881-8999-21f82762dce4
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: 181a167c-e8c0-4368-b280-1ce889ec4d74
+Report Status: 268435456
+Hashed bucket: 7bc12df7d266c1480e3ea57e8aae3bf5
+Cab Guid: 0"
+"12/5/2025 3:20:23 PM","Application","Information","1001","Windows Error Reporting","0","0","Fault bucket , type 0
+Event Name: APPCRASH
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: explorer.exe
+P2: 10.0.19041.6456
+P3: fbcace5c
+P4: SHELL32.dll
+P5: 10.0.19041.6456
+P6: 9ee39b73
+P7: c0000005
+P8: 00000000000ad4dc
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER3469.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER3823.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER38C0.tmp.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER38CE.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER390D.tmp.txt
+\\?\C:\Users\Buffe\AppData\Local\Temp\WER397E.tmp.appcompat.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_explorer.exe_a7b470fc69c3d036575d6a873b9efa73e615757_35bf31f6_cab_13b778e3-f807-4881-8999-21f82762dce4\memory.hdmp
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_explorer.exe_a7b470fc69c3d036575d6a873b9efa73e615757_35bf31f6_cab_13b778e3-f807-4881-8999-21f82762dce4
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: 181a167c-e8c0-4368-b280-1ce889ec4d74
+Report Status: 4
+Hashed bucket: 
+Cab Guid: 0"
+"12/5/2025 3:20:21 PM","Application","Error","1000","Application Error","0","0","Faulting application name: explorer.exe, version: 10.0.19041.6456, time stamp: 0xfbcace5c
+Faulting module name: SHELL32.dll, version: 10.0.19041.6456, time stamp: 0x9ee39b73
+Exception code: 0xc0000005
+Fault offset: 0x00000000000ad4dc
+Faulting process id: 0xc9bc
+Faulting application start time: 0x01dc662ce970e737
+Faulting application path: C:\Windows\explorer.exe
+Faulting module path: C:\Windows\System32\SHELL32.dll
+Report Id: 181a167c-e8c0-4368-b280-1ce889ec4d74
+Faulting package full name: 
+Faulting package-relative application ID: "
+"12/5/2025 3:14:14 PM","Application","Information","1001","Windows Error Reporting","0","0","Fault bucket 2179361232605035509, type 4
+Event Name: APPCRASH
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: explorer.exe
+P2: 10.0.19041.6456
+P3: fbcace5c
+P4: SHELL32.dll
+P5: 10.0.19041.6456
+P6: 9ee39b73
+P7: c0000005
+P8: 00000000000ad4dc
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER9003.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER93CD.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER944B.tmp.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER945C.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER949C.tmp.txt
+\\?\C:\Users\Buffe\AppData\Local\Temp\WER9508.tmp.appcompat.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_explorer.exe_a7b470fc69c3d036575d6a873b9efa73e615757_35bf31f6_cab_ef0ea221-1976-4277-a9ec-1b8a0d9518c7\memory.hdmp
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_explorer.exe_a7b470fc69c3d036575d6a873b9efa73e615757_35bf31f6_ef0ea221-1976-4277-a9ec-1b8a0d9518c7
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: 9227167f-edb7-47fd-9e27-9164b6175e44
+Report Status: 268435456
+Hashed bucket: 7bc12df7d266c1480e3ea57e8aae3bf5
+Cab Guid: 0"
+"12/5/2025 3:14:14 PM","Application","Information","1001","Windows Error Reporting","0","0","Fault bucket , type 0
+Event Name: APPCRASH
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: explorer.exe
+P2: 10.0.19041.6456
+P3: fbcace5c
+P4: SHELL32.dll
+P5: 10.0.19041.6456
+P6: 9ee39b73
+P7: c0000005
+P8: 00000000000ad4dc
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER9003.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER93CD.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER944B.tmp.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER945C.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER949C.tmp.txt
+\\?\C:\Users\Buffe\AppData\Local\Temp\WER9508.tmp.appcompat.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_explorer.exe_a7b470fc69c3d036575d6a873b9efa73e615757_35bf31f6_cab_ef0ea221-1976-4277-a9ec-1b8a0d9518c7\memory.hdmp
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_explorer.exe_a7b470fc69c3d036575d6a873b9efa73e615757_35bf31f6_cab_ef0ea221-1976-4277-a9ec-1b8a0d9518c7
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: 9227167f-edb7-47fd-9e27-9164b6175e44
+Report Status: 4
+Hashed bucket: 
+Cab Guid: 0"
+"12/5/2025 3:14:11 PM","Application","Error","1000","Application Error","0","0","Faulting application name: explorer.exe, version: 10.0.19041.6456, time stamp: 0xfbcace5c
+Faulting module name: SHELL32.dll, version: 10.0.19041.6456, time stamp: 0x9ee39b73
+Exception code: 0xc0000005
+Fault offset: 0x00000000000ad4dc
+Faulting process id: 0xd2f0
+Faulting application start time: 0x01dc662c0ef8a56b
+Faulting application path: C:\Windows\explorer.exe
+Faulting module path: C:\Windows\System32\SHELL32.dll
+Report Id: 9227167f-edb7-47fd-9e27-9164b6175e44
+Faulting package full name: 
+Faulting package-relative application ID: "
+"12/5/2025 3:12:11 PM","Application","Information","1001","Windows Error Reporting","0","0","Fault bucket 1358077005801851889, type 4
+Event Name: APPCRASH
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: explorer.exe
+P2: 10.0.19041.6456
+P3: fbcace5c
+P4: SHELL32.dll
+P5: 10.0.19041.6456
+P6: 9ee39b73
+P7: c0000005
+P8: 000000000025489b
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERB911.tmp.WERInternalMetadata.xml
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_explorer.exe_8b70ca4a723121343f0441fa139dac4c3b1586_35bf31f6_11d86d19-61c7-4c95-8999-165bf2707905
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: 58112b45-a63c-43e1-8b70-22f90ca1adf4
+Report Status: 268439552
+Hashed bucket: d7785b17df38518462d8dbd764720bf1
+Cab Guid: 0"
+"12/5/2025 3:12:10 PM","Application","Information","1001","Windows Error Reporting","0","0","Fault bucket , type 0
+Event Name: APPCRASH
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: explorer.exe
+P2: 10.0.19041.6456
+P3: fbcace5c
+P4: SHELL32.dll
+P5: 10.0.19041.6456
+P6: 9ee39b73
+P7: c0000005
+P8: 000000000025489b
+P9: 
+P10: 
+
+Attached files:
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_explorer.exe_8b70ca4a723121343f0441fa139dac4c3b1586_35bf31f6_11d86d19-61c7-4c95-8999-165bf2707905
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: 58112b45-a63c-43e1-8b70-22f90ca1adf4
+Report Status: 4100
+Hashed bucket: 
+Cab Guid: 0"
+"12/5/2025 3:12:09 PM","Application","Error","1000","Application Error","0","0","Faulting application name: explorer.exe, version: 10.0.19041.6456, time stamp: 0xfbcace5c
+Faulting module name: SHELL32.dll, version: 10.0.19041.6456, time stamp: 0x9ee39b73
+Exception code: 0xc0000005
+Fault offset: 0x000000000025489b
+Faulting process id: 0xe284
+Faulting application start time: 0x01dc662bc4397320
+Faulting application path: C:\Windows\explorer.exe
+Faulting module path: C:\Windows\System32\SHELL32.dll
+Report Id: 58112b45-a63c-43e1-8b70-22f90ca1adf4
+Faulting package full name: 
+Faulting package-relative application ID: "
+"12/5/2025 3:02:26 PM","Application","Information","1001","Windows Error Reporting","0","0","Fault bucket 1358077005801851889, type 4
+Event Name: APPCRASH
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: explorer.exe
+P2: 10.0.19041.6456
+P3: fbcace5c
+P4: SHELL32.dll
+P5: 10.0.19041.6456
+P6: 9ee39b73
+P7: c0000005
+P8: 000000000025489b
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERCAFE.tmp.WERInternalMetadata.xml
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_explorer.exe_8b70ca4a723121343f0441fa139dac4c3b1586_35bf31f6_1a264224-9b1a-4251-a613-d7ea36ae9a97
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: 416b091f-5ff8-411f-a765-4595d964aaf9
+Report Status: 268439552
+Hashed bucket: d7785b17df38518462d8dbd764720bf1
+Cab Guid: 0"
+"12/5/2025 3:02:25 PM","Application","Information","1001","Windows Error Reporting","0","0","Fault bucket , type 0
+Event Name: APPCRASH
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: explorer.exe
+P2: 10.0.19041.6456
+P3: fbcace5c
+P4: SHELL32.dll
+P5: 10.0.19041.6456
+P6: 9ee39b73
+P7: c0000005
+P8: 000000000025489b
+P9: 
+P10: 
+
+Attached files:
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_explorer.exe_8b70ca4a723121343f0441fa139dac4c3b1586_35bf31f6_1a264224-9b1a-4251-a613-d7ea36ae9a97
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: 416b091f-5ff8-411f-a765-4595d964aaf9
+Report Status: 4100
+Hashed bucket: 
+Cab Guid: 0"
+"12/5/2025 3:02:23 PM","Application","Error","1000","Application Error","0","0","Faulting application name: explorer.exe, version: 10.0.19041.6456, time stamp: 0xfbcace5c
+Faulting module name: SHELL32.dll, version: 10.0.19041.6456, time stamp: 0x9ee39b73
+Exception code: 0xc0000005
+Fault offset: 0x000000000025489b
+Faulting process id: 0x10578
+Faulting application start time: 0x01dc661c8e2ebe09
+Faulting application path: C:\Windows\explorer.exe
+Faulting module path: C:\Windows\System32\SHELL32.dll
+Report Id: 416b091f-5ff8-411f-a765-4595d964aaf9
+Faulting package full name: 
+Faulting package-relative application ID: "
+"12/5/2025 3:01:52 PM","Application","Information","1001","Windows Error Reporting","0","0","Fault bucket 2261516760164610096, type 4
+Event Name: APPCRASH
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: explorer.exe
+P2: 10.0.19041.6456
+P3: fbcace5c
+P4: shcore.dll
+P5: 10.0.19041.5794
+P6: e8391836
+P7: c000041d
+P8: 0000000000028137
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER4582.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER4739.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER47B7.tmp.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER47B7.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER4806.tmp.txt
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_explorer.exe_b53eb5e36ef49850ded8eac596bb6b5d3e3d74_35bf31f6_fa2df411-b446-4663-ad57-4f9a4e778bb5
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: 0be5e940-64c4-4c3b-bc5b-d0be73c2a414
+Report Status: 268435456
+Hashed bucket: a9fb134bb7660ef8cf628582e7343030
+Cab Guid: 0"
+"12/5/2025 3:01:51 PM","Application","Error","1000","Application Error","0","0","Faulting application name: explorer.exe, version: 10.0.19041.6456, time stamp: 0xfbcace5c
+Faulting module name: shcore.dll, version: 10.0.19041.5794, time stamp: 0xe8391836
+Exception code: 0xc000041d
+Fault offset: 0x0000000000028137
+Faulting process id: 0xaed8
+Faulting application start time: 0x01dc662a3a10c12e
+Faulting application path: C:\Windows\explorer.exe
+Faulting module path: C:\Windows\System32\shcore.dll
+Report Id: 0be5e940-64c4-4c3b-bc5b-d0be73c2a414
+Faulting package full name: 
+Faulting package-relative application ID: "
+"12/5/2025 3:01:50 PM","Application","Information","1001","Windows Error Reporting","0","0","Fault bucket 1379467929061685814, type 4
+Event Name: APPCRASH
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: explorer.exe
+P2: 10.0.19041.6456
+P3: fbcace5c
+P4: shcore.dll
+P5: 10.0.19041.5794
+P6: e8391836
+P7: c0000005
+P8: 0000000000028137
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER3DC2.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER3F59.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER3FE7.tmp.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER3FE5.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER4034.tmp.txt
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_explorer.exe_8dd6e8efdb8e25bb921ff14af3a35ce11c7219_35bf31f6_74c59cc8-abaf-416f-a6a5-184c93dd350c
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: e6101bbb-8efe-4dd8-aa24-9c6e91ef8ca5
+Report Status: 268435456
+Hashed bucket: fa3a0651ae1321b2f324dac5d2c3fa36
+Cab Guid: 0"
+"12/5/2025 3:01:49 PM","Application","Error","1000","Application Error","0","0","Faulting application name: explorer.exe, version: 10.0.19041.6456, time stamp: 0xfbcace5c
+Faulting module name: shcore.dll, version: 10.0.19041.5794, time stamp: 0xe8391836
+Exception code: 0xc0000005
+Fault offset: 0x0000000000028137
+Faulting process id: 0xaed8
+Faulting application start time: 0x01dc662a3a10c12e
+Faulting application path: C:\Windows\explorer.exe
+Faulting module path: C:\Windows\System32\shcore.dll
+Report Id: e6101bbb-8efe-4dd8-aa24-9c6e91ef8ca5
+Faulting package full name: 
+Faulting package-relative application ID: "
+"12/5/2025 1:22:53 PM","Application","Information","1001","Windows Error Reporting","0","0","Fault bucket 1379467929061685814, type 4
+Event Name: APPCRASH
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: explorer.exe
+P2: 10.0.19041.6456
+P3: fbcace5c
+P4: shcore.dll
+P5: 10.0.19041.5794
+P6: e8391836
+P7: c0000005
+P8: 0000000000028137
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER8BDD.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER94D7.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER9555.tmp.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER9564.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER95C3.tmp.txt
+\\?\C:\Users\Buffe\AppData\Local\Temp\WER9670.tmp.appcompat.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_explorer.exe_8dd6e8efdb8e25bb921ff14af3a35ce11c7219_35bf31f6_cab_bdca4698-8cfc-4c42-b9f3-01b9b753f14a\memory.hdmp
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_explorer.exe_8dd6e8efdb8e25bb921ff14af3a35ce11c7219_35bf31f6_bdca4698-8cfc-4c42-b9f3-01b9b753f14a
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: 2609a4d8-9130-4cce-bde3-69b52e3a704f
+Report Status: 268435456
+Hashed bucket: fa3a0651ae1321b2f324dac5d2c3fa36
+Cab Guid: 0"
+"12/5/2025 1:22:53 PM","Application","Information","1001","Windows Error Reporting","0","0","Fault bucket , type 0
+Event Name: APPCRASH
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: explorer.exe
+P2: 10.0.19041.6456
+P3: fbcace5c
+P4: shcore.dll
+P5: 10.0.19041.5794
+P6: e8391836
+P7: c0000005
+P8: 0000000000028137
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER8BDD.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER94D7.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER9555.tmp.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER9564.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER95C3.tmp.txt
+\\?\C:\Users\Buffe\AppData\Local\Temp\WER9670.tmp.appcompat.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_explorer.exe_8dd6e8efdb8e25bb921ff14af3a35ce11c7219_35bf31f6_cab_bdca4698-8cfc-4c42-b9f3-01b9b753f14a\memory.hdmp
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_explorer.exe_8dd6e8efdb8e25bb921ff14af3a35ce11c7219_35bf31f6_cab_bdca4698-8cfc-4c42-b9f3-01b9b753f14a
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: 2609a4d8-9130-4cce-bde3-69b52e3a704f
+Report Status: 4
+Hashed bucket: 
+Cab Guid: 0"
+"12/5/2025 1:22:45 PM","Application","Error","1000","Application Error","0","0","Faulting application name: explorer.exe, version: 10.0.19041.6456, time stamp: 0xfbcace5c
+Faulting module name: shcore.dll, version: 10.0.19041.5794, time stamp: 0xe8391836
+Exception code: 0xc0000005
+Fault offset: 0x0000000000028137
+Faulting process id: 0xc070
+Faulting application start time: 0x01dc65e36288ead1
+Faulting application path: C:\Windows\explorer.exe
+Faulting module path: C:\Windows\System32\shcore.dll
+Report Id: 2609a4d8-9130-4cce-bde3-69b52e3a704f
+Faulting package full name: 
+Faulting package-relative application ID: "
+"12/5/2025 6:33:39 AM","Application","Information","1001","Windows Error Reporting","0","0","Fault bucket 1379467929061685814, type 4
+Event Name: APPCRASH
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: Explorer.EXE
+P2: 10.0.19041.6456
+P3: fbcace5c
+P4: shcore.dll
+P5: 10.0.19041.5794
+P6: e8391836
+P7: c0000005
+P8: 0000000000028137
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WEREC3D.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERF3BF.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERF43D.tmp.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERF44B.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERF48B.tmp.txt
+\\?\C:\Users\Buffe\AppData\Local\Temp\WERF578.tmp.appcompat.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_Explorer.EXE_e4242462a03c3e204aa2422e2d37f333a881b1_f1d739db_cab_fcddb3ee-4d51-4299-9525-ffac230cbecb\memory.hdmp
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_Explorer.EXE_e4242462a03c3e204aa2422e2d37f333a881b1_f1d739db_fcddb3ee-4d51-4299-9525-ffac230cbecb
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: 0d2574df-d1f5-4db9-b2dd-6375f19c5cf4
+Report Status: 268435456
+Hashed bucket: fa3a0651ae1321b2f324dac5d2c3fa36
+Cab Guid: 0"
+"12/5/2025 6:33:38 AM","Application","Information","1001","Windows Error Reporting","0","0","Fault bucket , type 0
+Event Name: APPCRASH
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: Explorer.EXE
+P2: 10.0.19041.6456
+P3: fbcace5c
+P4: shcore.dll
+P5: 10.0.19041.5794
+P6: e8391836
+P7: c0000005
+P8: 0000000000028137
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WEREC3D.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERF3BF.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERF43D.tmp.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERF44B.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERF48B.tmp.txt
+\\?\C:\Users\Buffe\AppData\Local\Temp\WERF578.tmp.appcompat.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_Explorer.EXE_e4242462a03c3e204aa2422e2d37f333a881b1_f1d739db_cab_fcddb3ee-4d51-4299-9525-ffac230cbecb\memory.hdmp
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_Explorer.EXE_e4242462a03c3e204aa2422e2d37f333a881b1_f1d739db_cab_fcddb3ee-4d51-4299-9525-ffac230cbecb
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: 0d2574df-d1f5-4db9-b2dd-6375f19c5cf4
+Report Status: 4
+Hashed bucket: 
+Cab Guid: 0"
+"12/5/2025 6:33:34 AM","Application","Error","1000","Application Error","0","0","Faulting application name: Explorer.EXE, version: 10.0.19041.6456, time stamp: 0xfbcace5c
+Faulting module name: shcore.dll, version: 10.0.19041.5794, time stamp: 0xe8391836
+Exception code: 0xc0000005
+Fault offset: 0x0000000000028137
+Faulting process id: 0x1d8
+Faulting application start time: 0x01dc6594535fbe6c
+Faulting application path: C:\Windows\Explorer.EXE
+Faulting module path: C:\Windows\System32\shcore.dll
+Report Id: 0d2574df-d1f5-4db9-b2dd-6375f19c5cf4
+Faulting package full name: 
+Faulting package-relative application ID: "
+"12/4/2025 8:55:16 PM","Application","Information","1001","Windows Error Reporting","0","0","Fault bucket 1358077005801851889, type 4
+Event Name: APPCRASH
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: explorer.exe
+P2: 10.0.19041.6456
+P3: fbcace5c
+P4: SHELL32.dll
+P5: 10.0.19041.6456
+P6: 9ee39b73
+P7: c0000005
+P8: 000000000025489b
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER7A37.tmp.WERInternalMetadata.xml
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_explorer.exe_8b70ca4a723121343f0441fa139dac4c3b1586_35bf31f6_58f31c84-dda3-49de-9f9d-92ef150801a8
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: daf19b3b-54e0-4cef-a05d-119d24b3d84b
+Report Status: 268439552
+Hashed bucket: d7785b17df38518462d8dbd764720bf1
+Cab Guid: 0"
+"12/4/2025 8:55:15 PM","Application","Information","1001","Windows Error Reporting","0","0","Fault bucket , type 0
+Event Name: APPCRASH
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: explorer.exe
+P2: 10.0.19041.6456
+P3: fbcace5c
+P4: SHELL32.dll
+P5: 10.0.19041.6456
+P6: 9ee39b73
+P7: c0000005
+P8: 000000000025489b
+P9: 
+P10: 
+
+Attached files:
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_explorer.exe_8b70ca4a723121343f0441fa139dac4c3b1586_35bf31f6_58f31c84-dda3-49de-9f9d-92ef150801a8
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: daf19b3b-54e0-4cef-a05d-119d24b3d84b
+Report Status: 4100
+Hashed bucket: 
+Cab Guid: 0"
+"12/4/2025 8:55:13 PM","Application","Error","1000","Application Error","0","0","Faulting application name: explorer.exe, version: 10.0.19041.6456, time stamp: 0xfbcace5c
+Faulting module name: SHELL32.dll, version: 10.0.19041.6456, time stamp: 0x9ee39b73
+Exception code: 0xc0000005
+Fault offset: 0x000000000025489b
+Faulting process id: 0x11638
+Faulting application start time: 0x01dc65921398c134
+Faulting application path: C:\Windows\explorer.exe
+Faulting module path: C:\Windows\System32\SHELL32.dll
+Report Id: daf19b3b-54e0-4cef-a05d-119d24b3d84b
+Faulting package full name: 
+Faulting package-relative application ID: "
+"12/4/2025 8:51:37 PM","Application","Information","1001","Windows Error Reporting","0","0","Fault bucket 1358077005801851889, type 4
+Event Name: APPCRASH
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: explorer.exe
+P2: 10.0.19041.6456
+P3: fbcace5c
+P4: SHELL32.dll
+P5: 10.0.19041.6456
+P6: 9ee39b73
+P7: c0000005
+P8: 000000000025489b
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER255F.tmp.WERInternalMetadata.xml
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_explorer.exe_8b70ca4a723121343f0441fa139dac4c3b1586_35bf31f6_c2ef9e08-18b3-4156-89bf-76bffa013e7e
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: 4ad973dd-30d1-4a63-9338-85a76965dce9
+Report Status: 268439552
+Hashed bucket: d7785b17df38518462d8dbd764720bf1
+Cab Guid: 0"
+"12/4/2025 8:51:37 PM","Application","Information","1001","Windows Error Reporting","0","0","Fault bucket , type 0
+Event Name: APPCRASH
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: explorer.exe
+P2: 10.0.19041.6456
+P3: fbcace5c
+P4: SHELL32.dll
+P5: 10.0.19041.6456
+P6: 9ee39b73
+P7: c0000005
+P8: 000000000025489b
+P9: 
+P10: 
+
+Attached files:
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_explorer.exe_8b70ca4a723121343f0441fa139dac4c3b1586_35bf31f6_c2ef9e08-18b3-4156-89bf-76bffa013e7e
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: 4ad973dd-30d1-4a63-9338-85a76965dce9
+Report Status: 4100
+Hashed bucket: 
+Cab Guid: 0"
+"12/4/2025 8:51:35 PM","Application","Error","1000","Application Error","0","0","Faulting application name: explorer.exe, version: 10.0.19041.6456, time stamp: 0xfbcace5c
+Faulting module name: SHELL32.dll, version: 10.0.19041.6456, time stamp: 0x9ee39b73
+Exception code: 0xc0000005
+Fault offset: 0x000000000025489b
+Faulting process id: 0xb768
+Faulting application start time: 0x01dc65918924edf3
+Faulting application path: C:\Windows\explorer.exe
+Faulting module path: C:\Windows\System32\SHELL32.dll
+Report Id: 4ad973dd-30d1-4a63-9338-85a76965dce9
+Faulting package full name: 
+Faulting package-relative application ID: "
+"12/4/2025 8:47:45 PM","Application","Information","1001","Windows Error Reporting","0","0","Fault bucket 1379467929061685814, type 4
+Event Name: APPCRASH
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: explorer.exe
+P2: 10.0.19041.6456
+P3: fbcace5c
+P4: shcore.dll
+P5: 10.0.19041.5794
+P6: e8391836
+P7: c0000005
+P8: 0000000000028137
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER8758.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER8C0C.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER8D07.tmp.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER8D36.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER8E02.tmp.txt
+\\?\C:\Users\Buffe\AppData\Local\Temp\WER8EBF.tmp.appcompat.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_explorer.exe_8dd6e8efdb8e25bb921ff14af3a35ce11c7219_35bf31f6_cab_6c47cb0c-f901-41c4-ac7a-e72a23bc6a8e\memory.hdmp
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_explorer.exe_8dd6e8efdb8e25bb921ff14af3a35ce11c7219_35bf31f6_6c47cb0c-f901-41c4-ac7a-e72a23bc6a8e
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: 5ce292bb-9f13-4bcd-9728-2f57c36b5a9e
+Report Status: 268435456
+Hashed bucket: fa3a0651ae1321b2f324dac5d2c3fa36
+Cab Guid: 0"
+"12/4/2025 8:47:44 PM","Application","Information","1001","Windows Error Reporting","0","0","Fault bucket , type 0
+Event Name: APPCRASH
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: explorer.exe
+P2: 10.0.19041.6456
+P3: fbcace5c
+P4: shcore.dll
+P5: 10.0.19041.5794
+P6: e8391836
+P7: c0000005
+P8: 0000000000028137
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER8758.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER8C0C.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER8D07.tmp.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER8D36.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER8E02.tmp.txt
+\\?\C:\Users\Buffe\AppData\Local\Temp\WER8EBF.tmp.appcompat.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_explorer.exe_8dd6e8efdb8e25bb921ff14af3a35ce11c7219_35bf31f6_cab_6c47cb0c-f901-41c4-ac7a-e72a23bc6a8e\memory.hdmp
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_explorer.exe_8dd6e8efdb8e25bb921ff14af3a35ce11c7219_35bf31f6_cab_6c47cb0c-f901-41c4-ac7a-e72a23bc6a8e
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: 5ce292bb-9f13-4bcd-9728-2f57c36b5a9e
+Report Status: 4
+Hashed bucket: 
+Cab Guid: 0"
+"12/4/2025 8:47:39 PM","Application","Error","1000","Application Error","0","0","Faulting application name: explorer.exe, version: 10.0.19041.6456, time stamp: 0xfbcace5c
+Faulting module name: shcore.dll, version: 10.0.19041.5794, time stamp: 0xe8391836
+Exception code: 0xc0000005
+Fault offset: 0x0000000000028137
+Faulting process id: 0x12d8c
+Faulting application start time: 0x01dc6591751f83ff
+Faulting application path: C:\Windows\explorer.exe
+Faulting module path: C:\Windows\System32\shcore.dll
+Report Id: 5ce292bb-9f13-4bcd-9728-2f57c36b5a9e
+Faulting package full name: 
+Faulting package-relative application ID: "
+"12/4/2025 8:47:11 PM","Application","Information","1001","Windows Error Reporting","0","0","Fault bucket 1379467929061685814, type 4
+Event Name: APPCRASH
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: explorer.exe
+P2: 10.0.19041.6456
+P3: fbcace5c
+P4: shcore.dll
+P5: 10.0.19041.5794
+P6: e8391836
+P7: c0000005
+P8: 0000000000028137
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER910.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERDF3.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERE81.tmp.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERE8E.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERF1C.tmp.txt
+\\?\C:\Users\Buffe\AppData\Local\Temp\WERF9C.tmp.appcompat.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_explorer.exe_8dd6e8efdb8e25bb921ff14af3a35ce11c7219_35bf31f6_cab_980f9e80-d1e5-4aa3-8ebe-21fc8328af1e\memory.hdmp
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_explorer.exe_8dd6e8efdb8e25bb921ff14af3a35ce11c7219_35bf31f6_980f9e80-d1e5-4aa3-8ebe-21fc8328af1e
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: 36b67a2a-8a17-4cd2-b098-09219adfe7a2
+Report Status: 268435456
+Hashed bucket: fa3a0651ae1321b2f324dac5d2c3fa36
+Cab Guid: 0"
+"12/4/2025 8:47:11 PM","Application","Information","1001","Windows Error Reporting","0","0","Fault bucket , type 0
+Event Name: APPCRASH
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: explorer.exe
+P2: 10.0.19041.6456
+P3: fbcace5c
+P4: shcore.dll
+P5: 10.0.19041.5794
+P6: e8391836
+P7: c0000005
+P8: 0000000000028137
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER910.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERDF3.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERE81.tmp.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERE8E.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERF1C.tmp.txt
+\\?\C:\Users\Buffe\AppData\Local\Temp\WERF9C.tmp.appcompat.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_explorer.exe_8dd6e8efdb8e25bb921ff14af3a35ce11c7219_35bf31f6_cab_980f9e80-d1e5-4aa3-8ebe-21fc8328af1e\memory.hdmp
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_explorer.exe_8dd6e8efdb8e25bb921ff14af3a35ce11c7219_35bf31f6_cab_980f9e80-d1e5-4aa3-8ebe-21fc8328af1e
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: 36b67a2a-8a17-4cd2-b098-09219adfe7a2
+Report Status: 4
+Hashed bucket: 
+Cab Guid: 0"
+"12/4/2025 8:47:07 PM","Application","Error","1000","Application Error","0","0","Faulting application name: explorer.exe, version: 10.0.19041.6456, time stamp: 0xfbcace5c
+Faulting module name: shcore.dll, version: 10.0.19041.5794, time stamp: 0xe8391836
+Exception code: 0xc0000005
+Fault offset: 0x0000000000028137
+Faulting process id: 0x124d8
+Faulting application start time: 0x01dc65915bfe4037
+Faulting application path: C:\Windows\explorer.exe
+Faulting module path: C:\Windows\System32\shcore.dll
+Report Id: 36b67a2a-8a17-4cd2-b098-09219adfe7a2
+Faulting package full name: 
+Faulting package-relative application ID: "
+"12/4/2025 8:43:00 PM","Application","Information","1001","Windows Error Reporting","0","0","Fault bucket 1379467929061685814, type 4
+Event Name: APPCRASH
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: explorer.exe
+P2: 10.0.19041.6456
+P3: fbcace5c
+P4: shcore.dll
+P5: 10.0.19041.5794
+P6: e8391836
+P7: c0000005
+P8: 0000000000028137
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER3515.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER397B.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER3A09.tmp.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER3A1C.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER3A6C.tmp.txt
+\\?\C:\Users\Buffe\AppData\Local\Temp\WER3B05.tmp.appcompat.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_explorer.exe_8dd6e8efdb8e25bb921ff14af3a35ce11c7219_35bf31f6_cab_235f7024-79f9-41a7-b3dd-e93a6885a1bf\memory.hdmp
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_explorer.exe_8dd6e8efdb8e25bb921ff14af3a35ce11c7219_35bf31f6_235f7024-79f9-41a7-b3dd-e93a6885a1bf
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: ee3f9cbd-b813-4d85-a0a8-d0251244f59a
+Report Status: 268435456
+Hashed bucket: fa3a0651ae1321b2f324dac5d2c3fa36
+Cab Guid: 0"
+"12/4/2025 8:43:00 PM","Application","Information","1001","Windows Error Reporting","0","0","Fault bucket , type 0
+Event Name: APPCRASH
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: explorer.exe
+P2: 10.0.19041.6456
+P3: fbcace5c
+P4: shcore.dll
+P5: 10.0.19041.5794
+P6: e8391836
+P7: c0000005
+P8: 0000000000028137
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER3515.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER397B.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER3A09.tmp.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER3A1C.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER3A6C.tmp.txt
+\\?\C:\Users\Buffe\AppData\Local\Temp\WER3B05.tmp.appcompat.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_explorer.exe_8dd6e8efdb8e25bb921ff14af3a35ce11c7219_35bf31f6_cab_235f7024-79f9-41a7-b3dd-e93a6885a1bf\memory.hdmp
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_explorer.exe_8dd6e8efdb8e25bb921ff14af3a35ce11c7219_35bf31f6_cab_235f7024-79f9-41a7-b3dd-e93a6885a1bf
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: ee3f9cbd-b813-4d85-a0a8-d0251244f59a
+Report Status: 4
+Hashed bucket: 
+Cab Guid: 0"
+"12/4/2025 8:42:56 PM","Application","Error","1000","Application Error","0","0","Faulting application name: explorer.exe, version: 10.0.19041.6456, time stamp: 0xfbcace5c
+Faulting module name: shcore.dll, version: 10.0.19041.5794, time stamp: 0xe8391836
+Exception code: 0xc0000005
+Fault offset: 0x0000000000028137
+Faulting process id: 0xb584
+Faulting application start time: 0x01dc65909f7e0d80
+Faulting application path: C:\Windows\explorer.exe
+Faulting module path: C:\Windows\System32\shcore.dll
+Report Id: ee3f9cbd-b813-4d85-a0a8-d0251244f59a
+Faulting package full name: 
+Faulting package-relative application ID: "
+"12/4/2025 8:41:13 PM","Application","Information","1001","Windows Error Reporting","0","0","Fault bucket 1358077005801851889, type 4
+Event Name: APPCRASH
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: explorer.exe
+P2: 10.0.19041.6456
+P3: fbcace5c
+P4: SHELL32.dll
+P5: 10.0.19041.6456
+P6: 9ee39b73
+P7: c0000005
+P8: 000000000025489b
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER9E58.tmp.WERInternalMetadata.xml
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_explorer.exe_8b70ca4a723121343f0441fa139dac4c3b1586_35bf31f6_346bc79f-275a-49b4-9994-ce53a6f4885a
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: 9b596508-af91-4b43-86f8-a9a516545e7c
+Report Status: 268439552
+Hashed bucket: d7785b17df38518462d8dbd764720bf1
+Cab Guid: 0"
+"12/4/2025 8:41:12 PM","Application","Information","1001","Windows Error Reporting","0","0","Fault bucket , type 0
+Event Name: APPCRASH
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: explorer.exe
+P2: 10.0.19041.6456
+P3: fbcace5c
+P4: SHELL32.dll
+P5: 10.0.19041.6456
+P6: 9ee39b73
+P7: c0000005
+P8: 000000000025489b
+P9: 
+P10: 
+
+Attached files:
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_explorer.exe_8b70ca4a723121343f0441fa139dac4c3b1586_35bf31f6_346bc79f-275a-49b4-9994-ce53a6f4885a
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: 9b596508-af91-4b43-86f8-a9a516545e7c
+Report Status: 4100
+Hashed bucket: 
+Cab Guid: 0"
+"12/4/2025 8:41:10 PM","Application","Error","1000","Application Error","0","0","Faulting application name: explorer.exe, version: 10.0.19041.6456, time stamp: 0xfbcace5c
+Faulting module name: SHELL32.dll, version: 10.0.19041.6456, time stamp: 0x9ee39b73
+Exception code: 0xc0000005
+Fault offset: 0x000000000025489b
+Faulting process id: 0x12fb4
+Faulting application start time: 0x01dc65907c941a6a
+Faulting application path: C:\Windows\explorer.exe
+Faulting module path: C:\Windows\System32\SHELL32.dll
+Report Id: 9b596508-af91-4b43-86f8-a9a516545e7c
+Faulting package full name: 
+Faulting package-relative application ID: "
+"12/4/2025 8:40:14 PM","Application","Information","1001","Windows Error Reporting","0","0","Fault bucket 1379467929061685814, type 4
+Event Name: APPCRASH
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: explorer.exe
+P2: 10.0.19041.6456
+P3: fbcace5c
+P4: shcore.dll
+P5: 10.0.19041.5794
+P6: e8391836
+P7: c0000005
+P8: 0000000000028137
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERAC38.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERB0DC.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERB16A.tmp.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERB16A.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERB1B9.tmp.txt
+\\?\C:\Users\Buffe\AppData\Local\Temp\WERB237.tmp.appcompat.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_explorer.exe_8dd6e8efdb8e25bb921ff14af3a35ce11c7219_35bf31f6_cab_74cd1ac9-4eda-4a72-b431-397bfffe65e2\memory.hdmp
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_explorer.exe_8dd6e8efdb8e25bb921ff14af3a35ce11c7219_35bf31f6_74cd1ac9-4eda-4a72-b431-397bfffe65e2
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: a1a7aa8d-f6fa-4bca-bc4e-8069ad5ab64c
+Report Status: 268435456
+Hashed bucket: fa3a0651ae1321b2f324dac5d2c3fa36
+Cab Guid: 0"
+"12/4/2025 8:40:14 PM","Application","Information","1001","Windows Error Reporting","0","0","Fault bucket , type 0
+Event Name: APPCRASH
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: explorer.exe
+P2: 10.0.19041.6456
+P3: fbcace5c
+P4: shcore.dll
+P5: 10.0.19041.5794
+P6: e8391836
+P7: c0000005
+P8: 0000000000028137
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERAC38.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERB0DC.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERB16A.tmp.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERB16A.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERB1B9.tmp.txt
+\\?\C:\Users\Buffe\AppData\Local\Temp\WERB237.tmp.appcompat.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_explorer.exe_8dd6e8efdb8e25bb921ff14af3a35ce11c7219_35bf31f6_cab_74cd1ac9-4eda-4a72-b431-397bfffe65e2\memory.hdmp
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_explorer.exe_8dd6e8efdb8e25bb921ff14af3a35ce11c7219_35bf31f6_cab_74cd1ac9-4eda-4a72-b431-397bfffe65e2
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: a1a7aa8d-f6fa-4bca-bc4e-8069ad5ab64c
+Report Status: 4
+Hashed bucket: 
+Cab Guid: 0"
+"12/4/2025 8:40:10 PM","Application","Error","1000","Application Error","0","0","Faulting application name: explorer.exe, version: 10.0.19041.6456, time stamp: 0xfbcace5c
+Faulting module name: shcore.dll, version: 10.0.19041.5794, time stamp: 0xe8391836
+Exception code: 0xc0000005
+Fault offset: 0x0000000000028137
+Faulting process id: 0xbd50
+Faulting application start time: 0x01dc659062f219e2
+Faulting application path: C:\Windows\explorer.exe
+Faulting module path: C:\Windows\System32\shcore.dll
+Report Id: a1a7aa8d-f6fa-4bca-bc4e-8069ad5ab64c
+Faulting package full name: 
+Faulting package-relative application ID: "
+"12/4/2025 8:39:32 PM","Application","Information","1001","Windows Error Reporting","0","0","Fault bucket 1358077005801851889, type 4
+Event Name: APPCRASH
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: explorer.exe
+P2: 10.0.19041.6456
+P3: fbcace5c
+P4: SHELL32.dll
+P5: 10.0.19041.6456
+P6: 9ee39b73
+P7: c0000005
+P8: 000000000025489b
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER11CD.tmp.WERInternalMetadata.xml
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_explorer.exe_8b70ca4a723121343f0441fa139dac4c3b1586_35bf31f6_b6256b4e-f054-4b77-8edc-4512cc528c23
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: 719fe2dc-d7e9-4351-9dca-f9015e5659e6
+Report Status: 268439552
+Hashed bucket: d7785b17df38518462d8dbd764720bf1
+Cab Guid: 0"
+"12/4/2025 8:39:31 PM","Application","Information","1001","Windows Error Reporting","0","0","Fault bucket , type 0
+Event Name: APPCRASH
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: explorer.exe
+P2: 10.0.19041.6456
+P3: fbcace5c
+P4: SHELL32.dll
+P5: 10.0.19041.6456
+P6: 9ee39b73
+P7: c0000005
+P8: 000000000025489b
+P9: 
+P10: 
+
+Attached files:
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_explorer.exe_8b70ca4a723121343f0441fa139dac4c3b1586_35bf31f6_b6256b4e-f054-4b77-8edc-4512cc528c23
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: 719fe2dc-d7e9-4351-9dca-f9015e5659e6
+Report Status: 4100
+Hashed bucket: 
+Cab Guid: 0"
+"12/4/2025 8:39:29 PM","Application","Error","1000","Application Error","0","0","Faulting application name: explorer.exe, version: 10.0.19041.6456, time stamp: 0xfbcace5c
+Faulting module name: SHELL32.dll, version: 10.0.19041.6456, time stamp: 0x9ee39b73
+Exception code: 0xc0000005
+Fault offset: 0x000000000025489b
+Faulting process id: 0x2428
+Faulting application start time: 0x01dc658de117ea8a
+Faulting application path: C:\Windows\explorer.exe
+Faulting module path: C:\Windows\System32\SHELL32.dll
+Report Id: 719fe2dc-d7e9-4351-9dca-f9015e5659e6
+Faulting package full name: 
+Faulting package-relative application ID: "
+"12/4/2025 8:21:35 PM","Application","Information","1001","Windows Error Reporting","0","0","Fault bucket 1379467929061685814, type 4
+Event Name: APPCRASH
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: explorer.exe
+P2: 10.0.19041.6456
+P3: fbcace5c
+P4: shcore.dll
+P5: 10.0.19041.5794
+P6: e8391836
+P7: c0000005
+P8: 0000000000028137
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER9519.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER9A79.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER9B16.tmp.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER9B23.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER9B92.tmp.txt
+\\?\C:\Users\Buffe\AppData\Local\Temp\WER9C21.tmp.appcompat.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_explorer.exe_8dd6e8efdb8e25bb921ff14af3a35ce11c7219_35bf31f6_cab_c41bc47e-de96-4970-a00a-f1325c8ad2fe\memory.hdmp
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_explorer.exe_8dd6e8efdb8e25bb921ff14af3a35ce11c7219_35bf31f6_c41bc47e-de96-4970-a00a-f1325c8ad2fe
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: 154dbcc7-c4c5-4ffb-8e66-87914f5f6179
+Report Status: 268435456
+Hashed bucket: fa3a0651ae1321b2f324dac5d2c3fa36
+Cab Guid: 0"
+"12/4/2025 8:21:34 PM","Application","Information","1001","Windows Error Reporting","0","0","Fault bucket , type 0
+Event Name: APPCRASH
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: explorer.exe
+P2: 10.0.19041.6456
+P3: fbcace5c
+P4: shcore.dll
+P5: 10.0.19041.5794
+P6: e8391836
+P7: c0000005
+P8: 0000000000028137
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER9519.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER9A79.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER9B16.tmp.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER9B23.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER9B92.tmp.txt
+\\?\C:\Users\Buffe\AppData\Local\Temp\WER9C21.tmp.appcompat.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_explorer.exe_8dd6e8efdb8e25bb921ff14af3a35ce11c7219_35bf31f6_cab_c41bc47e-de96-4970-a00a-f1325c8ad2fe\memory.hdmp
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_explorer.exe_8dd6e8efdb8e25bb921ff14af3a35ce11c7219_35bf31f6_cab_c41bc47e-de96-4970-a00a-f1325c8ad2fe
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: 154dbcc7-c4c5-4ffb-8e66-87914f5f6179
+Report Status: 4
+Hashed bucket: 
+Cab Guid: 0"
+"12/4/2025 8:21:30 PM","Application","Error","1000","Application Error","0","0","Faulting application name: explorer.exe, version: 10.0.19041.6456, time stamp: 0xfbcace5c
+Faulting module name: shcore.dll, version: 10.0.19041.5794, time stamp: 0xe8391836
+Exception code: 0xc0000005
+Fault offset: 0x0000000000028137
+Faulting process id: 0x13700
+Faulting application start time: 0x01dc658d31e434cb
+Faulting application path: C:\Windows\explorer.exe
+Faulting module path: C:\Windows\System32\shcore.dll
+Report Id: 154dbcc7-c4c5-4ffb-8e66-87914f5f6179
+Faulting package full name: 
+Faulting package-relative application ID: "
+"12/4/2025 8:10:16 PM","Application","Information","1001","Windows Error Reporting","0","0","Fault bucket 1379467929061685814, type 4
+Event Name: APPCRASH
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: explorer.exe
+P2: 10.0.19041.6456
+P3: fbcace5c
+P4: shcore.dll
+P5: 10.0.19041.5794
+P6: e8391836
+P7: c0000005
+P8: 0000000000028137
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER3A95.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER3F78.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER4016.tmp.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER4014.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER4063.tmp.txt
+\\?\C:\Users\Buffe\AppData\Local\Temp\WER40F2.tmp.appcompat.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_explorer.exe_8dd6e8efdb8e25bb921ff14af3a35ce11c7219_35bf31f6_cab_3f0f6a26-9370-42f8-9d03-18cd73441e92\memory.hdmp
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_explorer.exe_8dd6e8efdb8e25bb921ff14af3a35ce11c7219_35bf31f6_3f0f6a26-9370-42f8-9d03-18cd73441e92
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: 27b61ab2-94f4-47a6-833f-928f40588d35
+Report Status: 268435456
+Hashed bucket: fa3a0651ae1321b2f324dac5d2c3fa36
+Cab Guid: 0"
+"12/4/2025 8:10:15 PM","Application","Information","1001","Windows Error Reporting","0","0","Fault bucket , type 0
+Event Name: APPCRASH
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: explorer.exe
+P2: 10.0.19041.6456
+P3: fbcace5c
+P4: shcore.dll
+P5: 10.0.19041.5794
+P6: e8391836
+P7: c0000005
+P8: 0000000000028137
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER3A95.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER3F78.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER4016.tmp.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER4014.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER4063.tmp.txt
+\\?\C:\Users\Buffe\AppData\Local\Temp\WER40F2.tmp.appcompat.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_explorer.exe_8dd6e8efdb8e25bb921ff14af3a35ce11c7219_35bf31f6_cab_3f0f6a26-9370-42f8-9d03-18cd73441e92\memory.hdmp
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_explorer.exe_8dd6e8efdb8e25bb921ff14af3a35ce11c7219_35bf31f6_cab_3f0f6a26-9370-42f8-9d03-18cd73441e92
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: 27b61ab2-94f4-47a6-833f-928f40588d35
+Report Status: 4
+Hashed bucket: 
+Cab Guid: 0"
+"12/4/2025 8:10:12 PM","Application","Error","1000","Application Error","0","0","Faulting application name: explorer.exe, version: 10.0.19041.6456, time stamp: 0xfbcace5c
+Faulting module name: shcore.dll, version: 10.0.19041.5794, time stamp: 0xe8391836
+Exception code: 0xc0000005
+Fault offset: 0x0000000000028137
+Faulting process id: 0x8d40
+Faulting application start time: 0x01dc658bc37dbee8
+Faulting application path: C:\Windows\explorer.exe
+Faulting module path: C:\Windows\System32\shcore.dll
+Report Id: 27b61ab2-94f4-47a6-833f-928f40588d35
+Faulting package full name: 
+Faulting package-relative application ID: "
+"12/4/2025 8:06:26 PM","Application","Information","1001","Windows Error Reporting","0","0","Fault bucket 1379467929061685814, type 4
+Event Name: APPCRASH
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: explorer.exe
+P2: 10.0.19041.6456
+P3: fbcace5c
+P4: shcore.dll
+P5: 10.0.19041.5794
+P6: e8391836
+P7: c0000005
+P8: 0000000000028137
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERB7F6.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERBCCA.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERBDE4.tmp.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERBE17.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERBE95.tmp.txt
+\\?\C:\Users\Buffe\AppData\Local\Temp\WERBF0F.tmp.appcompat.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_explorer.exe_8dd6e8efdb8e25bb921ff14af3a35ce11c7219_35bf31f6_cab_a9efc254-83c2-4d17-9a11-edb277924378\memory.hdmp
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_explorer.exe_8dd6e8efdb8e25bb921ff14af3a35ce11c7219_35bf31f6_a9efc254-83c2-4d17-9a11-edb277924378
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: 62f92e4e-0158-45fb-a02f-af0f82b3eecf
+Report Status: 268435456
+Hashed bucket: fa3a0651ae1321b2f324dac5d2c3fa36
+Cab Guid: 0"
+"12/4/2025 8:06:25 PM","Application","Information","1001","Windows Error Reporting","0","0","Fault bucket , type 0
+Event Name: APPCRASH
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: explorer.exe
+P2: 10.0.19041.6456
+P3: fbcace5c
+P4: shcore.dll
+P5: 10.0.19041.5794
+P6: e8391836
+P7: c0000005
+P8: 0000000000028137
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERB7F6.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERBCCA.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERBDE4.tmp.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERBE17.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERBE95.tmp.txt
+\\?\C:\Users\Buffe\AppData\Local\Temp\WERBF0F.tmp.appcompat.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_explorer.exe_8dd6e8efdb8e25bb921ff14af3a35ce11c7219_35bf31f6_cab_a9efc254-83c2-4d17-9a11-edb277924378\memory.hdmp
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_explorer.exe_8dd6e8efdb8e25bb921ff14af3a35ce11c7219_35bf31f6_cab_a9efc254-83c2-4d17-9a11-edb277924378
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: 62f92e4e-0158-45fb-a02f-af0f82b3eecf
+Report Status: 4
+Hashed bucket: 
+Cab Guid: 0"
+"12/4/2025 8:06:22 PM","Application","Error","1000","Application Error","0","0","Faulting application name: explorer.exe, version: 10.0.19041.6456, time stamp: 0xfbcace5c
+Faulting module name: shcore.dll, version: 10.0.19041.5794, time stamp: 0xe8391836
+Exception code: 0xc0000005
+Fault offset: 0x0000000000028137
+Faulting process id: 0x12c9c
+Faulting application start time: 0x01dc658baa066b97
+Faulting application path: C:\Windows\explorer.exe
+Faulting module path: C:\Windows\System32\shcore.dll
+Report Id: 62f92e4e-0158-45fb-a02f-af0f82b3eecf
+Faulting package full name: 
+Faulting package-relative application ID: "
+"12/4/2025 8:05:43 PM","Application","Information","1001","Windows Error Reporting","0","0","Fault bucket 1379467929061685814, type 4
+Event Name: APPCRASH
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: explorer.exe
+P2: 10.0.19041.6456
+P3: fbcace5c
+P4: shcore.dll
+P5: 10.0.19041.5794
+P6: e8391836
+P7: c0000005
+P8: 0000000000028137
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER102D.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER160A.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER16B7.tmp.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER16B9.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER1728.tmp.txt
+\\?\C:\Users\Buffe\AppData\Local\Temp\WER17B3.tmp.appcompat.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_explorer.exe_8dd6e8efdb8e25bb921ff14af3a35ce11c7219_35bf31f6_cab_e01f445a-950f-4e04-bf86-ad7f3ab87d13\memory.hdmp
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_explorer.exe_8dd6e8efdb8e25bb921ff14af3a35ce11c7219_35bf31f6_e01f445a-950f-4e04-bf86-ad7f3ab87d13
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: 77b1cafe-e8dd-4bb6-bcc4-9bdf797bcbaa
+Report Status: 268435456
+Hashed bucket: fa3a0651ae1321b2f324dac5d2c3fa36
+Cab Guid: 0"
+"12/4/2025 8:05:42 PM","Application","Information","1001","Windows Error Reporting","0","0","Fault bucket , type 0
+Event Name: APPCRASH
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: explorer.exe
+P2: 10.0.19041.6456
+P3: fbcace5c
+P4: shcore.dll
+P5: 10.0.19041.5794
+P6: e8391836
+P7: c0000005
+P8: 0000000000028137
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER102D.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER160A.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER16B7.tmp.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER16B9.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER1728.tmp.txt
+\\?\C:\Users\Buffe\AppData\Local\Temp\WER17B3.tmp.appcompat.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_explorer.exe_8dd6e8efdb8e25bb921ff14af3a35ce11c7219_35bf31f6_cab_e01f445a-950f-4e04-bf86-ad7f3ab87d13\memory.hdmp
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_explorer.exe_8dd6e8efdb8e25bb921ff14af3a35ce11c7219_35bf31f6_cab_e01f445a-950f-4e04-bf86-ad7f3ab87d13
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: 77b1cafe-e8dd-4bb6-bcc4-9bdf797bcbaa
+Report Status: 4
+Hashed bucket: 
+Cab Guid: 0"
+"12/4/2025 8:05:39 PM","Application","Error","1000","Application Error","0","0","Faulting application name: explorer.exe, version: 10.0.19041.6456, time stamp: 0xfbcace5c
+Faulting module name: shcore.dll, version: 10.0.19041.5794, time stamp: 0xe8391836
+Exception code: 0xc0000005
+Fault offset: 0x0000000000028137
+Faulting process id: 0x64fc
+Faulting application start time: 0x01dc658b5982bc08
+Faulting application path: C:\Windows\explorer.exe
+Faulting module path: C:\Windows\System32\shcore.dll
+Report Id: 77b1cafe-e8dd-4bb6-bcc4-9bdf797bcbaa
+Faulting package full name: 
+Faulting package-relative application ID: "
+"12/4/2025 8:04:29 PM","Application","Information","1001","Windows Error Reporting","0","0","Fault bucket 2261516760164610096, type 4
+Event Name: APPCRASH
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: explorer.exe
+P2: 10.0.19041.6456
+P3: fbcace5c
+P4: shcore.dll
+P5: 10.0.19041.5794
+P6: e8391836
+P7: c000041d
+P8: 0000000000028137
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERFC6C.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERFDE4.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERFE62.tmp.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERFE71.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERFEC0.tmp.txt
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_explorer.exe_b53eb5e36ef49850ded8eac596bb6b5d3e3d74_35bf31f6_f2d1a582-2130-44bf-8a86-a23a0f43a00a
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: 60c247a6-7f41-48f5-b188-a77a0947f331
+Report Status: 268435456
+Hashed bucket: a9fb134bb7660ef8cf628582e7343030
+Cab Guid: 0"
+"12/4/2025 8:04:28 PM","Application","Error","1000","Application Error","0","0","Faulting application name: explorer.exe, version: 10.0.19041.6456, time stamp: 0xfbcace5c
+Faulting module name: shcore.dll, version: 10.0.19041.5794, time stamp: 0xe8391836
+Exception code: 0xc000041d
+Fault offset: 0x0000000000028137
+Faulting process id: 0x6170
+Faulting application start time: 0x01dc658b75470997
+Faulting application path: C:\Windows\explorer.exe
+Faulting module path: C:\Windows\System32\shcore.dll
+Report Id: 60c247a6-7f41-48f5-b188-a77a0947f331
+Faulting package full name: 
+Faulting package-relative application ID: "
+"12/4/2025 8:04:28 PM","Application","Information","1001","Windows Error Reporting","0","0","Fault bucket 1379467929061685814, type 4
+Event Name: APPCRASH
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: explorer.exe
+P2: 10.0.19041.6456
+P3: fbcace5c
+P4: shcore.dll
+P5: 10.0.19041.5794
+P6: e8391836
+P7: c0000005
+P8: 0000000000028137
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERF43E.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERF5E5.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERF692.tmp.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERF69F.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERF6EE.tmp.txt
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_explorer.exe_8dd6e8efdb8e25bb921ff14af3a35ce11c7219_35bf31f6_68678892-7766-4806-b1a0-80aa54c7dbb5
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: 3c2ad0df-26dc-4e45-8519-c606cba806ba
+Report Status: 268435456
+Hashed bucket: fa3a0651ae1321b2f324dac5d2c3fa36
+Cab Guid: 0"
+"12/4/2025 8:04:26 PM","Application","Error","1000","Application Error","0","0","Faulting application name: explorer.exe, version: 10.0.19041.6456, time stamp: 0xfbcace5c
+Faulting module name: shcore.dll, version: 10.0.19041.5794, time stamp: 0xe8391836
+Exception code: 0xc0000005
+Fault offset: 0x0000000000028137
+Faulting process id: 0x6170
+Faulting application start time: 0x01dc658b75470997
+Faulting application path: C:\Windows\explorer.exe
+Faulting module path: C:\Windows\System32\shcore.dll
+Report Id: 3c2ad0df-26dc-4e45-8519-c606cba806ba
+Faulting package full name: 
+Faulting package-relative application ID: "
+"12/4/2025 7:58:54 PM","Application","Information","1001","Windows Error Reporting","0","0","Fault bucket 1379467929061685814, type 4
+Event Name: APPCRASH
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: explorer.exe
+P2: 10.0.19041.6456
+P3: fbcace5c
+P4: shcore.dll
+P5: 10.0.19041.5794
+P6: e8391836
+P7: c0000005
+P8: 0000000000028137
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERD1D9.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERD65F.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERD6EC.tmp.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERD6FA.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERD749.tmp.txt
+\\?\C:\Users\Buffe\AppData\Local\Temp\WERD7C9.tmp.appcompat.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_explorer.exe_8dd6e8efdb8e25bb921ff14af3a35ce11c7219_35bf31f6_cab_915185b5-dc3c-4a11-baee-3476bea6906f\memory.hdmp
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_explorer.exe_8dd6e8efdb8e25bb921ff14af3a35ce11c7219_35bf31f6_915185b5-dc3c-4a11-baee-3476bea6906f
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: 9d0914a0-9908-4558-9545-3881010edf31
+Report Status: 268435456
+Hashed bucket: fa3a0651ae1321b2f324dac5d2c3fa36
+Cab Guid: 0"
+"12/4/2025 7:58:53 PM","Application","Information","1001","Windows Error Reporting","0","0","Fault bucket , type 0
+Event Name: APPCRASH
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: explorer.exe
+P2: 10.0.19041.6456
+P3: fbcace5c
+P4: shcore.dll
+P5: 10.0.19041.5794
+P6: e8391836
+P7: c0000005
+P8: 0000000000028137
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERD1D9.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERD65F.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERD6EC.tmp.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERD6FA.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERD749.tmp.txt
+\\?\C:\Users\Buffe\AppData\Local\Temp\WERD7C9.tmp.appcompat.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_explorer.exe_8dd6e8efdb8e25bb921ff14af3a35ce11c7219_35bf31f6_cab_915185b5-dc3c-4a11-baee-3476bea6906f\memory.hdmp
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_explorer.exe_8dd6e8efdb8e25bb921ff14af3a35ce11c7219_35bf31f6_cab_915185b5-dc3c-4a11-baee-3476bea6906f
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: 9d0914a0-9908-4558-9545-3881010edf31
+Report Status: 4
+Hashed bucket: 
+Cab Guid: 0"
+"12/4/2025 7:58:49 PM","Application","Error","1000","Application Error","0","0","Faulting application name: explorer.exe, version: 10.0.19041.6456, time stamp: 0xfbcace5c
+Faulting module name: shcore.dll, version: 10.0.19041.5794, time stamp: 0xe8391836
+Exception code: 0xc0000005
+Fault offset: 0x0000000000028137
+Faulting process id: 0x12c9c
+Faulting application start time: 0x01dc6585ecad6519
+Faulting application path: C:\Windows\explorer.exe
+Faulting module path: C:\Windows\System32\shcore.dll
+Report Id: 9d0914a0-9908-4558-9545-3881010edf31
+Faulting package full name: 
+Faulting package-relative application ID: "
+"12/4/2025 7:24:38 PM","Application","Information","1001","Windows Error Reporting","0","0","Fault bucket 1379467929061685814, type 4
+Event Name: APPCRASH
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: explorer.exe
+P2: 10.0.19041.6456
+P3: fbcace5c
+P4: shcore.dll
+P5: 10.0.19041.5794
+P6: e8391836
+P7: c0000005
+P8: 0000000000028137
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER76DF.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER7AE7.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER7B85.tmp.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER7B98.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER7BE7.tmp.txt
+\\?\C:\Users\Buffe\AppData\Local\Temp\WER7C61.tmp.appcompat.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_explorer.exe_8dd6e8efdb8e25bb921ff14af3a35ce11c7219_35bf31f6_cab_48391cbf-3d99-46c1-afe3-50c557def14b\memory.hdmp
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_explorer.exe_8dd6e8efdb8e25bb921ff14af3a35ce11c7219_35bf31f6_48391cbf-3d99-46c1-afe3-50c557def14b
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: e39f3f4b-ea50-429f-a65d-fc3065fb9b56
+Report Status: 268435456
+Hashed bucket: fa3a0651ae1321b2f324dac5d2c3fa36
+Cab Guid: 0"
+"12/4/2025 7:24:38 PM","Application","Information","1001","Windows Error Reporting","0","0","Fault bucket , type 0
+Event Name: APPCRASH
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: explorer.exe
+P2: 10.0.19041.6456
+P3: fbcace5c
+P4: shcore.dll
+P5: 10.0.19041.5794
+P6: e8391836
+P7: c0000005
+P8: 0000000000028137
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER76DF.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER7AE7.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER7B85.tmp.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER7B98.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER7BE7.tmp.txt
+\\?\C:\Users\Buffe\AppData\Local\Temp\WER7C61.tmp.appcompat.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_explorer.exe_8dd6e8efdb8e25bb921ff14af3a35ce11c7219_35bf31f6_cab_48391cbf-3d99-46c1-afe3-50c557def14b\memory.hdmp
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_explorer.exe_8dd6e8efdb8e25bb921ff14af3a35ce11c7219_35bf31f6_cab_48391cbf-3d99-46c1-afe3-50c557def14b
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: e39f3f4b-ea50-429f-a65d-fc3065fb9b56
+Report Status: 4
+Hashed bucket: 
+Cab Guid: 0"
+"12/4/2025 7:24:35 PM","Application","Error","1000","Application Error","0","0","Faulting application name: explorer.exe, version: 10.0.19041.6456, time stamp: 0xfbcace5c
+Faulting module name: shcore.dll, version: 10.0.19041.5794, time stamp: 0xe8391836
+Exception code: 0xc0000005
+Fault offset: 0x0000000000028137
+Faulting process id: 0x103a0
+Faulting application start time: 0x01dc6585db3b20ac
+Faulting application path: C:\Windows\explorer.exe
+Faulting module path: C:\Windows\System32\shcore.dll
+Report Id: e39f3f4b-ea50-429f-a65d-fc3065fb9b56
+Faulting package full name: 
+Faulting package-relative application ID: "
+"12/4/2025 7:24:09 PM","Application","Information","1001","Windows Error Reporting","0","0","Fault bucket 1379467929061685814, type 4
+Event Name: APPCRASH
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: explorer.exe
+P2: 10.0.19041.6456
+P3: fbcace5c
+P4: shcore.dll
+P5: 10.0.19041.5794
+P6: e8391836
+P7: c0000005
+P8: 0000000000028137
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER3C2.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER838.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER8B6.tmp.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER8C8.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER917.tmp.txt
+\\?\C:\Users\Buffe\AppData\Local\Temp\WER983.tmp.appcompat.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_explorer.exe_8dd6e8efdb8e25bb921ff14af3a35ce11c7219_35bf31f6_cab_a8ba37d6-1f1d-4fa8-89ab-d34754ab3bb9\memory.hdmp
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_explorer.exe_8dd6e8efdb8e25bb921ff14af3a35ce11c7219_35bf31f6_a8ba37d6-1f1d-4fa8-89ab-d34754ab3bb9
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: fc37cbb1-8b77-40c3-92d1-97207e99c5f5
+Report Status: 268435456
+Hashed bucket: fa3a0651ae1321b2f324dac5d2c3fa36
+Cab Guid: 0"
+"12/4/2025 7:24:08 PM","Application","Information","1001","Windows Error Reporting","0","0","Fault bucket , type 0
+Event Name: APPCRASH
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: explorer.exe
+P2: 10.0.19041.6456
+P3: fbcace5c
+P4: shcore.dll
+P5: 10.0.19041.5794
+P6: e8391836
+P7: c0000005
+P8: 0000000000028137
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER3C2.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER838.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER8B6.tmp.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER8C8.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER917.tmp.txt
+\\?\C:\Users\Buffe\AppData\Local\Temp\WER983.tmp.appcompat.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_explorer.exe_8dd6e8efdb8e25bb921ff14af3a35ce11c7219_35bf31f6_cab_a8ba37d6-1f1d-4fa8-89ab-d34754ab3bb9\memory.hdmp
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_explorer.exe_8dd6e8efdb8e25bb921ff14af3a35ce11c7219_35bf31f6_cab_a8ba37d6-1f1d-4fa8-89ab-d34754ab3bb9
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: fc37cbb1-8b77-40c3-92d1-97207e99c5f5
+Report Status: 4
+Hashed bucket: 
+Cab Guid: 0"
+"12/4/2025 7:24:05 PM","Application","Error","1000","Application Error","0","0","Faulting application name: explorer.exe, version: 10.0.19041.6456, time stamp: 0xfbcace5c
+Faulting module name: shcore.dll, version: 10.0.19041.5794, time stamp: 0xe8391836
+Exception code: 0xc0000005
+Fault offset: 0x0000000000028137
+Faulting process id: 0x4880
+Faulting application start time: 0x01dc6585baf8bfd5
+Faulting application path: C:\Windows\explorer.exe
+Faulting module path: C:\Windows\System32\shcore.dll
+Report Id: fc37cbb1-8b77-40c3-92d1-97207e99c5f5
+Faulting package full name: 
+Faulting package-relative application ID: "
+"12/4/2025 7:23:15 PM","Application","Information","1001","Windows Error Reporting","0","0","Fault bucket 1379467929061685814, type 4
+Event Name: APPCRASH
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: explorer.exe
+P2: 10.0.19041.6456
+P3: fbcace5c
+P4: shcore.dll
+P5: 10.0.19041.5794
+P6: e8391836
+P7: c0000005
+P8: 0000000000028137
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER30A4.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER34CB.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER3568.tmp.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER3578.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER35C7.tmp.txt
+\\?\C:\Users\Buffe\AppData\Local\Temp\WER3635.tmp.appcompat.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_explorer.exe_8dd6e8efdb8e25bb921ff14af3a35ce11c7219_35bf31f6_cab_3d941d80-b32e-457a-8c4f-1728479ccd0a\memory.hdmp
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_explorer.exe_8dd6e8efdb8e25bb921ff14af3a35ce11c7219_35bf31f6_3d941d80-b32e-457a-8c4f-1728479ccd0a
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: c60f6e9e-a176-42b7-a24f-ef990f790963
+Report Status: 268435456
+Hashed bucket: fa3a0651ae1321b2f324dac5d2c3fa36
+Cab Guid: 0"
+"12/4/2025 7:23:14 PM","Application","Information","1001","Windows Error Reporting","0","0","Fault bucket , type 0
+Event Name: APPCRASH
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: explorer.exe
+P2: 10.0.19041.6456
+P3: fbcace5c
+P4: shcore.dll
+P5: 10.0.19041.5794
+P6: e8391836
+P7: c0000005
+P8: 0000000000028137
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER30A4.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER34CB.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER3568.tmp.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER3578.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER35C7.tmp.txt
+\\?\C:\Users\Buffe\AppData\Local\Temp\WER3635.tmp.appcompat.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_explorer.exe_8dd6e8efdb8e25bb921ff14af3a35ce11c7219_35bf31f6_cab_3d941d80-b32e-457a-8c4f-1728479ccd0a\memory.hdmp
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_explorer.exe_8dd6e8efdb8e25bb921ff14af3a35ce11c7219_35bf31f6_cab_3d941d80-b32e-457a-8c4f-1728479ccd0a
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: c60f6e9e-a176-42b7-a24f-ef990f790963
+Report Status: 4
+Hashed bucket: 
+Cab Guid: 0"
+"12/4/2025 7:23:11 PM","Application","Error","1000","Application Error","0","0","Faulting application name: explorer.exe, version: 10.0.19041.6456, time stamp: 0xfbcace5c
+Faulting module name: shcore.dll, version: 10.0.19041.5794, time stamp: 0xe8391836
+Exception code: 0xc0000005
+Fault offset: 0x0000000000028137
+Faulting process id: 0x111b4
+Faulting application start time: 0x01dc6585853a1e42
+Faulting application path: C:\Windows\explorer.exe
+Faulting module path: C:\Windows\System32\shcore.dll
+Report Id: c60f6e9e-a176-42b7-a24f-ef990f790963
+Faulting package full name: 
+Faulting package-relative application ID: "
+"12/4/2025 7:21:45 PM","Application","Information","1001","Windows Error Reporting","0","0","Fault bucket 1379467929061685814, type 4
+Event Name: APPCRASH
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: explorer.exe
+P2: 10.0.19041.6456
+P3: fbcace5c
+P4: shcore.dll
+P5: 10.0.19041.5794
+P6: e8391836
+P7: c0000005
+P8: 0000000000028137
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERCFFA.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERD441.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERD4BF.tmp.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERD4CD.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERD51C.tmp.txt
+\\?\C:\Users\Buffe\AppData\Local\Temp\WERD58C.tmp.appcompat.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_explorer.exe_8dd6e8efdb8e25bb921ff14af3a35ce11c7219_35bf31f6_cab_e1c1ab01-2618-4e1e-b746-4a7ae3509f95\memory.hdmp
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_explorer.exe_8dd6e8efdb8e25bb921ff14af3a35ce11c7219_35bf31f6_e1c1ab01-2618-4e1e-b746-4a7ae3509f95
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: a910dca1-bc13-45c5-bab5-02f373dfa5d4
+Report Status: 268435456
+Hashed bucket: fa3a0651ae1321b2f324dac5d2c3fa36
+Cab Guid: 0"
+"12/4/2025 7:21:44 PM","Application","Information","1001","Windows Error Reporting","0","0","Fault bucket , type 0
+Event Name: APPCRASH
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: explorer.exe
+P2: 10.0.19041.6456
+P3: fbcace5c
+P4: shcore.dll
+P5: 10.0.19041.5794
+P6: e8391836
+P7: c0000005
+P8: 0000000000028137
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERCFFA.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERD441.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERD4BF.tmp.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERD4CD.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERD51C.tmp.txt
+\\?\C:\Users\Buffe\AppData\Local\Temp\WERD58C.tmp.appcompat.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_explorer.exe_8dd6e8efdb8e25bb921ff14af3a35ce11c7219_35bf31f6_cab_e1c1ab01-2618-4e1e-b746-4a7ae3509f95\memory.hdmp
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_explorer.exe_8dd6e8efdb8e25bb921ff14af3a35ce11c7219_35bf31f6_cab_e1c1ab01-2618-4e1e-b746-4a7ae3509f95
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: a910dca1-bc13-45c5-bab5-02f373dfa5d4
+Report Status: 4
+Hashed bucket: 
+Cab Guid: 0"
+"12/4/2025 7:21:41 PM","Application","Error","1000","Application Error","0","0","Faulting application name: explorer.exe, version: 10.0.19041.6456, time stamp: 0xfbcace5c
+Faulting module name: shcore.dll, version: 10.0.19041.5794, time stamp: 0xe8391836
+Exception code: 0xc0000005
+Fault offset: 0x0000000000028137
+Faulting process id: 0x13110
+Faulting application start time: 0x01dc658565638edd
+Faulting application path: C:\Windows\explorer.exe
+Faulting module path: C:\Windows\System32\shcore.dll
+Report Id: a910dca1-bc13-45c5-bab5-02f373dfa5d4
+Faulting package full name: 
+Faulting package-relative application ID: "
+"12/4/2025 7:17:53 PM","Application","Information","1001","Windows Error Reporting","0","0","Fault bucket 1358077005801851889, type 4
+Event Name: APPCRASH
+Response: Not available
+Cab Id: 2105925439969294079
+
+Problem signature:
+P1: explorer.exe
+P2: 10.0.19041.6456
+P3: fbcace5c
+P4: SHELL32.dll
+P5: 10.0.19041.6456
+P6: 9ee39b73
+P7: c0000005
+P8: 000000000025489b
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERF49D.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERF941.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERF9EE.tmp.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERF9FC.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERFA5A.tmp.txt
+\\?\C:\Users\Buffe\AppData\Local\Temp\WERFAEA.tmp.appcompat.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_explorer.exe_8b70ca4a723121343f0441fa139dac4c3b1586_35bf31f6_cab_6997917d-c80e-4ded-9310-4d1ba15d51e4\memory.hdmp
+\\?\C:\Windows\Temp\WER3FE.tmp.WERDataCollectionStatus.txt
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_explorer.exe_8b70ca4a723121343f0441fa139dac4c3b1586_35bf31f6_cab_6997917d-c80e-4ded-9310-4d1ba15d51e4
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: fedec9dc-ee04-4496-aa24-9b2e6c098b38
+Report Status: 268435464
+Hashed bucket: d7785b17df38518462d8dbd764720bf1
+Cab Guid: 72c5b7dd-ec07-40c9-bd39-c007acd3f6ff"
+"12/4/2025 7:17:31 PM","Application","Information","1001","Windows Error Reporting","0","0","Fault bucket , type 0
+Event Name: APPCRASH
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: explorer.exe
+P2: 10.0.19041.6456
+P3: fbcace5c
+P4: SHELL32.dll
+P5: 10.0.19041.6456
+P6: 9ee39b73
+P7: c0000005
+P8: 000000000025489b
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERF49D.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERF941.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERF9EE.tmp.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERF9FC.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERFA5A.tmp.txt
+\\?\C:\Users\Buffe\AppData\Local\Temp\WERFAEA.tmp.appcompat.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_explorer.exe_8b70ca4a723121343f0441fa139dac4c3b1586_35bf31f6_cab_6997917d-c80e-4ded-9310-4d1ba15d51e4\memory.hdmp
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_explorer.exe_8b70ca4a723121343f0441fa139dac4c3b1586_35bf31f6_cab_6997917d-c80e-4ded-9310-4d1ba15d51e4
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: fedec9dc-ee04-4496-aa24-9b2e6c098b38
+Report Status: 4
+Hashed bucket: 
+Cab Guid: 0"
+"12/4/2025 7:17:28 PM","Application","Error","1000","Application Error","0","0","Faulting application name: explorer.exe, version: 10.0.19041.6456, time stamp: 0xfbcace5c
+Faulting module name: SHELL32.dll, version: 10.0.19041.6456, time stamp: 0x9ee39b73
+Exception code: 0xc0000005
+Fault offset: 0x000000000025489b
+Faulting process id: 0x12f04
+Faulting application start time: 0x01dc658460e255dd
+Faulting application path: C:\Windows\explorer.exe
+Faulting module path: C:\Windows\System32\SHELL32.dll
+Report Id: fedec9dc-ee04-4496-aa24-9b2e6c098b38
+Faulting package full name: 
+Faulting package-relative application ID: "
+"12/5/2025 4:36:40 PM","Application (WER)","Information","1001","Windows Error Reporting","0","0","Fault bucket 2294921860750228142, type 4
+Event Name: APPCRASH
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: Explorer.EXE
+P2: 10.0.19041.6575
+P3: 8ad29777
+P4: SHELL32.dll
+P5: 10.0.19041.6456
+P6: 9ee39b73
+P7: c0000005
+P8: 00000000000ad4dc
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERD037.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERD5C5.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERD643.tmp.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERD651.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERD671.tmp.txt
+\\?\C:\Users\Buffe\AppData\Local\Temp\WERD6E2.tmp.appcompat.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_Explorer.EXE_67ee34e4654dc687f3c41c44335f79ad63b8b3b_aa741173_cab_af326876-20c6-4f6e-8713-06b1928c0279\memory.hdmp
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_Explorer.EXE_67ee34e4654dc687f3c41c44335f79ad63b8b3b_aa741173_af326876-20c6-4f6e-8713-06b1928c0279
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: 0deb90c5-5092-4850-98aa-c9b12fe864a7
+Report Status: 268435456
+Hashed bucket: 604bf15475206164ffd93345f94bbaae
+Cab Guid: 0"
+"12/5/2025 4:36:39 PM","Application (WER)","Information","1001","Windows Error Reporting","0","0","Fault bucket , type 0
+Event Name: APPCRASH
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: Explorer.EXE
+P2: 10.0.19041.6575
+P3: 8ad29777
+P4: SHELL32.dll
+P5: 10.0.19041.6456
+P6: 9ee39b73
+P7: c0000005
+P8: 00000000000ad4dc
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERD037.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERD5C5.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERD643.tmp.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERD651.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERD671.tmp.txt
+\\?\C:\Users\Buffe\AppData\Local\Temp\WERD6E2.tmp.appcompat.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_Explorer.EXE_67ee34e4654dc687f3c41c44335f79ad63b8b3b_aa741173_cab_af326876-20c6-4f6e-8713-06b1928c0279\memory.hdmp
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_Explorer.EXE_67ee34e4654dc687f3c41c44335f79ad63b8b3b_aa741173_cab_af326876-20c6-4f6e-8713-06b1928c0279
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: 0deb90c5-5092-4850-98aa-c9b12fe864a7
+Report Status: 4
+Hashed bucket: 
+Cab Guid: 0"
+"12/5/2025 4:11:36 PM","Application (WER)","Information","1001","Windows Error Reporting","0","0","Fault bucket 2179361232605035509, type 4
+Event Name: APPCRASH
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: Explorer.EXE
+P2: 10.0.19041.6456
+P3: fbcace5c
+P4: SHELL32.dll
+P5: 10.0.19041.6456
+P6: 9ee39b73
+P7: c0000005
+P8: 00000000000ad4dc
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERC70F.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERCD88.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERCDF6.tmp.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERCE16.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERCE46.tmp.txt
+\\?\C:\Users\Buffe\AppData\Local\Temp\WERCEC4.tmp.appcompat.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_Explorer.EXE_c9ae3b96d925be57f2f840e567ec4b0e96fb53_f1d739db_cab_4235213d-d8a4-4781-b2a1-c162457e87de\memory.hdmp
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_Explorer.EXE_c9ae3b96d925be57f2f840e567ec4b0e96fb53_f1d739db_4235213d-d8a4-4781-b2a1-c162457e87de
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: 5c0fd940-0468-4ca3-8187-b0af601e889b
+Report Status: 268435456
+Hashed bucket: 7bc12df7d266c1480e3ea57e8aae3bf5
+Cab Guid: 0"
+"12/5/2025 4:11:35 PM","Application (WER)","Information","1001","Windows Error Reporting","0","0","Fault bucket , type 0
+Event Name: APPCRASH
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: Explorer.EXE
+P2: 10.0.19041.6456
+P3: fbcace5c
+P4: SHELL32.dll
+P5: 10.0.19041.6456
+P6: 9ee39b73
+P7: c0000005
+P8: 00000000000ad4dc
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERC70F.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERCD88.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERCDF6.tmp.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERCE16.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERCE46.tmp.txt
+\\?\C:\Users\Buffe\AppData\Local\Temp\WERCEC4.tmp.appcompat.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_Explorer.EXE_c9ae3b96d925be57f2f840e567ec4b0e96fb53_f1d739db_cab_4235213d-d8a4-4781-b2a1-c162457e87de\memory.hdmp
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_Explorer.EXE_c9ae3b96d925be57f2f840e567ec4b0e96fb53_f1d739db_cab_4235213d-d8a4-4781-b2a1-c162457e87de
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: 5c0fd940-0468-4ca3-8187-b0af601e889b
+Report Status: 4
+Hashed bucket: 
+Cab Guid: 0"
+"12/5/2025 3:45:21 PM","Application (WER)","Information","1001","Windows Error Reporting","0","0","Fault bucket 2179361232605035509, type 4
+Event Name: APPCRASH
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: explorer.exe
+P2: 10.0.19041.6456
+P3: fbcace5c
+P4: SHELL32.dll
+P5: 10.0.19041.6456
+P6: 9ee39b73
+P7: c0000005
+P8: 00000000000ad4dc
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERFAEA.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER53C.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER721.tmp.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER73E.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER7DC.tmp.txt
+\\?\C:\Users\Buffe\AppData\Local\Temp\WER86B.tmp.appcompat.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_explorer.exe_a7b470fc69c3d036575d6a873b9efa73e615757_35bf31f6_cab_9f9fbad7-f4d6-4541-8aec-f7fc59d191c4\memory.hdmp
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_explorer.exe_a7b470fc69c3d036575d6a873b9efa73e615757_35bf31f6_9f9fbad7-f4d6-4541-8aec-f7fc59d191c4
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: 45dbaf1a-00ef-44e2-967c-58ab2bf590a0
+Report Status: 268435456
+Hashed bucket: 7bc12df7d266c1480e3ea57e8aae3bf5
+Cab Guid: 0"
+"12/5/2025 3:45:20 PM","Application (WER)","Information","1001","Windows Error Reporting","0","0","Fault bucket , type 0
+Event Name: APPCRASH
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: explorer.exe
+P2: 10.0.19041.6456
+P3: fbcace5c
+P4: SHELL32.dll
+P5: 10.0.19041.6456
+P6: 9ee39b73
+P7: c0000005
+P8: 00000000000ad4dc
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERFAEA.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER53C.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER721.tmp.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER73E.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER7DC.tmp.txt
+\\?\C:\Users\Buffe\AppData\Local\Temp\WER86B.tmp.appcompat.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_explorer.exe_a7b470fc69c3d036575d6a873b9efa73e615757_35bf31f6_cab_9f9fbad7-f4d6-4541-8aec-f7fc59d191c4\memory.hdmp
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_explorer.exe_a7b470fc69c3d036575d6a873b9efa73e615757_35bf31f6_cab_9f9fbad7-f4d6-4541-8aec-f7fc59d191c4
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: 45dbaf1a-00ef-44e2-967c-58ab2bf590a0
+Report Status: 4
+Hashed bucket: 
+Cab Guid: 0"
+"12/5/2025 3:34:47 PM","Application (WER)","Information","1001","Windows Error Reporting","0","0","Fault bucket 2179361232605035509, type 4
+Event Name: APPCRASH
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: explorer.exe
+P2: 10.0.19041.6456
+P3: fbcace5c
+P4: SHELL32.dll
+P5: 10.0.19041.6456
+P6: 9ee39b73
+P7: c0000005
+P8: 00000000000ad4dc
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER5753.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER5C55.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER5CD3.tmp.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER5CE1.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER5D20.tmp.txt
+\\?\C:\Users\Buffe\AppData\Local\Temp\WER5DB0.tmp.appcompat.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_explorer.exe_a7b470fc69c3d036575d6a873b9efa73e615757_35bf31f6_cab_89519b67-a1e8-47b6-be3b-67468b0b6cf8\memory.hdmp
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_explorer.exe_a7b470fc69c3d036575d6a873b9efa73e615757_35bf31f6_89519b67-a1e8-47b6-be3b-67468b0b6cf8
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: e2d26ccb-da34-42b4-ac21-c39053ea9026
+Report Status: 268435456
+Hashed bucket: 7bc12df7d266c1480e3ea57e8aae3bf5
+Cab Guid: 0"
+"12/5/2025 3:34:47 PM","Application (WER)","Information","1001","Windows Error Reporting","0","0","Fault bucket , type 0
+Event Name: APPCRASH
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: explorer.exe
+P2: 10.0.19041.6456
+P3: fbcace5c
+P4: SHELL32.dll
+P5: 10.0.19041.6456
+P6: 9ee39b73
+P7: c0000005
+P8: 00000000000ad4dc
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER5753.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER5C55.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER5CD3.tmp.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER5CE1.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER5D20.tmp.txt
+\\?\C:\Users\Buffe\AppData\Local\Temp\WER5DB0.tmp.appcompat.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_explorer.exe_a7b470fc69c3d036575d6a873b9efa73e615757_35bf31f6_cab_89519b67-a1e8-47b6-be3b-67468b0b6cf8\memory.hdmp
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_explorer.exe_a7b470fc69c3d036575d6a873b9efa73e615757_35bf31f6_cab_89519b67-a1e8-47b6-be3b-67468b0b6cf8
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: e2d26ccb-da34-42b4-ac21-c39053ea9026
+Report Status: 4
+Hashed bucket: 
+Cab Guid: 0"
+"12/5/2025 3:20:24 PM","Application (WER)","Information","1001","Windows Error Reporting","0","0","Fault bucket 2179361232605035509, type 4
+Event Name: APPCRASH
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: explorer.exe
+P2: 10.0.19041.6456
+P3: fbcace5c
+P4: SHELL32.dll
+P5: 10.0.19041.6456
+P6: 9ee39b73
+P7: c0000005
+P8: 00000000000ad4dc
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER3469.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER3823.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER38C0.tmp.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER38CE.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER390D.tmp.txt
+\\?\C:\Users\Buffe\AppData\Local\Temp\WER397E.tmp.appcompat.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_explorer.exe_a7b470fc69c3d036575d6a873b9efa73e615757_35bf31f6_cab_13b778e3-f807-4881-8999-21f82762dce4\memory.hdmp
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_explorer.exe_a7b470fc69c3d036575d6a873b9efa73e615757_35bf31f6_13b778e3-f807-4881-8999-21f82762dce4
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: 181a167c-e8c0-4368-b280-1ce889ec4d74
+Report Status: 268435456
+Hashed bucket: 7bc12df7d266c1480e3ea57e8aae3bf5
+Cab Guid: 0"
+"12/5/2025 3:20:23 PM","Application (WER)","Information","1001","Windows Error Reporting","0","0","Fault bucket , type 0
+Event Name: APPCRASH
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: explorer.exe
+P2: 10.0.19041.6456
+P3: fbcace5c
+P4: SHELL32.dll
+P5: 10.0.19041.6456
+P6: 9ee39b73
+P7: c0000005
+P8: 00000000000ad4dc
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER3469.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER3823.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER38C0.tmp.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER38CE.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER390D.tmp.txt
+\\?\C:\Users\Buffe\AppData\Local\Temp\WER397E.tmp.appcompat.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_explorer.exe_a7b470fc69c3d036575d6a873b9efa73e615757_35bf31f6_cab_13b778e3-f807-4881-8999-21f82762dce4\memory.hdmp
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_explorer.exe_a7b470fc69c3d036575d6a873b9efa73e615757_35bf31f6_cab_13b778e3-f807-4881-8999-21f82762dce4
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: 181a167c-e8c0-4368-b280-1ce889ec4d74
+Report Status: 4
+Hashed bucket: 
+Cab Guid: 0"
+"12/5/2025 3:14:14 PM","Application (WER)","Information","1001","Windows Error Reporting","0","0","Fault bucket 2179361232605035509, type 4
+Event Name: APPCRASH
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: explorer.exe
+P2: 10.0.19041.6456
+P3: fbcace5c
+P4: SHELL32.dll
+P5: 10.0.19041.6456
+P6: 9ee39b73
+P7: c0000005
+P8: 00000000000ad4dc
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER9003.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER93CD.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER944B.tmp.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER945C.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER949C.tmp.txt
+\\?\C:\Users\Buffe\AppData\Local\Temp\WER9508.tmp.appcompat.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_explorer.exe_a7b470fc69c3d036575d6a873b9efa73e615757_35bf31f6_cab_ef0ea221-1976-4277-a9ec-1b8a0d9518c7\memory.hdmp
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_explorer.exe_a7b470fc69c3d036575d6a873b9efa73e615757_35bf31f6_ef0ea221-1976-4277-a9ec-1b8a0d9518c7
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: 9227167f-edb7-47fd-9e27-9164b6175e44
+Report Status: 268435456
+Hashed bucket: 7bc12df7d266c1480e3ea57e8aae3bf5
+Cab Guid: 0"
+"12/5/2025 3:14:14 PM","Application (WER)","Information","1001","Windows Error Reporting","0","0","Fault bucket , type 0
+Event Name: APPCRASH
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: explorer.exe
+P2: 10.0.19041.6456
+P3: fbcace5c
+P4: SHELL32.dll
+P5: 10.0.19041.6456
+P6: 9ee39b73
+P7: c0000005
+P8: 00000000000ad4dc
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER9003.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER93CD.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER944B.tmp.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER945C.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER949C.tmp.txt
+\\?\C:\Users\Buffe\AppData\Local\Temp\WER9508.tmp.appcompat.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_explorer.exe_a7b470fc69c3d036575d6a873b9efa73e615757_35bf31f6_cab_ef0ea221-1976-4277-a9ec-1b8a0d9518c7\memory.hdmp
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_explorer.exe_a7b470fc69c3d036575d6a873b9efa73e615757_35bf31f6_cab_ef0ea221-1976-4277-a9ec-1b8a0d9518c7
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: 9227167f-edb7-47fd-9e27-9164b6175e44
+Report Status: 4
+Hashed bucket: 
+Cab Guid: 0"
+"12/5/2025 3:12:11 PM","Application (WER)","Information","1001","Windows Error Reporting","0","0","Fault bucket 1358077005801851889, type 4
+Event Name: APPCRASH
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: explorer.exe
+P2: 10.0.19041.6456
+P3: fbcace5c
+P4: SHELL32.dll
+P5: 10.0.19041.6456
+P6: 9ee39b73
+P7: c0000005
+P8: 000000000025489b
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERB911.tmp.WERInternalMetadata.xml
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_explorer.exe_8b70ca4a723121343f0441fa139dac4c3b1586_35bf31f6_11d86d19-61c7-4c95-8999-165bf2707905
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: 58112b45-a63c-43e1-8b70-22f90ca1adf4
+Report Status: 268439552
+Hashed bucket: d7785b17df38518462d8dbd764720bf1
+Cab Guid: 0"
+"12/5/2025 3:12:10 PM","Application (WER)","Information","1001","Windows Error Reporting","0","0","Fault bucket , type 0
+Event Name: APPCRASH
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: explorer.exe
+P2: 10.0.19041.6456
+P3: fbcace5c
+P4: SHELL32.dll
+P5: 10.0.19041.6456
+P6: 9ee39b73
+P7: c0000005
+P8: 000000000025489b
+P9: 
+P10: 
+
+Attached files:
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_explorer.exe_8b70ca4a723121343f0441fa139dac4c3b1586_35bf31f6_11d86d19-61c7-4c95-8999-165bf2707905
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: 58112b45-a63c-43e1-8b70-22f90ca1adf4
+Report Status: 4100
+Hashed bucket: 
+Cab Guid: 0"
+"12/5/2025 3:02:26 PM","Application (WER)","Information","1001","Windows Error Reporting","0","0","Fault bucket 1358077005801851889, type 4
+Event Name: APPCRASH
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: explorer.exe
+P2: 10.0.19041.6456
+P3: fbcace5c
+P4: SHELL32.dll
+P5: 10.0.19041.6456
+P6: 9ee39b73
+P7: c0000005
+P8: 000000000025489b
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERCAFE.tmp.WERInternalMetadata.xml
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_explorer.exe_8b70ca4a723121343f0441fa139dac4c3b1586_35bf31f6_1a264224-9b1a-4251-a613-d7ea36ae9a97
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: 416b091f-5ff8-411f-a765-4595d964aaf9
+Report Status: 268439552
+Hashed bucket: d7785b17df38518462d8dbd764720bf1
+Cab Guid: 0"
+"12/5/2025 3:02:25 PM","Application (WER)","Information","1001","Windows Error Reporting","0","0","Fault bucket , type 0
+Event Name: APPCRASH
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: explorer.exe
+P2: 10.0.19041.6456
+P3: fbcace5c
+P4: SHELL32.dll
+P5: 10.0.19041.6456
+P6: 9ee39b73
+P7: c0000005
+P8: 000000000025489b
+P9: 
+P10: 
+
+Attached files:
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_explorer.exe_8b70ca4a723121343f0441fa139dac4c3b1586_35bf31f6_1a264224-9b1a-4251-a613-d7ea36ae9a97
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: 416b091f-5ff8-411f-a765-4595d964aaf9
+Report Status: 4100
+Hashed bucket: 
+Cab Guid: 0"
+"12/5/2025 3:01:52 PM","Application (WER)","Information","1001","Windows Error Reporting","0","0","Fault bucket 2261516760164610096, type 4
+Event Name: APPCRASH
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: explorer.exe
+P2: 10.0.19041.6456
+P3: fbcace5c
+P4: shcore.dll
+P5: 10.0.19041.5794
+P6: e8391836
+P7: c000041d
+P8: 0000000000028137
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER4582.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER4739.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER47B7.tmp.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER47B7.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER4806.tmp.txt
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_explorer.exe_b53eb5e36ef49850ded8eac596bb6b5d3e3d74_35bf31f6_fa2df411-b446-4663-ad57-4f9a4e778bb5
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: 0be5e940-64c4-4c3b-bc5b-d0be73c2a414
+Report Status: 268435456
+Hashed bucket: a9fb134bb7660ef8cf628582e7343030
+Cab Guid: 0"
+"12/5/2025 3:01:50 PM","Application (WER)","Information","1001","Windows Error Reporting","0","0","Fault bucket 1379467929061685814, type 4
+Event Name: APPCRASH
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: explorer.exe
+P2: 10.0.19041.6456
+P3: fbcace5c
+P4: shcore.dll
+P5: 10.0.19041.5794
+P6: e8391836
+P7: c0000005
+P8: 0000000000028137
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER3DC2.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER3F59.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER3FE7.tmp.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER3FE5.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER4034.tmp.txt
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_explorer.exe_8dd6e8efdb8e25bb921ff14af3a35ce11c7219_35bf31f6_74c59cc8-abaf-416f-a6a5-184c93dd350c
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: e6101bbb-8efe-4dd8-aa24-9c6e91ef8ca5
+Report Status: 268435456
+Hashed bucket: fa3a0651ae1321b2f324dac5d2c3fa36
+Cab Guid: 0"
+"12/5/2025 1:22:53 PM","Application (WER)","Information","1001","Windows Error Reporting","0","0","Fault bucket 1379467929061685814, type 4
+Event Name: APPCRASH
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: explorer.exe
+P2: 10.0.19041.6456
+P3: fbcace5c
+P4: shcore.dll
+P5: 10.0.19041.5794
+P6: e8391836
+P7: c0000005
+P8: 0000000000028137
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER8BDD.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER94D7.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER9555.tmp.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER9564.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER95C3.tmp.txt
+\\?\C:\Users\Buffe\AppData\Local\Temp\WER9670.tmp.appcompat.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_explorer.exe_8dd6e8efdb8e25bb921ff14af3a35ce11c7219_35bf31f6_cab_bdca4698-8cfc-4c42-b9f3-01b9b753f14a\memory.hdmp
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_explorer.exe_8dd6e8efdb8e25bb921ff14af3a35ce11c7219_35bf31f6_bdca4698-8cfc-4c42-b9f3-01b9b753f14a
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: 2609a4d8-9130-4cce-bde3-69b52e3a704f
+Report Status: 268435456
+Hashed bucket: fa3a0651ae1321b2f324dac5d2c3fa36
+Cab Guid: 0"
+"12/5/2025 1:22:53 PM","Application (WER)","Information","1001","Windows Error Reporting","0","0","Fault bucket , type 0
+Event Name: APPCRASH
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: explorer.exe
+P2: 10.0.19041.6456
+P3: fbcace5c
+P4: shcore.dll
+P5: 10.0.19041.5794
+P6: e8391836
+P7: c0000005
+P8: 0000000000028137
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER8BDD.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER94D7.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER9555.tmp.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER9564.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER95C3.tmp.txt
+\\?\C:\Users\Buffe\AppData\Local\Temp\WER9670.tmp.appcompat.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_explorer.exe_8dd6e8efdb8e25bb921ff14af3a35ce11c7219_35bf31f6_cab_bdca4698-8cfc-4c42-b9f3-01b9b753f14a\memory.hdmp
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_explorer.exe_8dd6e8efdb8e25bb921ff14af3a35ce11c7219_35bf31f6_cab_bdca4698-8cfc-4c42-b9f3-01b9b753f14a
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: 2609a4d8-9130-4cce-bde3-69b52e3a704f
+Report Status: 4
+Hashed bucket: 
+Cab Guid: 0"
+"12/5/2025 6:33:39 AM","Application (WER)","Information","1001","Windows Error Reporting","0","0","Fault bucket 1379467929061685814, type 4
+Event Name: APPCRASH
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: Explorer.EXE
+P2: 10.0.19041.6456
+P3: fbcace5c
+P4: shcore.dll
+P5: 10.0.19041.5794
+P6: e8391836
+P7: c0000005
+P8: 0000000000028137
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WEREC3D.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERF3BF.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERF43D.tmp.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERF44B.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERF48B.tmp.txt
+\\?\C:\Users\Buffe\AppData\Local\Temp\WERF578.tmp.appcompat.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_Explorer.EXE_e4242462a03c3e204aa2422e2d37f333a881b1_f1d739db_cab_fcddb3ee-4d51-4299-9525-ffac230cbecb\memory.hdmp
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_Explorer.EXE_e4242462a03c3e204aa2422e2d37f333a881b1_f1d739db_fcddb3ee-4d51-4299-9525-ffac230cbecb
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: 0d2574df-d1f5-4db9-b2dd-6375f19c5cf4
+Report Status: 268435456
+Hashed bucket: fa3a0651ae1321b2f324dac5d2c3fa36
+Cab Guid: 0"
+"12/5/2025 6:33:38 AM","Application (WER)","Information","1001","Windows Error Reporting","0","0","Fault bucket , type 0
+Event Name: APPCRASH
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: Explorer.EXE
+P2: 10.0.19041.6456
+P3: fbcace5c
+P4: shcore.dll
+P5: 10.0.19041.5794
+P6: e8391836
+P7: c0000005
+P8: 0000000000028137
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WEREC3D.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERF3BF.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERF43D.tmp.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERF44B.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERF48B.tmp.txt
+\\?\C:\Users\Buffe\AppData\Local\Temp\WERF578.tmp.appcompat.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_Explorer.EXE_e4242462a03c3e204aa2422e2d37f333a881b1_f1d739db_cab_fcddb3ee-4d51-4299-9525-ffac230cbecb\memory.hdmp
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_Explorer.EXE_e4242462a03c3e204aa2422e2d37f333a881b1_f1d739db_cab_fcddb3ee-4d51-4299-9525-ffac230cbecb
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: 0d2574df-d1f5-4db9-b2dd-6375f19c5cf4
+Report Status: 4
+Hashed bucket: 
+Cab Guid: 0"
+"12/4/2025 8:55:16 PM","Application (WER)","Information","1001","Windows Error Reporting","0","0","Fault bucket 1358077005801851889, type 4
+Event Name: APPCRASH
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: explorer.exe
+P2: 10.0.19041.6456
+P3: fbcace5c
+P4: SHELL32.dll
+P5: 10.0.19041.6456
+P6: 9ee39b73
+P7: c0000005
+P8: 000000000025489b
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER7A37.tmp.WERInternalMetadata.xml
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_explorer.exe_8b70ca4a723121343f0441fa139dac4c3b1586_35bf31f6_58f31c84-dda3-49de-9f9d-92ef150801a8
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: daf19b3b-54e0-4cef-a05d-119d24b3d84b
+Report Status: 268439552
+Hashed bucket: d7785b17df38518462d8dbd764720bf1
+Cab Guid: 0"
+"12/4/2025 8:55:15 PM","Application (WER)","Information","1001","Windows Error Reporting","0","0","Fault bucket , type 0
+Event Name: APPCRASH
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: explorer.exe
+P2: 10.0.19041.6456
+P3: fbcace5c
+P4: SHELL32.dll
+P5: 10.0.19041.6456
+P6: 9ee39b73
+P7: c0000005
+P8: 000000000025489b
+P9: 
+P10: 
+
+Attached files:
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_explorer.exe_8b70ca4a723121343f0441fa139dac4c3b1586_35bf31f6_58f31c84-dda3-49de-9f9d-92ef150801a8
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: daf19b3b-54e0-4cef-a05d-119d24b3d84b
+Report Status: 4100
+Hashed bucket: 
+Cab Guid: 0"
+"12/4/2025 8:51:37 PM","Application (WER)","Information","1001","Windows Error Reporting","0","0","Fault bucket 1358077005801851889, type 4
+Event Name: APPCRASH
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: explorer.exe
+P2: 10.0.19041.6456
+P3: fbcace5c
+P4: SHELL32.dll
+P5: 10.0.19041.6456
+P6: 9ee39b73
+P7: c0000005
+P8: 000000000025489b
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER255F.tmp.WERInternalMetadata.xml
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_explorer.exe_8b70ca4a723121343f0441fa139dac4c3b1586_35bf31f6_c2ef9e08-18b3-4156-89bf-76bffa013e7e
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: 4ad973dd-30d1-4a63-9338-85a76965dce9
+Report Status: 268439552
+Hashed bucket: d7785b17df38518462d8dbd764720bf1
+Cab Guid: 0"
+"12/4/2025 8:51:37 PM","Application (WER)","Information","1001","Windows Error Reporting","0","0","Fault bucket , type 0
+Event Name: APPCRASH
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: explorer.exe
+P2: 10.0.19041.6456
+P3: fbcace5c
+P4: SHELL32.dll
+P5: 10.0.19041.6456
+P6: 9ee39b73
+P7: c0000005
+P8: 000000000025489b
+P9: 
+P10: 
+
+Attached files:
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_explorer.exe_8b70ca4a723121343f0441fa139dac4c3b1586_35bf31f6_c2ef9e08-18b3-4156-89bf-76bffa013e7e
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: 4ad973dd-30d1-4a63-9338-85a76965dce9
+Report Status: 4100
+Hashed bucket: 
+Cab Guid: 0"
+"12/4/2025 8:47:45 PM","Application (WER)","Information","1001","Windows Error Reporting","0","0","Fault bucket 1379467929061685814, type 4
+Event Name: APPCRASH
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: explorer.exe
+P2: 10.0.19041.6456
+P3: fbcace5c
+P4: shcore.dll
+P5: 10.0.19041.5794
+P6: e8391836
+P7: c0000005
+P8: 0000000000028137
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER8758.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER8C0C.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER8D07.tmp.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER8D36.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER8E02.tmp.txt
+\\?\C:\Users\Buffe\AppData\Local\Temp\WER8EBF.tmp.appcompat.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_explorer.exe_8dd6e8efdb8e25bb921ff14af3a35ce11c7219_35bf31f6_cab_6c47cb0c-f901-41c4-ac7a-e72a23bc6a8e\memory.hdmp
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_explorer.exe_8dd6e8efdb8e25bb921ff14af3a35ce11c7219_35bf31f6_6c47cb0c-f901-41c4-ac7a-e72a23bc6a8e
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: 5ce292bb-9f13-4bcd-9728-2f57c36b5a9e
+Report Status: 268435456
+Hashed bucket: fa3a0651ae1321b2f324dac5d2c3fa36
+Cab Guid: 0"
+"12/4/2025 8:47:44 PM","Application (WER)","Information","1001","Windows Error Reporting","0","0","Fault bucket , type 0
+Event Name: APPCRASH
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: explorer.exe
+P2: 10.0.19041.6456
+P3: fbcace5c
+P4: shcore.dll
+P5: 10.0.19041.5794
+P6: e8391836
+P7: c0000005
+P8: 0000000000028137
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER8758.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER8C0C.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER8D07.tmp.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER8D36.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER8E02.tmp.txt
+\\?\C:\Users\Buffe\AppData\Local\Temp\WER8EBF.tmp.appcompat.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_explorer.exe_8dd6e8efdb8e25bb921ff14af3a35ce11c7219_35bf31f6_cab_6c47cb0c-f901-41c4-ac7a-e72a23bc6a8e\memory.hdmp
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_explorer.exe_8dd6e8efdb8e25bb921ff14af3a35ce11c7219_35bf31f6_cab_6c47cb0c-f901-41c4-ac7a-e72a23bc6a8e
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: 5ce292bb-9f13-4bcd-9728-2f57c36b5a9e
+Report Status: 4
+Hashed bucket: 
+Cab Guid: 0"
+"12/4/2025 8:47:11 PM","Application (WER)","Information","1001","Windows Error Reporting","0","0","Fault bucket 1379467929061685814, type 4
+Event Name: APPCRASH
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: explorer.exe
+P2: 10.0.19041.6456
+P3: fbcace5c
+P4: shcore.dll
+P5: 10.0.19041.5794
+P6: e8391836
+P7: c0000005
+P8: 0000000000028137
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER910.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERDF3.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERE81.tmp.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERE8E.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERF1C.tmp.txt
+\\?\C:\Users\Buffe\AppData\Local\Temp\WERF9C.tmp.appcompat.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_explorer.exe_8dd6e8efdb8e25bb921ff14af3a35ce11c7219_35bf31f6_cab_980f9e80-d1e5-4aa3-8ebe-21fc8328af1e\memory.hdmp
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_explorer.exe_8dd6e8efdb8e25bb921ff14af3a35ce11c7219_35bf31f6_980f9e80-d1e5-4aa3-8ebe-21fc8328af1e
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: 36b67a2a-8a17-4cd2-b098-09219adfe7a2
+Report Status: 268435456
+Hashed bucket: fa3a0651ae1321b2f324dac5d2c3fa36
+Cab Guid: 0"
+"12/4/2025 8:47:11 PM","Application (WER)","Information","1001","Windows Error Reporting","0","0","Fault bucket , type 0
+Event Name: APPCRASH
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: explorer.exe
+P2: 10.0.19041.6456
+P3: fbcace5c
+P4: shcore.dll
+P5: 10.0.19041.5794
+P6: e8391836
+P7: c0000005
+P8: 0000000000028137
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER910.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERDF3.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERE81.tmp.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERE8E.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERF1C.tmp.txt
+\\?\C:\Users\Buffe\AppData\Local\Temp\WERF9C.tmp.appcompat.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_explorer.exe_8dd6e8efdb8e25bb921ff14af3a35ce11c7219_35bf31f6_cab_980f9e80-d1e5-4aa3-8ebe-21fc8328af1e\memory.hdmp
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_explorer.exe_8dd6e8efdb8e25bb921ff14af3a35ce11c7219_35bf31f6_cab_980f9e80-d1e5-4aa3-8ebe-21fc8328af1e
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: 36b67a2a-8a17-4cd2-b098-09219adfe7a2
+Report Status: 4
+Hashed bucket: 
+Cab Guid: 0"
+"12/4/2025 8:43:00 PM","Application (WER)","Information","1001","Windows Error Reporting","0","0","Fault bucket 1379467929061685814, type 4
+Event Name: APPCRASH
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: explorer.exe
+P2: 10.0.19041.6456
+P3: fbcace5c
+P4: shcore.dll
+P5: 10.0.19041.5794
+P6: e8391836
+P7: c0000005
+P8: 0000000000028137
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER3515.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER397B.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER3A09.tmp.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER3A1C.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER3A6C.tmp.txt
+\\?\C:\Users\Buffe\AppData\Local\Temp\WER3B05.tmp.appcompat.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_explorer.exe_8dd6e8efdb8e25bb921ff14af3a35ce11c7219_35bf31f6_cab_235f7024-79f9-41a7-b3dd-e93a6885a1bf\memory.hdmp
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_explorer.exe_8dd6e8efdb8e25bb921ff14af3a35ce11c7219_35bf31f6_235f7024-79f9-41a7-b3dd-e93a6885a1bf
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: ee3f9cbd-b813-4d85-a0a8-d0251244f59a
+Report Status: 268435456
+Hashed bucket: fa3a0651ae1321b2f324dac5d2c3fa36
+Cab Guid: 0"
+"12/4/2025 8:43:00 PM","Application (WER)","Information","1001","Windows Error Reporting","0","0","Fault bucket , type 0
+Event Name: APPCRASH
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: explorer.exe
+P2: 10.0.19041.6456
+P3: fbcace5c
+P4: shcore.dll
+P5: 10.0.19041.5794
+P6: e8391836
+P7: c0000005
+P8: 0000000000028137
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER3515.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER397B.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER3A09.tmp.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER3A1C.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER3A6C.tmp.txt
+\\?\C:\Users\Buffe\AppData\Local\Temp\WER3B05.tmp.appcompat.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_explorer.exe_8dd6e8efdb8e25bb921ff14af3a35ce11c7219_35bf31f6_cab_235f7024-79f9-41a7-b3dd-e93a6885a1bf\memory.hdmp
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_explorer.exe_8dd6e8efdb8e25bb921ff14af3a35ce11c7219_35bf31f6_cab_235f7024-79f9-41a7-b3dd-e93a6885a1bf
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: ee3f9cbd-b813-4d85-a0a8-d0251244f59a
+Report Status: 4
+Hashed bucket: 
+Cab Guid: 0"
+"12/4/2025 8:41:13 PM","Application (WER)","Information","1001","Windows Error Reporting","0","0","Fault bucket 1358077005801851889, type 4
+Event Name: APPCRASH
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: explorer.exe
+P2: 10.0.19041.6456
+P3: fbcace5c
+P4: SHELL32.dll
+P5: 10.0.19041.6456
+P6: 9ee39b73
+P7: c0000005
+P8: 000000000025489b
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER9E58.tmp.WERInternalMetadata.xml
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_explorer.exe_8b70ca4a723121343f0441fa139dac4c3b1586_35bf31f6_346bc79f-275a-49b4-9994-ce53a6f4885a
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: 9b596508-af91-4b43-86f8-a9a516545e7c
+Report Status: 268439552
+Hashed bucket: d7785b17df38518462d8dbd764720bf1
+Cab Guid: 0"
+"12/4/2025 8:41:12 PM","Application (WER)","Information","1001","Windows Error Reporting","0","0","Fault bucket , type 0
+Event Name: APPCRASH
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: explorer.exe
+P2: 10.0.19041.6456
+P3: fbcace5c
+P4: SHELL32.dll
+P5: 10.0.19041.6456
+P6: 9ee39b73
+P7: c0000005
+P8: 000000000025489b
+P9: 
+P10: 
+
+Attached files:
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_explorer.exe_8b70ca4a723121343f0441fa139dac4c3b1586_35bf31f6_346bc79f-275a-49b4-9994-ce53a6f4885a
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: 9b596508-af91-4b43-86f8-a9a516545e7c
+Report Status: 4100
+Hashed bucket: 
+Cab Guid: 0"
+"12/4/2025 8:40:14 PM","Application (WER)","Information","1001","Windows Error Reporting","0","0","Fault bucket 1379467929061685814, type 4
+Event Name: APPCRASH
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: explorer.exe
+P2: 10.0.19041.6456
+P3: fbcace5c
+P4: shcore.dll
+P5: 10.0.19041.5794
+P6: e8391836
+P7: c0000005
+P8: 0000000000028137
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERAC38.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERB0DC.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERB16A.tmp.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERB16A.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERB1B9.tmp.txt
+\\?\C:\Users\Buffe\AppData\Local\Temp\WERB237.tmp.appcompat.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_explorer.exe_8dd6e8efdb8e25bb921ff14af3a35ce11c7219_35bf31f6_cab_74cd1ac9-4eda-4a72-b431-397bfffe65e2\memory.hdmp
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_explorer.exe_8dd6e8efdb8e25bb921ff14af3a35ce11c7219_35bf31f6_74cd1ac9-4eda-4a72-b431-397bfffe65e2
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: a1a7aa8d-f6fa-4bca-bc4e-8069ad5ab64c
+Report Status: 268435456
+Hashed bucket: fa3a0651ae1321b2f324dac5d2c3fa36
+Cab Guid: 0"
+"12/4/2025 8:40:14 PM","Application (WER)","Information","1001","Windows Error Reporting","0","0","Fault bucket , type 0
+Event Name: APPCRASH
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: explorer.exe
+P2: 10.0.19041.6456
+P3: fbcace5c
+P4: shcore.dll
+P5: 10.0.19041.5794
+P6: e8391836
+P7: c0000005
+P8: 0000000000028137
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERAC38.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERB0DC.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERB16A.tmp.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERB16A.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERB1B9.tmp.txt
+\\?\C:\Users\Buffe\AppData\Local\Temp\WERB237.tmp.appcompat.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_explorer.exe_8dd6e8efdb8e25bb921ff14af3a35ce11c7219_35bf31f6_cab_74cd1ac9-4eda-4a72-b431-397bfffe65e2\memory.hdmp
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_explorer.exe_8dd6e8efdb8e25bb921ff14af3a35ce11c7219_35bf31f6_cab_74cd1ac9-4eda-4a72-b431-397bfffe65e2
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: a1a7aa8d-f6fa-4bca-bc4e-8069ad5ab64c
+Report Status: 4
+Hashed bucket: 
+Cab Guid: 0"
+"12/4/2025 8:39:32 PM","Application (WER)","Information","1001","Windows Error Reporting","0","0","Fault bucket 1358077005801851889, type 4
+Event Name: APPCRASH
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: explorer.exe
+P2: 10.0.19041.6456
+P3: fbcace5c
+P4: SHELL32.dll
+P5: 10.0.19041.6456
+P6: 9ee39b73
+P7: c0000005
+P8: 000000000025489b
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER11CD.tmp.WERInternalMetadata.xml
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_explorer.exe_8b70ca4a723121343f0441fa139dac4c3b1586_35bf31f6_b6256b4e-f054-4b77-8edc-4512cc528c23
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: 719fe2dc-d7e9-4351-9dca-f9015e5659e6
+Report Status: 268439552
+Hashed bucket: d7785b17df38518462d8dbd764720bf1
+Cab Guid: 0"
+"12/4/2025 8:39:31 PM","Application (WER)","Information","1001","Windows Error Reporting","0","0","Fault bucket , type 0
+Event Name: APPCRASH
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: explorer.exe
+P2: 10.0.19041.6456
+P3: fbcace5c
+P4: SHELL32.dll
+P5: 10.0.19041.6456
+P6: 9ee39b73
+P7: c0000005
+P8: 000000000025489b
+P9: 
+P10: 
+
+Attached files:
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_explorer.exe_8b70ca4a723121343f0441fa139dac4c3b1586_35bf31f6_b6256b4e-f054-4b77-8edc-4512cc528c23
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: 719fe2dc-d7e9-4351-9dca-f9015e5659e6
+Report Status: 4100
+Hashed bucket: 
+Cab Guid: 0"
+"12/4/2025 8:21:35 PM","Application (WER)","Information","1001","Windows Error Reporting","0","0","Fault bucket 1379467929061685814, type 4
+Event Name: APPCRASH
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: explorer.exe
+P2: 10.0.19041.6456
+P3: fbcace5c
+P4: shcore.dll
+P5: 10.0.19041.5794
+P6: e8391836
+P7: c0000005
+P8: 0000000000028137
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER9519.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER9A79.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER9B16.tmp.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER9B23.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER9B92.tmp.txt
+\\?\C:\Users\Buffe\AppData\Local\Temp\WER9C21.tmp.appcompat.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_explorer.exe_8dd6e8efdb8e25bb921ff14af3a35ce11c7219_35bf31f6_cab_c41bc47e-de96-4970-a00a-f1325c8ad2fe\memory.hdmp
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_explorer.exe_8dd6e8efdb8e25bb921ff14af3a35ce11c7219_35bf31f6_c41bc47e-de96-4970-a00a-f1325c8ad2fe
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: 154dbcc7-c4c5-4ffb-8e66-87914f5f6179
+Report Status: 268435456
+Hashed bucket: fa3a0651ae1321b2f324dac5d2c3fa36
+Cab Guid: 0"
+"12/4/2025 8:21:34 PM","Application (WER)","Information","1001","Windows Error Reporting","0","0","Fault bucket , type 0
+Event Name: APPCRASH
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: explorer.exe
+P2: 10.0.19041.6456
+P3: fbcace5c
+P4: shcore.dll
+P5: 10.0.19041.5794
+P6: e8391836
+P7: c0000005
+P8: 0000000000028137
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER9519.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER9A79.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER9B16.tmp.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER9B23.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER9B92.tmp.txt
+\\?\C:\Users\Buffe\AppData\Local\Temp\WER9C21.tmp.appcompat.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_explorer.exe_8dd6e8efdb8e25bb921ff14af3a35ce11c7219_35bf31f6_cab_c41bc47e-de96-4970-a00a-f1325c8ad2fe\memory.hdmp
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_explorer.exe_8dd6e8efdb8e25bb921ff14af3a35ce11c7219_35bf31f6_cab_c41bc47e-de96-4970-a00a-f1325c8ad2fe
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: 154dbcc7-c4c5-4ffb-8e66-87914f5f6179
+Report Status: 4
+Hashed bucket: 
+Cab Guid: 0"
+"12/4/2025 8:10:16 PM","Application (WER)","Information","1001","Windows Error Reporting","0","0","Fault bucket 1379467929061685814, type 4
+Event Name: APPCRASH
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: explorer.exe
+P2: 10.0.19041.6456
+P3: fbcace5c
+P4: shcore.dll
+P5: 10.0.19041.5794
+P6: e8391836
+P7: c0000005
+P8: 0000000000028137
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER3A95.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER3F78.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER4016.tmp.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER4014.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER4063.tmp.txt
+\\?\C:\Users\Buffe\AppData\Local\Temp\WER40F2.tmp.appcompat.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_explorer.exe_8dd6e8efdb8e25bb921ff14af3a35ce11c7219_35bf31f6_cab_3f0f6a26-9370-42f8-9d03-18cd73441e92\memory.hdmp
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_explorer.exe_8dd6e8efdb8e25bb921ff14af3a35ce11c7219_35bf31f6_3f0f6a26-9370-42f8-9d03-18cd73441e92
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: 27b61ab2-94f4-47a6-833f-928f40588d35
+Report Status: 268435456
+Hashed bucket: fa3a0651ae1321b2f324dac5d2c3fa36
+Cab Guid: 0"
+"12/4/2025 8:10:15 PM","Application (WER)","Information","1001","Windows Error Reporting","0","0","Fault bucket , type 0
+Event Name: APPCRASH
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: explorer.exe
+P2: 10.0.19041.6456
+P3: fbcace5c
+P4: shcore.dll
+P5: 10.0.19041.5794
+P6: e8391836
+P7: c0000005
+P8: 0000000000028137
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER3A95.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER3F78.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER4016.tmp.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER4014.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER4063.tmp.txt
+\\?\C:\Users\Buffe\AppData\Local\Temp\WER40F2.tmp.appcompat.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_explorer.exe_8dd6e8efdb8e25bb921ff14af3a35ce11c7219_35bf31f6_cab_3f0f6a26-9370-42f8-9d03-18cd73441e92\memory.hdmp
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_explorer.exe_8dd6e8efdb8e25bb921ff14af3a35ce11c7219_35bf31f6_cab_3f0f6a26-9370-42f8-9d03-18cd73441e92
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: 27b61ab2-94f4-47a6-833f-928f40588d35
+Report Status: 4
+Hashed bucket: 
+Cab Guid: 0"
+"12/4/2025 8:06:26 PM","Application (WER)","Information","1001","Windows Error Reporting","0","0","Fault bucket 1379467929061685814, type 4
+Event Name: APPCRASH
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: explorer.exe
+P2: 10.0.19041.6456
+P3: fbcace5c
+P4: shcore.dll
+P5: 10.0.19041.5794
+P6: e8391836
+P7: c0000005
+P8: 0000000000028137
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERB7F6.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERBCCA.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERBDE4.tmp.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERBE17.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERBE95.tmp.txt
+\\?\C:\Users\Buffe\AppData\Local\Temp\WERBF0F.tmp.appcompat.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_explorer.exe_8dd6e8efdb8e25bb921ff14af3a35ce11c7219_35bf31f6_cab_a9efc254-83c2-4d17-9a11-edb277924378\memory.hdmp
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_explorer.exe_8dd6e8efdb8e25bb921ff14af3a35ce11c7219_35bf31f6_a9efc254-83c2-4d17-9a11-edb277924378
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: 62f92e4e-0158-45fb-a02f-af0f82b3eecf
+Report Status: 268435456
+Hashed bucket: fa3a0651ae1321b2f324dac5d2c3fa36
+Cab Guid: 0"
+"12/4/2025 8:06:25 PM","Application (WER)","Information","1001","Windows Error Reporting","0","0","Fault bucket , type 0
+Event Name: APPCRASH
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: explorer.exe
+P2: 10.0.19041.6456
+P3: fbcace5c
+P4: shcore.dll
+P5: 10.0.19041.5794
+P6: e8391836
+P7: c0000005
+P8: 0000000000028137
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERB7F6.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERBCCA.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERBDE4.tmp.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERBE17.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERBE95.tmp.txt
+\\?\C:\Users\Buffe\AppData\Local\Temp\WERBF0F.tmp.appcompat.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_explorer.exe_8dd6e8efdb8e25bb921ff14af3a35ce11c7219_35bf31f6_cab_a9efc254-83c2-4d17-9a11-edb277924378\memory.hdmp
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_explorer.exe_8dd6e8efdb8e25bb921ff14af3a35ce11c7219_35bf31f6_cab_a9efc254-83c2-4d17-9a11-edb277924378
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: 62f92e4e-0158-45fb-a02f-af0f82b3eecf
+Report Status: 4
+Hashed bucket: 
+Cab Guid: 0"
+"12/4/2025 8:05:43 PM","Application (WER)","Information","1001","Windows Error Reporting","0","0","Fault bucket 1379467929061685814, type 4
+Event Name: APPCRASH
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: explorer.exe
+P2: 10.0.19041.6456
+P3: fbcace5c
+P4: shcore.dll
+P5: 10.0.19041.5794
+P6: e8391836
+P7: c0000005
+P8: 0000000000028137
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER102D.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER160A.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER16B7.tmp.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER16B9.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER1728.tmp.txt
+\\?\C:\Users\Buffe\AppData\Local\Temp\WER17B3.tmp.appcompat.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_explorer.exe_8dd6e8efdb8e25bb921ff14af3a35ce11c7219_35bf31f6_cab_e01f445a-950f-4e04-bf86-ad7f3ab87d13\memory.hdmp
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_explorer.exe_8dd6e8efdb8e25bb921ff14af3a35ce11c7219_35bf31f6_e01f445a-950f-4e04-bf86-ad7f3ab87d13
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: 77b1cafe-e8dd-4bb6-bcc4-9bdf797bcbaa
+Report Status: 268435456
+Hashed bucket: fa3a0651ae1321b2f324dac5d2c3fa36
+Cab Guid: 0"
+"12/4/2025 8:05:42 PM","Application (WER)","Information","1001","Windows Error Reporting","0","0","Fault bucket , type 0
+Event Name: APPCRASH
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: explorer.exe
+P2: 10.0.19041.6456
+P3: fbcace5c
+P4: shcore.dll
+P5: 10.0.19041.5794
+P6: e8391836
+P7: c0000005
+P8: 0000000000028137
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER102D.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER160A.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER16B7.tmp.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER16B9.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER1728.tmp.txt
+\\?\C:\Users\Buffe\AppData\Local\Temp\WER17B3.tmp.appcompat.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_explorer.exe_8dd6e8efdb8e25bb921ff14af3a35ce11c7219_35bf31f6_cab_e01f445a-950f-4e04-bf86-ad7f3ab87d13\memory.hdmp
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_explorer.exe_8dd6e8efdb8e25bb921ff14af3a35ce11c7219_35bf31f6_cab_e01f445a-950f-4e04-bf86-ad7f3ab87d13
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: 77b1cafe-e8dd-4bb6-bcc4-9bdf797bcbaa
+Report Status: 4
+Hashed bucket: 
+Cab Guid: 0"
+"12/4/2025 8:04:29 PM","Application (WER)","Information","1001","Windows Error Reporting","0","0","Fault bucket 2261516760164610096, type 4
+Event Name: APPCRASH
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: explorer.exe
+P2: 10.0.19041.6456
+P3: fbcace5c
+P4: shcore.dll
+P5: 10.0.19041.5794
+P6: e8391836
+P7: c000041d
+P8: 0000000000028137
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERFC6C.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERFDE4.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERFE62.tmp.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERFE71.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERFEC0.tmp.txt
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_explorer.exe_b53eb5e36ef49850ded8eac596bb6b5d3e3d74_35bf31f6_f2d1a582-2130-44bf-8a86-a23a0f43a00a
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: 60c247a6-7f41-48f5-b188-a77a0947f331
+Report Status: 268435456
+Hashed bucket: a9fb134bb7660ef8cf628582e7343030
+Cab Guid: 0"
+"12/4/2025 8:04:28 PM","Application (WER)","Information","1001","Windows Error Reporting","0","0","Fault bucket 1379467929061685814, type 4
+Event Name: APPCRASH
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: explorer.exe
+P2: 10.0.19041.6456
+P3: fbcace5c
+P4: shcore.dll
+P5: 10.0.19041.5794
+P6: e8391836
+P7: c0000005
+P8: 0000000000028137
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERF43E.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERF5E5.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERF692.tmp.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERF69F.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERF6EE.tmp.txt
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_explorer.exe_8dd6e8efdb8e25bb921ff14af3a35ce11c7219_35bf31f6_68678892-7766-4806-b1a0-80aa54c7dbb5
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: 3c2ad0df-26dc-4e45-8519-c606cba806ba
+Report Status: 268435456
+Hashed bucket: fa3a0651ae1321b2f324dac5d2c3fa36
+Cab Guid: 0"
+"12/4/2025 7:58:54 PM","Application (WER)","Information","1001","Windows Error Reporting","0","0","Fault bucket 1379467929061685814, type 4
+Event Name: APPCRASH
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: explorer.exe
+P2: 10.0.19041.6456
+P3: fbcace5c
+P4: shcore.dll
+P5: 10.0.19041.5794
+P6: e8391836
+P7: c0000005
+P8: 0000000000028137
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERD1D9.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERD65F.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERD6EC.tmp.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERD6FA.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERD749.tmp.txt
+\\?\C:\Users\Buffe\AppData\Local\Temp\WERD7C9.tmp.appcompat.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_explorer.exe_8dd6e8efdb8e25bb921ff14af3a35ce11c7219_35bf31f6_cab_915185b5-dc3c-4a11-baee-3476bea6906f\memory.hdmp
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_explorer.exe_8dd6e8efdb8e25bb921ff14af3a35ce11c7219_35bf31f6_915185b5-dc3c-4a11-baee-3476bea6906f
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: 9d0914a0-9908-4558-9545-3881010edf31
+Report Status: 268435456
+Hashed bucket: fa3a0651ae1321b2f324dac5d2c3fa36
+Cab Guid: 0"
+"12/4/2025 7:58:53 PM","Application (WER)","Information","1001","Windows Error Reporting","0","0","Fault bucket , type 0
+Event Name: APPCRASH
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: explorer.exe
+P2: 10.0.19041.6456
+P3: fbcace5c
+P4: shcore.dll
+P5: 10.0.19041.5794
+P6: e8391836
+P7: c0000005
+P8: 0000000000028137
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERD1D9.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERD65F.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERD6EC.tmp.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERD6FA.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERD749.tmp.txt
+\\?\C:\Users\Buffe\AppData\Local\Temp\WERD7C9.tmp.appcompat.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_explorer.exe_8dd6e8efdb8e25bb921ff14af3a35ce11c7219_35bf31f6_cab_915185b5-dc3c-4a11-baee-3476bea6906f\memory.hdmp
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_explorer.exe_8dd6e8efdb8e25bb921ff14af3a35ce11c7219_35bf31f6_cab_915185b5-dc3c-4a11-baee-3476bea6906f
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: 9d0914a0-9908-4558-9545-3881010edf31
+Report Status: 4
+Hashed bucket: 
+Cab Guid: 0"
+"12/4/2025 7:24:38 PM","Application (WER)","Information","1001","Windows Error Reporting","0","0","Fault bucket 1379467929061685814, type 4
+Event Name: APPCRASH
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: explorer.exe
+P2: 10.0.19041.6456
+P3: fbcace5c
+P4: shcore.dll
+P5: 10.0.19041.5794
+P6: e8391836
+P7: c0000005
+P8: 0000000000028137
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER76DF.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER7AE7.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER7B85.tmp.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER7B98.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER7BE7.tmp.txt
+\\?\C:\Users\Buffe\AppData\Local\Temp\WER7C61.tmp.appcompat.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_explorer.exe_8dd6e8efdb8e25bb921ff14af3a35ce11c7219_35bf31f6_cab_48391cbf-3d99-46c1-afe3-50c557def14b\memory.hdmp
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_explorer.exe_8dd6e8efdb8e25bb921ff14af3a35ce11c7219_35bf31f6_48391cbf-3d99-46c1-afe3-50c557def14b
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: e39f3f4b-ea50-429f-a65d-fc3065fb9b56
+Report Status: 268435456
+Hashed bucket: fa3a0651ae1321b2f324dac5d2c3fa36
+Cab Guid: 0"
+"12/4/2025 7:24:38 PM","Application (WER)","Information","1001","Windows Error Reporting","0","0","Fault bucket , type 0
+Event Name: APPCRASH
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: explorer.exe
+P2: 10.0.19041.6456
+P3: fbcace5c
+P4: shcore.dll
+P5: 10.0.19041.5794
+P6: e8391836
+P7: c0000005
+P8: 0000000000028137
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER76DF.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER7AE7.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER7B85.tmp.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER7B98.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER7BE7.tmp.txt
+\\?\C:\Users\Buffe\AppData\Local\Temp\WER7C61.tmp.appcompat.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_explorer.exe_8dd6e8efdb8e25bb921ff14af3a35ce11c7219_35bf31f6_cab_48391cbf-3d99-46c1-afe3-50c557def14b\memory.hdmp
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_explorer.exe_8dd6e8efdb8e25bb921ff14af3a35ce11c7219_35bf31f6_cab_48391cbf-3d99-46c1-afe3-50c557def14b
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: e39f3f4b-ea50-429f-a65d-fc3065fb9b56
+Report Status: 4
+Hashed bucket: 
+Cab Guid: 0"
+"12/4/2025 7:24:09 PM","Application (WER)","Information","1001","Windows Error Reporting","0","0","Fault bucket 1379467929061685814, type 4
+Event Name: APPCRASH
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: explorer.exe
+P2: 10.0.19041.6456
+P3: fbcace5c
+P4: shcore.dll
+P5: 10.0.19041.5794
+P6: e8391836
+P7: c0000005
+P8: 0000000000028137
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER3C2.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER838.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER8B6.tmp.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER8C8.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER917.tmp.txt
+\\?\C:\Users\Buffe\AppData\Local\Temp\WER983.tmp.appcompat.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_explorer.exe_8dd6e8efdb8e25bb921ff14af3a35ce11c7219_35bf31f6_cab_a8ba37d6-1f1d-4fa8-89ab-d34754ab3bb9\memory.hdmp
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_explorer.exe_8dd6e8efdb8e25bb921ff14af3a35ce11c7219_35bf31f6_a8ba37d6-1f1d-4fa8-89ab-d34754ab3bb9
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: fc37cbb1-8b77-40c3-92d1-97207e99c5f5
+Report Status: 268435456
+Hashed bucket: fa3a0651ae1321b2f324dac5d2c3fa36
+Cab Guid: 0"
+"12/4/2025 7:24:08 PM","Application (WER)","Information","1001","Windows Error Reporting","0","0","Fault bucket , type 0
+Event Name: APPCRASH
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: explorer.exe
+P2: 10.0.19041.6456
+P3: fbcace5c
+P4: shcore.dll
+P5: 10.0.19041.5794
+P6: e8391836
+P7: c0000005
+P8: 0000000000028137
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER3C2.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER838.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER8B6.tmp.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER8C8.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER917.tmp.txt
+\\?\C:\Users\Buffe\AppData\Local\Temp\WER983.tmp.appcompat.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_explorer.exe_8dd6e8efdb8e25bb921ff14af3a35ce11c7219_35bf31f6_cab_a8ba37d6-1f1d-4fa8-89ab-d34754ab3bb9\memory.hdmp
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_explorer.exe_8dd6e8efdb8e25bb921ff14af3a35ce11c7219_35bf31f6_cab_a8ba37d6-1f1d-4fa8-89ab-d34754ab3bb9
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: fc37cbb1-8b77-40c3-92d1-97207e99c5f5
+Report Status: 4
+Hashed bucket: 
+Cab Guid: 0"
+"12/4/2025 7:23:15 PM","Application (WER)","Information","1001","Windows Error Reporting","0","0","Fault bucket 1379467929061685814, type 4
+Event Name: APPCRASH
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: explorer.exe
+P2: 10.0.19041.6456
+P3: fbcace5c
+P4: shcore.dll
+P5: 10.0.19041.5794
+P6: e8391836
+P7: c0000005
+P8: 0000000000028137
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER30A4.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER34CB.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER3568.tmp.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER3578.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER35C7.tmp.txt
+\\?\C:\Users\Buffe\AppData\Local\Temp\WER3635.tmp.appcompat.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_explorer.exe_8dd6e8efdb8e25bb921ff14af3a35ce11c7219_35bf31f6_cab_3d941d80-b32e-457a-8c4f-1728479ccd0a\memory.hdmp
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_explorer.exe_8dd6e8efdb8e25bb921ff14af3a35ce11c7219_35bf31f6_3d941d80-b32e-457a-8c4f-1728479ccd0a
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: c60f6e9e-a176-42b7-a24f-ef990f790963
+Report Status: 268435456
+Hashed bucket: fa3a0651ae1321b2f324dac5d2c3fa36
+Cab Guid: 0"
+"12/4/2025 7:23:14 PM","Application (WER)","Information","1001","Windows Error Reporting","0","0","Fault bucket , type 0
+Event Name: APPCRASH
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: explorer.exe
+P2: 10.0.19041.6456
+P3: fbcace5c
+P4: shcore.dll
+P5: 10.0.19041.5794
+P6: e8391836
+P7: c0000005
+P8: 0000000000028137
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER30A4.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER34CB.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER3568.tmp.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER3578.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WER35C7.tmp.txt
+\\?\C:\Users\Buffe\AppData\Local\Temp\WER3635.tmp.appcompat.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_explorer.exe_8dd6e8efdb8e25bb921ff14af3a35ce11c7219_35bf31f6_cab_3d941d80-b32e-457a-8c4f-1728479ccd0a\memory.hdmp
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_explorer.exe_8dd6e8efdb8e25bb921ff14af3a35ce11c7219_35bf31f6_cab_3d941d80-b32e-457a-8c4f-1728479ccd0a
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: c60f6e9e-a176-42b7-a24f-ef990f790963
+Report Status: 4
+Hashed bucket: 
+Cab Guid: 0"
+"12/4/2025 7:21:45 PM","Application (WER)","Information","1001","Windows Error Reporting","0","0","Fault bucket 1379467929061685814, type 4
+Event Name: APPCRASH
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: explorer.exe
+P2: 10.0.19041.6456
+P3: fbcace5c
+P4: shcore.dll
+P5: 10.0.19041.5794
+P6: e8391836
+P7: c0000005
+P8: 0000000000028137
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERCFFA.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERD441.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERD4BF.tmp.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERD4CD.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERD51C.tmp.txt
+\\?\C:\Users\Buffe\AppData\Local\Temp\WERD58C.tmp.appcompat.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_explorer.exe_8dd6e8efdb8e25bb921ff14af3a35ce11c7219_35bf31f6_cab_e1c1ab01-2618-4e1e-b746-4a7ae3509f95\memory.hdmp
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_explorer.exe_8dd6e8efdb8e25bb921ff14af3a35ce11c7219_35bf31f6_e1c1ab01-2618-4e1e-b746-4a7ae3509f95
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: a910dca1-bc13-45c5-bab5-02f373dfa5d4
+Report Status: 268435456
+Hashed bucket: fa3a0651ae1321b2f324dac5d2c3fa36
+Cab Guid: 0"
+"12/4/2025 7:21:44 PM","Application (WER)","Information","1001","Windows Error Reporting","0","0","Fault bucket , type 0
+Event Name: APPCRASH
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: explorer.exe
+P2: 10.0.19041.6456
+P3: fbcace5c
+P4: shcore.dll
+P5: 10.0.19041.5794
+P6: e8391836
+P7: c0000005
+P8: 0000000000028137
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERCFFA.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERD441.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERD4BF.tmp.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERD4CD.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERD51C.tmp.txt
+\\?\C:\Users\Buffe\AppData\Local\Temp\WERD58C.tmp.appcompat.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_explorer.exe_8dd6e8efdb8e25bb921ff14af3a35ce11c7219_35bf31f6_cab_e1c1ab01-2618-4e1e-b746-4a7ae3509f95\memory.hdmp
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_explorer.exe_8dd6e8efdb8e25bb921ff14af3a35ce11c7219_35bf31f6_cab_e1c1ab01-2618-4e1e-b746-4a7ae3509f95
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: a910dca1-bc13-45c5-bab5-02f373dfa5d4
+Report Status: 4
+Hashed bucket: 
+Cab Guid: 0"
+"12/4/2025 7:17:53 PM","Application (WER)","Information","1001","Windows Error Reporting","0","0","Fault bucket 1358077005801851889, type 4
+Event Name: APPCRASH
+Response: Not available
+Cab Id: 2105925439969294079
+
+Problem signature:
+P1: explorer.exe
+P2: 10.0.19041.6456
+P3: fbcace5c
+P4: SHELL32.dll
+P5: 10.0.19041.6456
+P6: 9ee39b73
+P7: c0000005
+P8: 000000000025489b
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERF49D.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERF941.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERF9EE.tmp.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERF9FC.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERFA5A.tmp.txt
+\\?\C:\Users\Buffe\AppData\Local\Temp\WERFAEA.tmp.appcompat.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_explorer.exe_8b70ca4a723121343f0441fa139dac4c3b1586_35bf31f6_cab_6997917d-c80e-4ded-9310-4d1ba15d51e4\memory.hdmp
+\\?\C:\Windows\Temp\WER3FE.tmp.WERDataCollectionStatus.txt
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportArchive\AppCrash_explorer.exe_8b70ca4a723121343f0441fa139dac4c3b1586_35bf31f6_cab_6997917d-c80e-4ded-9310-4d1ba15d51e4
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: fedec9dc-ee04-4496-aa24-9b2e6c098b38
+Report Status: 268435464
+Hashed bucket: d7785b17df38518462d8dbd764720bf1
+Cab Guid: 72c5b7dd-ec07-40c9-bd39-c007acd3f6ff"
+"12/4/2025 7:17:31 PM","Application (WER)","Information","1001","Windows Error Reporting","0","0","Fault bucket , type 0
+Event Name: APPCRASH
+Response: Not available
+Cab Id: 0
+
+Problem signature:
+P1: explorer.exe
+P2: 10.0.19041.6456
+P3: fbcace5c
+P4: SHELL32.dll
+P5: 10.0.19041.6456
+P6: 9ee39b73
+P7: c0000005
+P8: 000000000025489b
+P9: 
+P10: 
+
+Attached files:
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERF49D.tmp.mdmp
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERF941.tmp.WERInternalMetadata.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERF9EE.tmp.xml
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERF9FC.tmp.csv
+\\?\C:\ProgramData\Microsoft\Windows\WER\Temp\WERFA5A.tmp.txt
+\\?\C:\Users\Buffe\AppData\Local\Temp\WERFAEA.tmp.appcompat.txt
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_explorer.exe_8b70ca4a723121343f0441fa139dac4c3b1586_35bf31f6_cab_6997917d-c80e-4ded-9310-4d1ba15d51e4\memory.hdmp
+
+These files may be available here:
+\\?\C:\ProgramData\Microsoft\Windows\WER\ReportQueue\AppCrash_explorer.exe_8b70ca4a723121343f0441fa139dac4c3b1586_35bf31f6_cab_6997917d-c80e-4ded-9310-4d1ba15d51e4
+
+Analysis symbol: 
+Rechecking for solution: 0
+Report Id: fedec9dc-ee04-4496-aa24-9b2e6c098b38
+Report Status: 4
+Hashed bucket: 
+Cab Guid: 0"
